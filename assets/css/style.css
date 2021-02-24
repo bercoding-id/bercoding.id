@@ -297,7 +297,7 @@ h6 {
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background: rgb(49, 49, 202);
+    background: rgb(51, 95, 238);
     color: #fff;
     transition: all 0.4s;
 }
@@ -329,8 +329,8 @@ h6 {
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 6px solid white;
-    border-top-color: navy;
-    border-bottom-color: navy;
+    border-top-color: #335fee;
+    border-bottom-color: #335fee;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -380,7 +380,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-    background: linear-gradient(to bottom, #1924c2, #457cf1);
+    background: linear-gradient(to bottom, #1924c2, #335fee);
     padding: 12px 0;
 }
 
@@ -890,7 +890,7 @@ section {
     border-radius: 5px;
     transition: 0.5s;
     color: #fff;
-    background: rgb(49, 49, 202);
+    background: #335fee;
     position: relative;
 }
 

@@ -16,7 +16,7 @@ body {
 }
 
 a {
-    color: #5846f9;
+    color: #335fee;
 }
 
 a:hover {
@@ -264,7 +264,7 @@ h6 {
 .nav-menu .drop-down ul a:hover,
 .nav-menu .drop-down ul .active>a,
 .nav-menu .drop-down ul li:hover>a {
-    color: #5846f9;
+    color: #335fee;
 }
 
 .nav-menu .drop-down>a:after {
@@ -387,7 +387,7 @@ h6 {
 .mobile-nav a:hover,
 .mobile-nav .active>a,
 .mobile-nav li:hover>a {
-    color: #5846f9;
+    color: #335fee;
     text-decoration: none;
 }
 
@@ -489,7 +489,7 @@ h6 {
 
 #hero .btn-get-started:hover {
     background: #fff;
-    color: #5846f9;
+    color: #335fee;
 }
 
 #hero .animated {
@@ -594,7 +594,7 @@ section {
     display: block;
     width: 50px;
     height: 3px;
-    background: #5846f9;
+    background: #335fee;
     bottom: 0;
     left: calc(50% - 25px);
 }
@@ -630,7 +630,7 @@ section {
 .about .content ul i {
     font-size: 20px;
     padding-right: 4px;
-    color: #5846f9;
+    color: #335fee;
 }
 
 .about .content p:last-child {
@@ -874,7 +874,7 @@ section {
 .features .icon-box i {
     font-size: 48px;
     float: left;
-    color: #5846f9;
+    color: #335fee;
 }
 
 .features .icon-box p {
@@ -926,7 +926,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
     color: #fff;
-    background: #5846f9;
+    background: #335fee;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -942,7 +942,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(88, 70, 249, 0.8);
+    background: rgba(51, 95, 238, 0.8);
     position: absolute;
     left: 30px;
     right: 30px;
@@ -1044,7 +1044,7 @@ section {
 
 .pricing h4 {
     font-size: 36px;
-    color: #5846f9;
+    color: #335fee;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     margin-bottom: 20px;
@@ -1076,7 +1076,7 @@ section {
 }
 
 .pricing ul i {
-    color: #5846f9;
+    color: #335fee;
     font-size: 18px;
     padding-right: 4px;
 }
@@ -1208,7 +1208,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-    color: #5846f9;
+    color: #335fee;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1240,7 +1240,7 @@ section {
 
 .contact .info-box i {
     font-size: 32px;
-    color: #5846f9;
+    color: #335fee;
     border-radius: 50%;
     padding: 8px;
 }
@@ -1324,7 +1324,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-    border-color: #5846f9;
+    border-color: #335fee;
 }
 
 .contact .php-email-form input {
@@ -1449,7 +1449,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-    background-color: #5846f9 !important;
+    background-color: #335fee !important;
 }
 
 .portfolio-details .portfolio-info {

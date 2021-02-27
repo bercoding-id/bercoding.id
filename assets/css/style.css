@@ -6,22 +6,20 @@
 /*style jumbotron*/
 
 .jumbotron {
-    margin-top: -55px;
     width: 100%;
-    height: 95vh;
-    background: linear-gradient(to bottom, #1623d3 0%, rgba(112, 143, 247, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+    height: 130vh;
+    background: linear-gradient(to bottom, #2a38fa 0%, #708ff7e6 100%), url("../img/hero-bg.jpg") center center no-repeat;
     background-size: cover;
 }
 
 .jumbotron .display-4 {
     font-size: 45px;
     color: white;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 
 .jumbotron p {
     color: white;
-    font-size: 18px;
     text-align: left;
 }
 
@@ -62,52 +60,6 @@ h6 {
     margin-top: -150px;
 }
 
-.the-team {
-    float: left;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-
-.card {
-    width: 400px;
-    height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-    border-radius: 20px;
-}
-
-.container-team h3 {
-    width: 100%;
-    font-size: 25px;
-    text-align: center;
-    color: navy;
-}
-
-.container-team .fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 100%;
-}
-
-.container-team .fa:hover {
-    opacity: 0.7;
-}
-
-.container-team ul {
-    padding: 0px 100px 10px 100px;
-}
-
-.container-team::after,
-.team::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .team .icon-box .rating {
     padding: 10px 10px 10px 10px;
 }
@@ -117,6 +69,7 @@ h6 {
 }
 
 .team .icon-box {
+    width: 500px;
     text-align: center;
     padding: 30px 20px 30px 20px;
     transition: all ease-in-out 0.3s;
@@ -329,8 +282,8 @@ h6 {
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 6px solid white;
-    border-top-color: navy;
-    border-bottom-color: navy;
+    border-top-color: #335fee;
+    border-bottom-color: #335fee;
     border-radius: 50%;
     width: 60px;
     height: 60px;

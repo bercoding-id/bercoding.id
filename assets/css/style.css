@@ -5,6 +5,18 @@
 
 /*style jumbotron*/
 
+@media screen and (max-width: 768px) {
+    .jumbotron p {
+        font-size: 16px;
+    }
+    .jumbotron .display-4 {
+        font-size: 30px;
+    }
+    .jumbotron img {
+        width: 200px;
+    }
+}
+
 .jumbotron {
     width: 100%;
     height: 130vh;
@@ -13,7 +25,6 @@
 }
 
 .jumbotron .display-4 {
-    font-size: 45px;
     color: white;
     margin-top: 50px;
 }

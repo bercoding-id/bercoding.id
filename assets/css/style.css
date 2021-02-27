@@ -6,22 +6,20 @@
 /*style jumbotron*/
 
 .jumbotron {
-    margin-top: -55px;
     width: 100%;
-    height: 95vh;
-    background: linear-gradient(to bottom, #1623d3 0%, rgba(112, 143, 247, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+    height: 130vh;
+    background: linear-gradient(to bottom, #2a38fa 0%, #708ff7e6 100%), url("../img/hero-bg.jpg") center center no-repeat;
     background-size: cover;
 }
 
 .jumbotron .display-4 {
     font-size: 45px;
     color: white;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 
 .jumbotron p {
     color: white;
-    font-size: 18px;
     text-align: left;
 }
 

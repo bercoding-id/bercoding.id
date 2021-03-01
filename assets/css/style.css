@@ -261,7 +261,7 @@ h6 {
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background: rgb(49, 49, 202);
+    background: rgb(51, 95, 238);
     color: #fff;
     transition: all 0.4s;
 }
@@ -344,7 +344,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-    background: linear-gradient(to bottom, #1924c2, #457cf1);
+    background: linear-gradient(to bottom, #1924c2, #335fee);
     padding: 12px 0;
 }
 
@@ -854,7 +854,7 @@ section {
     border-radius: 5px;
     transition: 0.5s;
     color: #fff;
-    background: rgb(49, 49, 202);
+    background: #335fee;
     position: relative;
 }
 
@@ -1390,7 +1390,7 @@ section {
     position: absolute;
     right: 0;
     left: 20px;
-    color: #8577fb;
+    color: #335fee;
 }
 
 .faq .faq-list .icon-show,

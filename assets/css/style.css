@@ -3,15 +3,6 @@
 --------------------------------------------------------------*/
 
 
-/* pagination */
-
-@media screen and (max-width: 768px) {
-    .pagination {
-        justify-content: center;
-    }
-}
-
-
 /*style jumbotron*/
 
 @media screen and (max-width: 768px) {

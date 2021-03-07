@@ -65,14 +65,6 @@ h6 {
 # Team
 --------------------------------------------------------------*/
 
-.team .icon-box .rating {
-    padding: 10px 10px 10px 10px;
-}
-
-.team .icon-box .fa {
-    color: #fff;
-}
-
 .team .icon-box {
     width: 500px;
     text-align: center;

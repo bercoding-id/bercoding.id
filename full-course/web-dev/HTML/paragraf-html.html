@@ -26,7 +26,6 @@
 
     <!-- Template Main CSS File -->
     <link href="../../../assets/css/style.css" rel="stylesheet">
-    <link href="../../../assets/css/next-prev.css" rel="stylesheet">
 
 </head>
 
@@ -81,21 +80,122 @@
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
                             <h2 class="display-4" style="font-size: 35px;">Paragraf HTML</h2>
                             <hr class="my-2 border-dark mb-3">
+                            <br>
+                            <br>
                             <h3 class="font-weight-bold">Paragraf</h3>
                             <p class="lead">
-                                Setiap paragraf harus dimulai dengan memberi tag <i>< p ></i> dan diakhiri dengan tag<i>< / p >.</i>
+                                Paragraf adalah kumpulan dari beberapa kalimat. Pada web, Paragraf biasanya digunakan untuk menampilkan teks. Paragraf pada HTML dibuat dengan tag <em style="color:red;"><<em style="color:red;">p></em></em>. Selain tag
+                                itu, ada juga Tag pendukung lainnya seperti <em style="color:red;"><<em style="color:red;">div></em></em>, <em style="color:red;"><<em style="color:red;">hr></em></em>,
+                                <em style="color:red;"><<em style="color:red;">br></em></em>, dan <em style="color:red;"><<em style="color:red;">pre></em></em>,
                                 <br> Contoh :
-                                <br> Hasil :
+
+                                <!-- menampilkan contoh code-->
+                                <pre class="code">
+<em style="color:red"><<em style="color:red">body></em></em>
+
+   <em style="color:red"><<em style="color:red">p></em></em> Paragraf adalah kumpulan dari beberapa kalimat. Pada web,
+paragraf biasanya digunakan untu menampilkan teks. Paragraf pada HTML dibuat dengan tag pembukan <em style="color:red;"><<em style="color:red;">p></em></em> dan Tag
+penutup <em style="color:red;"><<em style="color:red;">/p></em></em>. Selain tag itu, ada juga tag pendukung lain seperti <em style="color:red;"><<em style="color:red;">div></em></em>, <em style="color:red;"><<em style="color:red;">hr></em></em>,
+   <em style="color:red;"><<em style="color:red;">br></em></em>, dan <em style="color:red;"><<em style="color:red;">pre></em></em>.  <em style="color:red"></<em style="color:red">p></em></em>
+
+<em style="color:red"><<em style="color:red">/body></em></em>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/hasil paragraf.jpg" alt="hasil code paragraf" class="img-fluid">
                             </p>
                             <h3 class="font-weight-bold">Line Break</h3>
-                            <p class="lead">Digunakan untuk ganti baris atau ENTER. Tag yang digunakan adalah tag <i>< br >.</i>
-                                <br> Contoh :
-                                <br> Hasil :
+                            <p class="lead">Digunakan untuk ganti baris atau ENTER. Tag <em style="color:red;"><<em style="color:red;">br></em></em>
+                                sebenarnya bukanlah tag untuk membuat paragrag. Tetapi tag ini, biasanya digunakan untuk membantu tag <em style="color:red;"><<em style="color:red;">p></em></em>.
+                                <br> Fungsi utama tag <em style="color:red;"><<em style="color:red;">br></em></em> adalah untuk membuat baris baru.<br>
+                                <br> Contoh : <br> Misalkan kita ingin menampilkan pantun, bisa saja kita buat seperti ini dengan tag <em style="color:red;"><<em style="color:red;">p></em></em>.
+                                <br>
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+<em style="color:red"><<em style="color:red">body></em></em>
+
+   <em style="color:red"><<em style="color:red">p></em></em> Buah dipetik rasanya segar
+    Untuk dibuat kue acar.
+    Kalau malas belajar,
+    Pasti bodoh di waktu besar. <em style="color:red"><</<em style="color:red">/p></em></em>
+
+<em style="color:red"><<em style="color:red">/body></em></em>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/br1.jpg" alt="br1" class="img-fluid"> <br> <br> Meskipun pada kode HTML kita sudah menulis tiap bait pantun dalam baris yang baru. Tetapi ia akan Tetap ditampilkan seperti baris.
+                                <br> Di sinilah saatnya kita harus menggunakan tag <em style="color:red"><</<em style="color:red">br></em></em>. Maka, kode di atas bisa kita tambahkan menjadi seperti ini : <br> <br>
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+<em style="color:red"><<em style="color:red">body></em></em>
+
+   <em style="color:red"><<em style="color:red">p></em></em> Buah dipetik rasanya segar <em style="color:red"><<em style="color:red">br /></em></em>
+    Untuk dibuat kue acar. <em style="color:red"><<em style="color:red">br /></em></em>
+    Kalau malas belajar, <em style="color:red"><<em style="color:red">br /></em></em>
+    Pasti bodoh di waktu besar. <em style="color:red"><</<em style="color:red">/p></em></em>
+
+   <em style="color:red"><<em style="color:red">/body></em></em>
+</pre><br> Hasil : <br> <br>
+                                <img src="../../../assets/img/hasil code/br2.jpg" alt="br2" class="img-fluid"> <br> Dalam penulisan tag <em style="color:red"><<em style="color:red">br></em></em> tag ini tidal memiliki pasangan penutup. Cara menutupnya,
+                                tambahkan saja garis miring seperti ini <em style="color:red"><<em style="color:red">br /></em></em>.
+                                <br> Tag <em style="color:red"><<em style="color:red">br></em></em> boleh ditutup, dan juga boleh tidak ditutup.
+
                             </p>
                             <h3 class="font-weight-bold">Align</h3>
-                            <p class="lead">Digunakan untuk menentukan rata tulisan.
+                            <p class="lead">
+                                <b>Atribut align</b> adalah atribut yang menentukan perataan teks. Ada beberapa mancam nilai Atribut align, diantaranya : <br> <br>
+                                <ul>
+                                    <li>center : Membuat seluruh teks ke tengan halaman web, penulisannya align="center"</li>
+                                    <li>left : Membuat seluruh teks ke sisi kiri halaman web, penulisannya align="left"</li>
+                                    <li>right : Membuat seluruh teks ke sisi kanan halaman web, penulisannya align="right"</li>
+                                    <li>justify : Meregangkan baris sehingga setiap baris memiliki lebar yang sama (seperti dikoran dan majalah), penulisannya align="justify"</li>
+                                </ul><br><br> Kita bisa menggunakan atribut align di beberapa tag seperti di bawah ini : <br><br> Dengan tag heading <br>
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+<<em style="color:red;">h1 <em style="color:blue;">align="right"> </em></em>. . </<em style="color:red">h1></em>
+</pre><br> Dengan tag paragraf <br>
+                                <pre class="code">
+<<em style="color:red;">p <em style="color:blue;">align="right"> </em></em>. . </<em style="color:red">p></em>
+</pre><br> Dengan tag Horizontal Rule <br>
+                                <pre class="code">
+<<em style="color:red;">hr <em style="color:blue;">align="right"> </em></em>. . </<em style="color:red">hr></em>
+</pre><br>
+
                                 <br> Contoh :
-                                <br> Hasil :
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+<em><</em>!<em>DOCTYPE html></em>
+  <em><</em><em style="color:red;">html</em>>
+  <em><</em><em style="color:red;">head</em>>
+      <em><</em><em style="color:red;">title</em>> Belajar atribut align <em><</em>/<em style="color:red;">title</em>>
+  <em><</em>/<em style="color:red;">head</em>>
+  <em><</em><em style="color:red;">body</em>>
+      <em><</em><em style="color:red;">h1</em> <em style="color:orange;">align</em>="<em style="color:green;">center</em>"> Hi kamu yang disana </h1>
+      <em><</em><em style="color:red;">p</em> <em style="color:orange;">align</em>="<em style="color:green;">right</em>">
+          semoga kamu baik - baik saja, ada yang selalu merindukanmu disini
+      <em><</em>/<em style="color:red;">p</em>>
+      <em><</em><em style="color:red;">hr</em> <em style="color:orange;">align</em>="<em style="color:green;">center</em>">
+      <em><</em><em style="color:red;">p</em> <em style="color:orange;">align</em>="<em style="color:green;">center</em>">
+          senyum manis kamoeh yang ngebuat akoh terus kangen sama kamoeh #eaaa
+      <em><</em>/<em style="color:red;">p</em>>
+      <em><</em><em style="color:red;">p</em> <em style="color:orange;">align</em>="<em style="color:green;">justify</em>">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Curabitur ullamcorper, mi sit amet porttitor porttitor, velit sapien iaculis ipsum,
+          a rhoncus felis elit non mauris. Praesent orci tellus, faucibus sed tellus vel,
+          posuere posuere lorem. Integer mi nunc, tempor a auctor non, mollis a tellus.
+          Etiam nibh lectus, consectetur vel lectus vitae, imperdiet pretium purus.
+          Quisque vehicula lacus vel porttitor ultricies. Nam dignissim eu augue sit
+          amet maximus. Fusce lacus ligula, porttitor a tristique eget, tempor sit amet tellus.
+          Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Nullam eu maximus nibh. Nulla vulputate lorem tellus, quis rhoncus erat sagittis non
+      <em><</em>/<em style="color:red;">p</em>>
+  <em><</em>/<em style="color:red;">body</em>>
+  <em><</em>/<em style="color:red;">html</em>>
+</pre> <br> <br>
+                                <br> Hasil : <br> <br>
+                                <img src="../../../assets/img/hasil code/align.jpg" alt="hasil align" class="img-fluid">
                             </p>
                         </div>
                     </div>
@@ -145,6 +245,9 @@
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 10. Font
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                11. QUIZ HTML
                             </a>
                         </div>
                     </div>

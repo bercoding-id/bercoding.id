@@ -26,7 +26,6 @@
 
     <!-- Template Main CSS File -->
     <link href="../../../assets/css/style.css" rel="stylesheet">
-    <link href="../../../assets/css/next-prev.css" rel="stylesheet">
 
 </head>
 
@@ -83,53 +82,164 @@
                             <hr class="my-2 border-dark mb-3">
                             <h3 class="font-weight-bold">Membuat Tabel</h3>
                             <p class="lead">
-                                Tabel digunakan untuk menyajikan data dalam bentuk kolom dan baris. Tabel didefinisikan dengan tag <i>< table ></i>. Sebuah tabel dibagi menjadi beberapa baris ( dengan tag <i>< tr ></i> ), dan setiap baris dibagi menjadi
-                                beberapa kolom ( dengan tag <i>< td ></i> ). Td kependekan dari <strong>"table data"</strong> yang berarti tempat menyimpan data <i>(data cell)</i>. Sebuah cell data dapat berupa teks, image, list, paragraf, form, tabel,
-                                dll.
-                                <br> Contoh :
-                                <br> Hasil :
+                                Tabel digunakan untuk menyajikan data dalam bentuk kolom dan baris. Untuk mengawali pembuatan Tabel di awali dengan tag <em style="color:red;"><<em style="color:red;">table></em></em>. Tabel sudah identik dengan baris dan
+                                kolom,dalam penulisan baris di dalam tabel bisa gunakan tag <em style="color:red;"><<em style="color:red;">tr></em></em>. dan untuk pembuatan kolom Anda bisa menggunakan tag <em style="color:red;"><<em style="color:red;">td></em></em>.
+                                Td kependekan dari <strong>"table data"</strong> yang berarti tempat menyimpan data <i>(data cell)</i>. Sebuah cell data dapat berupa teks, image, list, paragraf, form, tabel, dll.
+                                <br> Contoh : <br>
+
+                                <pre class="code">
+<<em style="color:red;">body</em>>
+    <<em style="color:red;">table</em> border="1px solid black">
+         <<em style="color:red;">tr</em>>
+            <<em style="color:red;">td</em>> Nama <<em>/</em><em style="color:red;">td</em>>
+            <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+         <<em>/</em><em style="color:red;">tr</em>>
+
+         <<em style="color:red;">tr</em>>
+            <<em style="color:red;">td</em>> Michael <<em>/</em><em style="color:red;">td</em>>
+            <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+         <<em>/</em><em style="color:red;">tr</em>>
+    <<em>/</em><em style="color:red;">table</em>>
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/table.jpg" alt="table" class="img-fluid">
+
                             </p>
-                            <h3 class="font-weight-bold">Colspan</h3>
-                            <p class="lead">
-                                DIgunakan untuk menggabung kolom.
-                                <br> Contoh :
-                                <br> Hasil :
-                            </p>
-                            <h3 class="font-weight-bold">Rowspan</h3>
-                            <p class="lead">
-                                Digunakan untuk menggabung baris.
-                                <br> Contoh :
-                                <br> Hasil :
+                            <h3 class="font-weight-bold">Menggabungkan Sel Tabel</h3>
+                            <p class="lead"> Atribut yang digunakan untuk menggabungkan sel tabel adalah <b style="color:red">rowspan</b> dan <b style="color:red">colspan</b> :
+                                <ul>
+                                    <li><b style="color:red">rowspan</b> untuk menggabungkan baris</li>
+                                    <li><b style="color:red">colspan</b> untuk menggabungkan kolom</li>
+                                </ul>
+                                <img src="../../../assets/img/hasil code/rowspan.jpg" alt="contoh" class="img-fluid"> <br>
+                                <br> Contoh : <br>
+
+                                <pre class="code">
+<<em style="color:red;">table</em> border="1" Cellpadding="10">
+
+<<em style="color:red;">tr</em>>
+          <<em style="color:red;">th</em> <em style="color:green;">rowspan</em>="2" <em style="color:green">bgcolor</em><em style="color:red">=</em><em style="color:orange">"yellow"</em>> Nama <<em>/</em><em style="color:red;">th</em>>
+          <<em style="color:red;">th</em> <em style="color:green;">colspan</em>="2" <em style="color:green">bgcolor</em><em style="color:red">=</em><em style="color:orange">"green"</em>> Nilai<<em>/</em><em style="color:red;">th</em>>
+<<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+              <<em style="color:red;">td</em>> UTS <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> UAS <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+              <<em style="color:red;">td</em>> Michael <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 80 <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 75 <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+              <<em style="color:red;">td</em>> Dimas <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 85 <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 90 <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+              <<em style="color:red;">td</em>> Rani <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 90 <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 90 <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+<<em>/</em><em style="color:red;">table</em>>
+</pre>
+
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/colspan.jpg" alt="colspan" class="img-fluid">
                             </p>
                             <h3 class="font-weight-bold">Cellpadding</h3>
                             <p class="lead">
                                 Digunakan untuk mengatur padding cell (jarak antara border dengan konten).
-                                <br> Contoh :
-                                <br> Hasil :
+                                <br> Contoh : <br>
+                                <pre class="code">
+<<em style="color:red;">table</em> border="1" Cellpadding="10">
+
+  <<em style="color:red;">tr</em>>
+     <<em style="color:red;">td</em>> Nama <<em>/</em><em style="color:red;">td</em>>
+     <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+  <<em>/</em><em style="color:red;">tr</em>>
+
+  <<em style="color:red;">tr</em>>
+      <<em style="color:red;">td</em>> Michael <<em>/</em><em style="color:red;">td</em>>
+      <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+  <<em>/</em><em style="color:red;">tr</em>>
+
+<<em>/</em><em style="color:red;">table</em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/cellpading.jpg" alt="cellpading" class="img-fluid">
                             </p>
                             <h3 class="font-weight-bold">Cellspacing</h3>
                             <p class="lead">
                                 Digunakan untuk memberi jarak antar cell.
-                                <br> Contoh :
-                                <br> Hasil :
+                                <br> Contoh : <br>
+                                <pre class="code">
+<<em style="color:red;">table</em> border="1" Cellspacing="10">
+    <<em style="color:red;">tr</em>>
+           <<em style="color:red;">td</em> > Nama <<em>/</em><em style="color:red;">td</em>>
+           <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+           <<em style="color:red;">td</em> > Michael <<em>/</em><em style="color:red;">td</em>>
+           <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+<<em>/</em><em style="color:red;">table</em>>
+</pre>
+                                <br> Hasil :<br>
+                                <img src="../../../assets/img/hasil code/spacing.jpg" alt="Cellspacing" class="img-fluid">
                             </p>
                             <h3 class="font-weight-bold">Background Warna</h3>
                             <p class="lead">
                                 Untuk memberi background warna pada tabel dengan menggunakan <strong>bgcolor</strong>.
-                                <br> Contoh :
-                                <br> Hasil :
-                            </p>
-                            <h3 class="font-weight-bold">Background Gambar</h3>
-                            <p class="lead">
-                                Untuk memberi background gambar pada tabel dengan menggunakan <strong>background</strong>.
-                                <br> Contoh :
-                                <br> Hasil :
+                                <br> Contoh : <br>
+
+                                <pre class="code">
+<<em style="color:red;">table</em> border="1" Cellpadding="10">
+    <<em style="color:red;">tr</em>>
+         <<em style="color:red;">td</em> <em style="color:green">bgcolor</em><em style="color:red">=</em><em style="color:orange">"yellow"</em>> Nama <<em>/</em><em style="color:red;">td</em>>
+         <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em> <em style="color:green">bgcolor</em><em style="color:red">=</em><em style="color:orange">"#00ff80"</em>>
+        <<em style="color:red;">td</em> > Michael <<em>/</em><em style="color:red;">td</em>>
+        <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+<<em>/</em><em style="color:red;">table</em>>
+</pre>
+
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/bgcolor.jpg" alt="bgcolor" class="img-fluid"> <br>
                             </p>
                             <h3 class="font-weight-bold">Warna Border</h3>
                             <p class="lead">
                                 Untuk memberi warna pada border dengan menggunakan <strong>bordercolor</strong>.
-                                <br> Contoh :
-                                <br> Hasil :
+                                <br> Contoh : <br>
+
+                                <pre class="code">
+<<em style="color:red;">table</em> border="1" bordercolor="red">
+    <<em style="color:red;">tr</em>>
+           <<em style="color:red;">td</em> > Nama <<em>/</em><em style="color:red;">td</em>>
+           <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+           <<em style="color:red;">td</em> > Michael <<em>/</em><em style="color:red;">td</em>>
+           <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+<<em>/</em><em style="color:red;">table</em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/bordercolor.jpg" alt="bordercolor" class="img-fluid">
                             </p>
                         </div>
                     </div>
@@ -157,7 +267,7 @@
                                 2. Tag HTML
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Paragraf 
+                                3. Paragraf
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 4. Pemformatan Teks
@@ -179,6 +289,9 @@
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 10. Font
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                11. QUIZ HTML
                             </a>
                         </div>
                     </div>

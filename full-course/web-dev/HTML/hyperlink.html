@@ -26,7 +26,6 @@
 
     <!-- Template Main CSS File -->
     <link href="../../../assets/css/style.css" rel="stylesheet">
-    <link href="../../../assets/css/next-prev.css" rel="stylesheet">
 
 </head>
 
@@ -83,29 +82,68 @@
                             <hr class="my-2 border-dark mb-3">
                             <h3 class="font-weight-bold">Hyperlink</h3>
                             <p class="lead">
-                                Dokumen HTML mempunyai kemampuan untuk memberikan link dari satu teks dan / atau gambar menuju ke dokumen atau bagian Lain dalam suatu dokumen. Browser web akan menyorot teks atau gambar yang diidentifikasikan sebagai link dengan warna dan / atau garis
-                                bawah untuk menunjukkan bahwa itu adalah hypertext link. <br> HTML menggunakan tag
-                                <i>< a ></i> yang disebut sebagai tag anchor untuk membuat suatu link kepada dokumen lain.
+                                Dokumen HTML mempunyai kemampuan untuk memberikan link dari satu teks atau gambar menuju ke dokumen/halaman Lain dalam suatu dokumen. Browser web akan menyorot teks atau gambar yang diidentifikasikan sebagai link dengan warna atau garis bawah untuk menunjukkan
+                                bahwa itu adalah hypertext link. <br> HTML menggunakan tag
+                                <em style="color:red;"><</em><em style="color:red;">a></em></em> yang disebut sebagai tag anchor untuk membuat suatu link kepada dokumen lain.
                                 <br> Contoh :
-                                <br> Hasil :
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+<<em style="color:red;">body</em>>
+  <<em style="color:red;">p</em>>
+      <<em style="color:red;">a </em><em style="color:green;">href</em>="<em color:blue;>https://www.bercoding.id</em>"</em>>Contoh Hyperlink<<em>/</em><em style="color:red;">a</em></em>>
+  <<em>/<em style="color:red;">p</em></em>>
+<<em>/<em style="color:red;">body</em></em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/link.jpg" alt="hasil Hyperlink" class="img-fluid">
                             </p>
                             <h3 class="font-weight-bold">Membuat link untuk Tab Baru</h3>
                             <p class="lead">
                                 Untuk membuat link supaya membuka tab baru dapat ditambahkan atribut: <i>target="_blank"</i>
-                                <br> Contoh :
-                                <br> Hasil :
+                                <br> Contoh : <br>
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+  <<em style="color:red;">body</em>>
+    <<em style="color:red;">p</em>>
+          <<em style="color:red;">a </em><em style="color:green;">href</em>="<em color:blue;>https://www.bercoding.id</em>"</em> <em style="color:orange;">type</em>="<em style="color:green;">_blank</em>">Contoh Hyperlink<<em>/</em><em style="color:red;">a</em></em>>
+    <<em>/<em style="color:red;">p</em></em>>
+  <<em>/<em style="color:red;">body</em></em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/link2.jpg" alt="_blank" class="img-fluid">
                             </p>
                             <h3 class="font-weight-bold">Mailto</h3>
                             <p class="lead">
                                 Berikut ini adalah contoh link untuk menghubungkan ke sebuah alamat email.
                                 <br> Contoh :
-                                <br> Hasil :
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+  <<em style="color:red;">body</em>>
+      <<em style="color:red;">p</em>>
+            <<em style="color:red;">a </em> <em style="color:orange">href</em>=<em style=color:red;>"mailto:bercoding.id@gmail.com"></em>Contoh Hyperlink mailto <<em>/</em><em style="color:red;">a</em></em>>
+      <<em>/<em style="color:red;">p</em></em>>
+  <<em>/<em style="color:red;">body</em></em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/mailto.jpg" alt="mailto" class="img-fluid">
                             </p>
                             <h3 class="font-weight-bold">Image Hyperlink </h3>
                             <p class="lead">
-                                Hyperlink dengan gambar, jika gambar di klik akan mengarah ke alamat yang dituju.
-                                <br> Contoh :
-                                <br> Hasil :
+                                Hyperlink dengan gambar, dalam menanamkan link di sebuah gambar memang terlihat seperti tidak ada yang berubah tetapi ketika Anda mengklik gambar tersebut halaman secara otomatis akan beralih ke Hyperlink yang sudah anda buat.
+                                <br> Contoh : <br>
+                                <!--menampilkan contoh code-->
+                                <p class="code1">
+                                    <<em style="color:red">a</em> <em style="color:green;">href</em><em style="color:red;">=</em><em style="color:orange;">"#"</em>>
+                                        <<em style="color:red;">img</em> <em style="color:green;">src</em>
+                                            <em style="color:red;">=</em><em style="color:orange;">"https://www.bercoding.id/img/logo.jpg" </em> /<em>></em>
+                                            <<em>/</em><em style="color:red;">a</em>>
+                                </p>
+
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/link img.jpg" alt="link image" class="img-fluid">
                             </p>
                         </div>
                     </div>
@@ -133,7 +171,7 @@
                                 2. Tag HTML
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Paragraf 
+                                3. Paragraf
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 4. Pemformatan Teks
@@ -155,6 +193,9 @@
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 10. Font
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                11. QUIZ HTML
                             </a>
                         </div>
                     </div>

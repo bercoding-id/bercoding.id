@@ -26,7 +26,6 @@
 
     <!-- Template Main CSS File -->
     <link href="../../../assets/css/style.css" rel="stylesheet">
-    <link href="../../../assets/css/next-prev.css" rel="stylesheet">
 
 </head>
 
@@ -87,28 +86,127 @@
                             </p>
                             <h3 class="font-weight-bold">Ordered List</h3>
                             <p class="lead">
-                                Untuk membuat list terurut nomor <i>(ordered list)</i>. Kita gunakan tag pembuka <i> < ol ></i> dan penutup tag <i> </ ol > </i>, sedangkan untuk mendata setiap itemnya menggunakan tag <i>< li ></i> sebagai pembuka dan
-                                <i>< /li ></i> sebagai penutup.
-                                <br> Contoh :
-                                <br> Hasil :
+                                Untuk membuat list terurut nomor <i>(ordered list)</i>. Kita gunakan tag pembuka <em style="color:red;"><<em style="color:red;">ol></em></em> dan penutup tag <em style="color:red;"><<em style="color:red;">/ol></em></em>,
+                                sedangkan untuk mendata setiap itemnya menggunakan tag <em style="color:red;"><<em style="color:red;">li></em></em> sebagai pembuka dan
+                                <em style="color:red;"><<em style="color:red;">/li></em></em> sebagai penutup.
+                                <br> Contoh : <br>
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+<<em style="color:red;">body</em>>
+  <<em style="color:red;">ol</em>>
+   <<em style="color:red;">li</em>> Contoh 1 <<em>/</em><em style="color:red;">li</em>>
+   <<em style="color:red;">li</em>> Contoh 2 <<em>/</em><em style="color:red;">li</em>>
+   <<em style="color:red;">li</em>> Contoh 3 <<em>/</em><em style="color:red;">li</em>>
+  <<em>/</em><em style="color:red;">ol</em>>
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/ol.jpg" alt="Orderedlist" class="img-fluid">
                                 <br> Ada beberapa tipe yang bisa Digunakan, yaitu : <br>
-                                <i>< ol type = "1" > - Default</i><br>
-                                <i>< ol type ="l"></i><br>
-                                <i>< ol type ="i"></i><br>
-                                <i>< ol type ="A"></i><br>
-                                <i>< ol type ="a"></i><br>
-                                <br> Contoh :
-                                <br> Hasil :
+                                <ul>
+                                    <li>
+                                        < <em style="color:red;">ol </em><em style="color:green;">type</em>="<em style="color:orange">a</em>"> = untuk alfabet <i style="color:red;">a, b, c,</i> dan seterusnya</li>
+                                    <li>
+                                        < <em style="color:red;">ol </em><em style="color:green;">type</em>="<em style="color:orange">A</em>"> = untuk alfabet <i style="color:red;">A, B, C,</i> dan seterusnya</li>
+                                    <li>
+                                        < <em style="color:red;">ol </em><em style="color:green;">type</em>="<em style="color:orange">i</em>"> = untuk angka romawi <i style="color:red;">i, ii, iii,</i> dan seterusnya</li>
+                                    <li>
+                                        < <em style="color:red;">ol </em><em style="color:green;">type</em>="<em style="color:orange">I</em>"> = untuk alfabet <i style="color:red;">I, II, III,</i> dan seterusnya</li>
+                                </ul>
+                                <br> Contoh : <br>
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+  <<em style="color:red;">body</em>>
+
+   <<em style="color:red;">h3</em>> List dengan type "a" <<em>/</em><em style="color:red;">h3</em>>
+
+      <<em style="color:red;">ol </em><em style="color:green;">type</em>="<em style="color:orange">a</em>">
+           <<em style="color:red;">li</em>> Contoh 1 <<em>/</em><em style="color:red;">li</em>>
+           <<em style="color:red;">li</em>> Contoh 2 <<em>/</em><em style="color:red;">li</em>>
+           <<em style="color:red;">li</em>> Contoh 3 <<em>/</em><em style="color:red;">li</em>>
+      <<em>/</em><em style="color:red;">ol</em>>
+
+  <<em style="color:red;">h3</em>> List dengan type "A" <<em>/</em><em style="color:red;">h3</em>>
+      <<em style="color:red;">ol </em><em style="color:green;">type</em>="<em style="color:orange">A</em>">
+           <<em style="color:red;">li</em>> Contoh 1 <<em>/</em><em style="color:red;">li</em>>
+           <<em style="color:red;">li</em>> Contoh 2 <<em>/</em><em style="color:red;">li</em>>
+           <<em style="color:red;">li</em>> Contoh 3 <<em>/</em><em style="color:red;">li</em>>
+      <<em>/</em><em style="color:red;">ol</em>>
+
+<<em style="color:red;">h3</em>> List dengan type "i" <<em>/</em><em style="color:red;">h3</em>>
+      <<em style="color:red;">ol </em><em style="color:green;">type</em>="<em style="color:orange">i</em>">
+           <<em style="color:red;">li</em>> Contoh 1 <<em>/</em><em style="color:red;">li</em>>
+           <<em style="color:red;">li</em>> Contoh 2 <<em>/</em><em style="color:red;">li</em>>
+           <<em style="color:red;">li</em>> Contoh 3 <<em>/</em><em style="color:red;">li</em>>
+      <<em>/</em><em style="color:red;">ol</em>>
+
+<<em style="color:red;">h3</em>> List dengan type "I" <<em>/</em><em style="color:red;">h3</em>>
+      <<em style="color:red;">ol </em><em style="color:green;">type</em>="<em style="color:orange">I</em>">
+           <<em style="color:red;">li</em>> Contoh 1 <<em>/</em><em style="color:red;">li</em>>
+           <<em style="color:red;">li</em>> Contoh 2 <<em>/</em><em style="color:red;">li</em>>
+           <<em style="color:red;">li</em>> Contoh 3 <<em>/</em><em style="color:red;">li</em>>
+      <<em>/</em><em style="color:red;">ol</em>>
+
+  <<em>/</em><em style="color:red;">body</em>>
+</pre>
+
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/type.jpg" alt="type pada Orderedlist" class="img-fluid">
+                                <br>
                             </p>
                             <h3 class="font-weight-bold">Unordered List</h3>
                             <p class="lead">
-                                Untuk membuat list tidak terurut nomor <i>(unordered list)</i>, kita gunakan tag pembuka <i>< ul ></i> dan penutup <i>< /ul ></i>, sedangkan untuk mendata setiap itemnya menggunakan tag <i>< li ></i> sebagai pembuka dan
-                                <i>< /li ></i> sebagai penutup.
-                                <br> Contoh :
-                                <br> Hasil :
+                                Untuk membuat list tidak terurut nomor <i>(unordered list)</i>, kita gunakan tag pembuka<em style="color:red;"><<em style="color:red;">ul></em></em> dan penutup tag <em style="color:red;"><<em style="color:red;">/ul></em></em>,
+                                sedangkan untuk mendata setiap itemnya menggunakan tag <em style="color:red;"><<em style="color:red;">li></em></em> sebagai pembuka dan
+                                <em style="color:red;"><<em style="color:red;">/li></em></em> sebagai penutup.
+                                <br> Contoh : <br>
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+<<em style="color:red;">body</em>>
+    <<em style="color:red;">ul</em>>
+         <<em style="color:red;">li</em>> Contoh 1 <<em>/</em><em style="color:red;">li</em>>
+         <<em style="color:red;">li</em>> Contoh 2 <<em>/</em><em style="color:red;">li</em>>
+         <<em style="color:red;">li</em>> Contoh 3 <<em>/</em><em style="color:red;">li</em>>
+    <<em>/</em><em style="color:red;">ul</em>>
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/ul.jpg" alt="Unordered" class="img-fluid">
                                 <br> Ada 3 tipe yang bisa kita gunakan yaitu <strong>square</strong>, <strong>disc</strong>, <strong>circle</strong>.
-                                <br> Contoh :
-                                <br> Hasil :
+                                <br> Contoh : <br>
+
+                                <!--menampilkan contoh code-->
+                                <pre class="code">
+<<em style="color:red;">body</em>>
+
+<<em style="color:red;">h3</em>> Unordered dengan type "cirle" <<em>/</em><em style="color:red;">h3</em>>
+
+  <<em style="color:red;">ul </em><em style="color:green;">type</em>="<em style="color:orange">cirle</em>">
+       <<em style="color:red;">li</em>> Contoh 1 <<em>/</em><em style="color:red;">li</em>>
+       <<em style="color:red;">li</em>> Contoh 2 <<em>/</em><em style="color:red;">li</em>>
+       <<em style="color:red;">li</em>> Contoh 3 <<em>/</em><em style="color:red;">li</em>>
+  <<em>/</em><em style="color:red;">ul</em>>
+
+<<em style="color:red;">h3</em>> Unordered dengan type "disc" <<em>/</em><em style="color:red;">h3</em>>
+  <<em style="color:red;">ul </em><em style="color:green;">type</em>="<em style="color:orange">disc</em>">
+       <<em style="color:red;">li</em>> Contoh 1 <<em>/</em><em style="color:red;">li</em>>
+       <<em style="color:red;">li</em>> Contoh 2 <<em>/</em><em style="color:red;">li</em>>
+       <<em style="color:red;">li</em>> Contoh 3 <<em>/</em><em style="color:red;">li</em>>
+  <<em>/</em><em style="color:red;">ul</em>>
+
+<<em style="color:red;">h3</em>> Unordered dengan type "square" <<em>/</em><em style="color:red;">h3</em>>
+  <<em style="color:red;">ul </em><em style="color:green;">type</em>="<em style="color:orange">square</em>">
+       <<em style="color:red;">li</em>> Contoh 1 <<em>/</em><em style="color:red;">li</em>>
+       <<em style="color:red;">li</em>> Contoh 2 <<em>/</em><em style="color:red;">li</em>>
+       <<em style="color:red;">li</em>> Contoh 3 <<em>/</em><em style="color:red;">li</em>>
+  <<em>/</em><em style="color:red;">ul</em>>
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/ul type.jpg" alt="type" class="img-fluid">
                             </p>
                         </div>
                     </div>
@@ -136,7 +234,7 @@
                                 2. Tag HTML
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Paragraf 
+                                3. Paragraf
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 4. Pemformatan Teks
@@ -158,6 +256,9 @@
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 10. Font
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                11. QUIZ HTML
                             </a>
                         </div>
                     </div>

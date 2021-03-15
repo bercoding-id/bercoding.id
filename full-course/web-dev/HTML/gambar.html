@@ -26,7 +26,6 @@
 
     <!-- Template Main CSS File -->
     <link href="../../../assets/css/style.css" rel="stylesheet">
-    <link href="../../../assets/css/next-prev.css" rel="stylesheet">
 
 </head>
 
@@ -83,30 +82,68 @@
                             <hr class="my-2 border-dark mb-3">
                             <h3 class="font-weight-bold">Menyertakan Gambar</h3>
                             <p class="lead">
-                                Gambar di dalam suatu web paeg merupakan daya penarik bagi pengunjung suatu website. Umumnya website dilengkapi dengan gambar-gambar untuk membuat orang tertarik untuk melihat dan membaca isi yang ada di suatu website. Setiap gambar akan butuh waktu tambahan
+                                Gambar di dalam suatu web page merupakan daya penarik bagi pengunjung suatu website. Umumnya website dilengkapi dengan gambar-gambar untuk membuat orang tertarik untuk melihat dan membaca isi yang ada di suatu website. Setiap gambar akan butuh waktu tambahan
                                 untuk download dan memperlambat awal penampilan suatu dokumen dalam browser. Untuk itu perlu hati-hati untuk menyertakan gambar dalam dokumen website. Cara untuk menyertakan sebuah image dalam dokumen web adalah sebagai
-                                berikut : <i>< img src="nama_image" ></i>.
-                                <br> Contoh :
-                                <br> Hasil :
+                                berikut :
+                                <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">nama_image</em>">
+                                    <br> Contoh : <br>
+                                    <pre class="code">
+<<em style="color:red;">body</em>>
+     <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>">
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+                                    <br> Hasil : <br>
+                                    <img src="../../../assets/img/hasil code/link img.jpg" alt="logo" class="img-fluid">
                             </p>
                             <h3 class="font-weight-bold">Teks Alternatif untuk Image</h3>
                             <p class="lead">
-                                Atribut <i>alt</i> pada tag <i>< img ></i> menyediakan tempat untuk menampilkan teks pengganti gambar. Keterangan alternatif akan muncul jika kita menaruh mouse pointer di atas gambar agak lama atau ketika file gambar tidak
-                                tersedia.
-                                <br> Contoh :
-                                <br> Hasil :
+                                Atribut <em style="color:red;">alt</em> adalah atribut untuk memberikan teks alternatif pada gambar saat gambar gagal ditampilkan. <br> Contoh : <br>
+
+                                <pre class="code">
+  <<em style="color:red;">body</em>>
+       <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">alt</em><em style="color:red;">=</em><em style="color:green;">"logo"</em>>
+  <<em>/</em><em style="color:red;">body</em>>
+</pre>
+
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/alt image.jpg" alt="alt" class="img-fluid">
                             </p>
                             <h3 class="font-weight-bold">Image Border</h3>
                             <p class="lead">
                                 Memberikan border atau bingkai pada gambar.
-                                <br> Contoh :
-                                <br> Hasil :
+                                <!--menampilkan contoh code-->
+                                <br> Contoh :<pre class="code">
+<<em style="color:red;">body</em>>
+   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">alt</em><em style="color:red;">=</em><em style="color:green;">"logo"</em> border="3px solid black;">
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/link img.jpg" style="width: 300px; border: 3px solid black;">
+
                             </p>
                             <h3 class="font-weight-bold">Image Alignment</h3>
                             <p class="lead">
                                 Mengatur gambar rata kiri <i>(left)</i>, tengah <i>(center)</i>, atau kanan <i>(right)</i>.
-                                <br> Contoh :
-                                <br> Hasil :
+                                <!--menampilkan contoh code-->
+                                <br> Contoh :<pre class="code">
+<<em style="color:red;">body</em>>
+   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">align</em>="center">
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+
+                                <br> Contoh :<pre class="code">
+<<em style="color:red;">body</em>>
+   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">align</em>="left">
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+
+                                <br> Contoh :<pre class="code">
+<<em style="color:red;">body</em>>
+   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">align</em>="right">
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+
                             </p>
                         </div>
                     </div>
@@ -134,7 +171,7 @@
                                 2. Tag HTML
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Paragraf 
+                                3. Paragraf
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 4. Pemformatan Teks
@@ -156,6 +193,9 @@
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 10. Font
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                11. QUIZ HTML
                             </a>
                         </div>
                     </div>

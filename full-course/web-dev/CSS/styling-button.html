@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Paragraf HTML | BerCODING ID</title>
+    <title>Styling Button | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -45,7 +45,7 @@
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                            <li class="active"><a href="../../../index.html">Home</a></li>
+                            <li class="active"><a href="../../index.html">Home</a></li>
                             <li><a href="../../../about/about.html">Tentang Kami</a></li>
                             <li><a href="#">Layanan</a></li>
                             <li><a href="../../../portofolio/all-portfolio.html">Portofolio</a></li>
@@ -76,142 +76,71 @@
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-sm-6 col-md-8">
-                    <div class="jumbotron-full-bg bg-white text-md-left">
+                    <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Paragraf HTML</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Styling Button CSS</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <br>
-                            <br>
-                            <h3 class="font-weight-bold">Paragraf</h3>
+                            <h3 class="font-weight-bold">Pengenalan</h3>
                             <p class="lead">
-                                Paragraf adalah kumpulan dari beberapa kalimat. Pada web, Paragraf biasanya digunakan untuk menampilkan teks. Paragraf pada HTML dibuat dengan tag <em style="color:red;"><<em style="color:red;">p></em></em>. Selain tag
-                                itu, ada juga Tag pendukung lainnya seperti <em style="color:red;"><<em style="color:red;">div></em></em>, <em style="color:red;"><<em style="color:red;">hr></em></em>,
-                                <em style="color:red;"><<em style="color:red;">br></em></em>, dan <em style="color:red;"><<em style="color:red;">pre></em></em>,
-                                <br> Contoh :
-
-                                <!-- menampilkan contoh code-->
+                                Tombol (button) telah menjadi bagian yang tidak terhindarkan lagi dari pengembangan front-end. Oleh karena itu, penting untuk mengingat beberapa hal sebelum Anda mulai menata tombol. Ini beberapa cara menata tombol menggunakan CSS. <br>                                <br>
+                                <b>HTML CODE</b>
                                 <pre class="code">
-&lt;body&gt;
+&lt;h1&gt;Style Button 1 &lt;/h1&gt;
 
-   &lt;p&gt;
-   Paragraf adalah kumpulan dari beberapa kalimat. Pada web,
-   paragraf biasanya digunakan untu menampilkan teks. Paragraf pada
-   HTML dibuat dengan tag pembukan &lt;p&gt; dan Tag
-   penutup &lt;/p&gt;. Selain tag itu, ada juga tag pendukung lain seperti &lt;div&gt;, &lt;hr&gt;
-   &lt;br&gt;, dan &lt;pre&gt;.
-   &lt;/p&gt;
+&lt;button class="btn first"&gt;Tombol 1&lt;/button&gt;
 
-&lt;/body&gt;
-</pre>
-                                <br> Hasil : <br>
-                                <img src="../../../assets/img/hasil code/hasil paragraf.jpg" alt="hasil code paragraf" class="img-fluid">
-                            </p>
-                            <h3 class="font-weight-bold">Line Break</h3>
-                            <p class="lead">Digunakan untuk ganti baris atau ENTER. Tag <em style="color:red;"><<em style="color:red;">br></em></em>
-                                sebenarnya bukanlah tag untuk membuat paragrag. Tetapi tag ini, biasanya digunakan untuk membantu tag <em style="color:red;"><<em style="color:red;">p></em></em>.
-                                <br> Fungsi utama tag <em style="color:red;"><<em style="color:red;">br></em></em> adalah untuk membuat baris baru.<br>
-                                <br> Contoh : <br> Misalkan kita ingin menampilkan pantun, bisa saja kita buat seperti ini dengan tag <em style="color:red;"><<em style="color:red;">p></em></em>.
-                                <br>
-
-                                <!--menampilkan contoh code-->
+                            </pre>
+                                <br><br>
+                                <b>CSS CODE Styling 1</b>
                                 <pre class="code">
-&lt;body&gt;
 
-   &lt;p&gt; Buah dipetik rasanya segar
-    Untuk dibuat kue acar.
-    Kalau malas belajar,
-    Pasti bodoh di waktu besar. &lt;/p&gt;
+.btn {
+     box-sizing: border-box;
+     -webkit-appearance: none;
+        -moz-appearance: none;
+             appearance: none;
+     background-color: transparent;
+     border: 2px solid #e74c3c;
+     border-radius: 0.6em;
+     color: #e74c3c;
+     cursor: pointer;
+     display: flex;
+     align-self: center;
+     font-size: 1rem;
+     font-weight: 400;
+     line-height: 1;
+     margin: 20px;
+     padding: 1.2em 2.8em;
+     text-decoration: none;
+     text-align: center;
+     text-transform: uppercase;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+}
+.btn:hover, .btn:focus {
+     color: #fff;
+     outline: 0;
+}
 
-&lt;/body&gt;
-</pre>
-                                <br> Hasil : <br>
-                                <img src="../../../assets/img/hasil code/br1.jpg" alt="br1" class="img-fluid"> <br> <br> Meskipun pada kode HTML kita sudah menulis tiap bait pantun dalam baris yang baru. Tetapi ia akan Tetap ditampilkan seperti baris.
-                                <br> Di sinilah saatnya kita harus menggunakan tag <em style="color:red"><</<em style="color:red">br></em></em>. Maka, kode di atas bisa kita tambahkan menjadi seperti ini : <br> <br>
+.first {
+     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+     box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+                </pre> <br><br> Hasil dari code yang kita tulis di atas akan seperti dibawah ini : <br>
+                                <img src="../../../assets/img/hasil code/css/button1.gif" alt="button 1" class="img-fluid"> <br><br>
 
-                                <!--menampilkan contoh code-->
-                                <pre class="code">
-&lt;body&gt;
-
-   &lt;p&gt; Buah dipetik rasanya segar &lt;br /&gt;
-    Untuk dibuat kue acar. &lt;br /&gt;
-    Kalau malas belajar, &lt;br /&gt;
-    Pasti bodoh di waktu besar. &lt;/p&gt;
-
-   &lt;/body&gt;
-</pre><br> Hasil : <br> <br>
-                                <img src="../../../assets/img/hasil code/br2.jpg" alt="br2" class="img-fluid"> <br> Dalam penulisan tag <em style="color:red"><<em style="color:red">br></em></em> tag ini tidal memiliki pasangan penutup. Cara menutupnya,
-                                tambahkan saja garis miring seperti ini <em style="color:red"><<em style="color:red">br /></em></em>.
-                                <br> Tag <em style="color:red"><<em style="color:red">br></em></em> boleh ditutup, dan juga boleh tidak ditutup.
-
-                            </p>
-                            <h3 class="font-weight-bold">Align</h3>
-                            <p class="lead">
-                                <b>Atribut align</b> adalah atribut yang menentukan perataan teks. Ada beberapa mancam nilai Atribut align, diantaranya : <br> <br>
-                                <ul>
-                                    <li>center : Membuat seluruh teks ke tengan halaman web, penulisannya align="center"</li>
-                                    <li>left : Membuat seluruh teks ke sisi kiri halaman web, penulisannya align="left"</li>
-                                    <li>right : Membuat seluruh teks ke sisi kanan halaman web, penulisannya align="right"</li>
-                                    <li>justify : Meregangkan baris sehingga setiap baris memiliki lebar yang sama (seperti dikoran dan majalah), penulisannya align="justify"</li>
-                                </ul><br><br> Kita bisa menggunakan atribut align di beberapa tag seperti di bawah ini : <br>
-                                <!--menampilkan contoh code-->
-
-                                <br> Dengan tag heading <br>
-                                <pre class="code">
-&lt;h1 align="right"&gt; . . &lt;/h1&gt;
-</pre>
-                                <br> Dengan tag paragraf <br>
-                                <pre class="code">
-&lt;p align="right"&gt; . . &lt;/p&gt;
-</pre>
-                                <br> Dengan tag Horizontal Rule <br>
-                                <pre class="code">
-&lt;hr align="right"&gt; . . &lt;/hr&gt;
-</pre><br>
-
-                                <br> Contoh :
-
-                                <!--menampilkan contoh code-->
-                                <pre class="code">
-&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-  &lt;head&gt;
-      &lt;title&gt; Belajar atribut align &lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-      &lt;h1 align="center&gt;" Hi kamu yang disana &lt;/h1&gt;
-      &lt;p align="right"&gt;
-          semoga kamu baik - baik saja, ada yang selalu merindukanmu disini
-      &lt;/p&gt;
-      &lt;hr align="center"&gt;
-      &lt;p align="center"&gt;
-          senyum manis kamoeh yang ngebuat akoh terus kangen sama kamoeh #eaaa
-      &lt;/p&gt;
-      &lt;p align="justify"&gt;
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur ullamcorper, mi sit amet porttitor porttitor, velit sapien iaculis ipsum,
-          a rhoncus felis elit non mauris. Praesent orci tellus, faucibus sed tellus vel,
-          posuere posuere lorem. Integer mi nunc, tempor a auctor non, mollis a tellus.
-          Etiam nibh lectus, consectetur vel lectus vitae, imperdiet pretium purus.
-          Quisque vehicula lacus vel porttitor ultricies. Nam dignissim eu augue sit
-          amet maximus. Fusce lacus ligula, porttitor a tristique eget, tempor sit amet tellus.
-          Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Nullam eu maximus nibh. Nulla vulputate lorem tellus, quis rhoncus erat sagittis non
-      &lt;/p&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-</pre> <br> <br>
-                                <br> Hasil : <br> <br>
-                                <img src="../../../assets/img/hasil code/align.jpg" alt="hasil align" class="img-fluid">
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/tag-html.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/styling-table.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/format-text.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/styling-image.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -223,37 +152,28 @@
                                 List Kursus
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                1. Pengenalan HTML
+                                1. Pengenalan CSS
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Tag HTML
+                                2. Styling Font
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>3. Paragraf</strong>
+                                3. Styling Link
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Pemformatan Teks
+                                4. Styling Tabel
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                5. Hyperlink
+                                <strong>5. Styling Button</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                6.  List
+                                6. Styling Image
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                7. Gambar
+                                7. Icon
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                8. Tabel
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                9. Form
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                10. Font
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                11. QUIZ HTML
+                                8. Color
                             </a>
                         </div>
                     </div>

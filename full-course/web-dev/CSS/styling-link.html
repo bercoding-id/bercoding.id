@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Paragraf HTML | BerCODING ID</title>
+    <title>Styling Link | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -45,7 +45,7 @@
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                            <li class="active"><a href="../../../index.html">Home</a></li>
+                            <li class="active"><a href="../../index.html">Home</a></li>
                             <li><a href="../../../about/about.html">Tentang Kami</a></li>
                             <li><a href="#">Layanan</a></li>
                             <li><a href="../../../portofolio/all-portfolio.html">Portofolio</a></li>
@@ -76,142 +76,93 @@
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-sm-6 col-md-8">
-                    <div class="jumbotron-full-bg bg-white text-md-left">
+                    <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Paragraf HTML</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Styling Link CSS</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <br>
-                            <br>
-                            <h3 class="font-weight-bold">Paragraf</h3>
+                            <h3 class="font-weight-bold">Pengenalan styling Link</h3>
                             <p class="lead">
-                                Paragraf adalah kumpulan dari beberapa kalimat. Pada web, Paragraf biasanya digunakan untuk menampilkan teks. Paragraf pada HTML dibuat dengan tag <em style="color:red;"><<em style="color:red;">p></em></em>. Selain tag
-                                itu, ada juga Tag pendukung lainnya seperti <em style="color:red;"><<em style="color:red;">div></em></em>, <em style="color:red;"><<em style="color:red;">hr></em></em>,
-                                <em style="color:red;"><<em style="color:red;">br></em></em>, dan <em style="color:red;"><<em style="color:red;">pre></em></em>,
-                                <br> Contoh :
-
-                                <!-- menampilkan contoh code-->
-                                <pre class="code">
-&lt;body&gt;
-
-   &lt;p&gt;
-   Paragraf adalah kumpulan dari beberapa kalimat. Pada web,
-   paragraf biasanya digunakan untu menampilkan teks. Paragraf pada
-   HTML dibuat dengan tag pembukan &lt;p&gt; dan Tag
-   penutup &lt;/p&gt;. Selain tag itu, ada juga tag pendukung lain seperti &lt;div&gt;, &lt;hr&gt;
-   &lt;br&gt;, dan &lt;pre&gt;.
-   &lt;/p&gt;
-
-&lt;/body&gt;
-</pre>
-                                <br> Hasil : <br>
-                                <img src="../../../assets/img/hasil code/hasil paragraf.jpg" alt="hasil code paragraf" class="img-fluid">
+                                Dalam penulisan Styling CSS ada beberapa Property, Seperti : <br>
+                                <span style="color:red;">color</span>, <span style="color:red;">font-size</span>, <span style="color:red;">display</span>, <span style="color:red;">text-direction</span>, dll, hingga kerangka dalam HTML menjadi lebih menarik
+                                lagi, disamping itu juga dapat diberi style menggunakan beberapa <u>pseudo class</u>, yaitu : <br>
+                                <u>
+                                <li> <span style="color:red;">a:link</span>, style untuk element a normal, belum diklik. </li>
+                                <li> <span style="color:red;">a:visited</span>, style untuk element a dimana link telah dikunjungi/di klik. </li>
+                                <li> <span style="color:red;">a:hover</span>, style untuk element a ketika mouse berada diaas element (:hover). </li>
+                                <li> <span style="color:red;">a:active</span>, style untuk element a ketika di klik (mouse ditekan, belum dilepas). </li>
+                              </u>
                             </p>
-                            <h3 class="font-weight-bold">Line Break</h3>
-                            <p class="lead">Digunakan untuk ganti baris atau ENTER. Tag <em style="color:red;"><<em style="color:red;">br></em></em>
-                                sebenarnya bukanlah tag untuk membuat paragrag. Tetapi tag ini, biasanya digunakan untuk membantu tag <em style="color:red;"><<em style="color:red;">p></em></em>.
-                                <br> Fungsi utama tag <em style="color:red;"><<em style="color:red;">br></em></em> adalah untuk membuat baris baru.<br>
-                                <br> Contoh : <br> Misalkan kita ingin menampilkan pantun, bisa saja kita buat seperti ini dengan tag <em style="color:red;"><<em style="color:red;">p></em></em>.
-                                <br>
+                            <br>
 
-                                <!--menampilkan contoh code-->
-                                <pre class="code">
-&lt;body&gt;
-
-   &lt;p&gt; Buah dipetik rasanya segar
-    Untuk dibuat kue acar.
-    Kalau malas belajar,
-    Pasti bodoh di waktu besar. &lt;/p&gt;
-
-&lt;/body&gt;
-</pre>
-                                <br> Hasil : <br>
-                                <img src="../../../assets/img/hasil code/br1.jpg" alt="br1" class="img-fluid"> <br> <br> Meskipun pada kode HTML kita sudah menulis tiap bait pantun dalam baris yang baru. Tetapi ia akan Tetap ditampilkan seperti baris.
-                                <br> Di sinilah saatnya kita harus menggunakan tag <em style="color:red"><</<em style="color:red">br></em></em>. Maka, kode di atas bisa kita tambahkan menjadi seperti ini : <br> <br>
-
-                                <!--menampilkan contoh code-->
-                                <pre class="code">
-&lt;body&gt;
-
-   &lt;p&gt; Buah dipetik rasanya segar &lt;br /&gt;
-    Untuk dibuat kue acar. &lt;br /&gt;
-    Kalau malas belajar, &lt;br /&gt;
-    Pasti bodoh di waktu besar. &lt;/p&gt;
-
-   &lt;/body&gt;
-</pre><br> Hasil : <br> <br>
-                                <img src="../../../assets/img/hasil code/br2.jpg" alt="br2" class="img-fluid"> <br> Dalam penulisan tag <em style="color:red"><<em style="color:red">br></em></em> tag ini tidal memiliki pasangan penutup. Cara menutupnya,
-                                tambahkan saja garis miring seperti ini <em style="color:red"><<em style="color:red">br /></em></em>.
-                                <br> Tag <em style="color:red"><<em style="color:red">br></em></em> boleh ditutup, dan juga boleh tidak ditutup.
-
-                            </p>
-                            <h3 class="font-weight-bold">Align</h3>
+                            <h3 class="font-weigt-bold">Pseudo Class :link</h3>
                             <p class="lead">
-                                <b>Atribut align</b> adalah atribut yang menentukan perataan teks. Ada beberapa mancam nilai Atribut align, diantaranya : <br> <br>
+                                Mungkin sebagian bertanya mengapa ada <span style="color:red;">:link</span>? bukankan element <span style="color:red;">a</span> otomatis merupakan link?, jawabnya mengacu pasa <span style="color:blue;">Spesifikasi CSS</span>                                bahwa <span style="color:red;">:link</span> disini mengacu pada semua element HTML yang memiliki attribut <span style="color:red;">a:link{}</span> sama dengan <span style="color:red;">a[href]{}</span> (element a yang memiliki
+                                attribute href, dengan nilai apapun) atau cukup
+                                <span style="color:red;">a{}</span>.
+                            </p>
+                            <h3 class="font-weight-bold">Pseudo Class :visited</h3>
+                            <p class="lead">
+                                Psedo class <span style="color:red;">:visited</span> digunakan ketika user telah mengunjungi url/link tersebut, hal ini untuk mempermudah user untuk membedakan link yang telah dikunjungi (di click) dan yang belum dikunjungi.
+                                Untuk alasan keamanan, seperti yang dijelaskan oleh Mozilla pada halamannya, hanya beberapa Property yang diijinkan untuk di berikan style, yaitu :
                                 <ul>
-                                    <li>center : Membuat seluruh teks ke tengan halaman web, penulisannya align="center"</li>
-                                    <li>left : Membuat seluruh teks ke sisi kiri halaman web, penulisannya align="left"</li>
-                                    <li>right : Membuat seluruh teks ke sisi kanan halaman web, penulisannya align="right"</li>
-                                    <li>justify : Meregangkan baris sehingga setiap baris memiliki lebar yang sama (seperti dikoran dan majalah), penulisannya align="justify"</li>
-                                </ul><br><br> Kita bisa menggunakan atribut align di beberapa tag seperti di bawah ini : <br>
-                                <!--menampilkan contoh code-->
-
-                                <br> Dengan tag heading <br>
-                                <pre class="code">
-&lt;h1 align="right"&gt; . . &lt;/h1&gt;
-</pre>
-                                <br> Dengan tag paragraf <br>
-                                <pre class="code">
-&lt;p align="right"&gt; . . &lt;/p&gt;
-</pre>
-                                <br> Dengan tag Horizontal Rule <br>
-                                <pre class="code">
-&lt;hr align="right"&gt; . . &lt;/hr&gt;
-</pre><br>
-
-                                <br> Contoh :
-
-                                <!--menampilkan contoh code-->
-                                <pre class="code">
-&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-  &lt;head&gt;
-      &lt;title&gt; Belajar atribut align &lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-      &lt;h1 align="center&gt;" Hi kamu yang disana &lt;/h1&gt;
-      &lt;p align="right"&gt;
-          semoga kamu baik - baik saja, ada yang selalu merindukanmu disini
-      &lt;/p&gt;
-      &lt;hr align="center"&gt;
-      &lt;p align="center"&gt;
-          senyum manis kamoeh yang ngebuat akoh terus kangen sama kamoeh #eaaa
-      &lt;/p&gt;
-      &lt;p align="justify"&gt;
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur ullamcorper, mi sit amet porttitor porttitor, velit sapien iaculis ipsum,
-          a rhoncus felis elit non mauris. Praesent orci tellus, faucibus sed tellus vel,
-          posuere posuere lorem. Integer mi nunc, tempor a auctor non, mollis a tellus.
-          Etiam nibh lectus, consectetur vel lectus vitae, imperdiet pretium purus.
-          Quisque vehicula lacus vel porttitor ultricies. Nam dignissim eu augue sit
-          amet maximus. Fusce lacus ligula, porttitor a tristique eget, tempor sit amet tellus.
-          Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Nullam eu maximus nibh. Nulla vulputate lorem tellus, quis rhoncus erat sagittis non
-      &lt;/p&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-</pre> <br> <br>
-                                <br> Hasil : <br> <br>
-                                <img src="../../../assets/img/hasil code/align.jpg" alt="hasil align" class="img-fluid">
+                                    <li> <span style="color:blue">color</span> </li>
+                                    <li> <span style="color:blue">background-color</span> (dab sub properties nya) </li>
+                                    <li> <span style="color:blue">outline-color</span></li>
+                                    <li> Warna untuk fill dan stroke </li>
+                                </ul>
+                                <br> Property Pseudo class <span style="color:red;">:visited</span> dapat bekerja jika sebelumnya telah didefinisikan pada pseudo class
+                                <span style="color:red;">:link</span>, misal : kita ingin merubah warna link yang telah kita kunjungi menjadi menjadi merah dengan menuliskan properties <span style="color:red;">color: red</span> pada Pseudo class
+                                <span style="color:red;">:visited</span>, warna link tersebut dapat berubah jika pada pseudo class <span style="color:red;">:link</span> juga telah didefinisikan properties color nya.
+                            </p>
+                            <h3 class="font-weight-bold">Pseudo Class :hover</h3>
+                            <p class="lead">
+                                Pseudo Class <span style="color:red;">:hover</span> akan aktif pada saat mouse berada diatas element. Class ini dapat digunakan pada semua element, namun khusus untuk browser Internet Explorer versi 6 dan sebelumnya, pseudo
+                                class <span style="color:red;">:hover</span> hanya dapat digunakan pada element anchor. Pseudo class <span style="color:red;">:hover</span> pada element selain anchor salah satunya digunakan untuk membuat dropdown menu
+                                yang biasanya diterapkan pada element &lt;li&ht;.
+                            </p>
+                            <h3 class="font-weigt-bold">Pseudo Class :acrive</h3>
+                            <p class="lead">
+                                Pseudo class :active digunakan ketika link di klik dan mouse pada posisi ditekan (belum dilepas), dan biasanya fungsionalnya hanya terlihat sepintas.
+                            </p>
+                            <h3 class="font-weight-bold">Pseudo class :focus</h3>
+                            <p class="lead">
+                                Pseudo class :focus aktif ketika link mendapatkan focus, focus disini pada inputbox ketika ada cursor didalamnya, untuk link, pseudo class ini aktif salah satunya ketika kita menekan tab pada keybord untuk beralih dari bagian satu ke bagian lain, dan
+                                ketika mengenai link, maka pseudo class :focus akan aktif.
+                            </p>
+                            <h3 class="font-weight-bold">Kaidah penulisan</h3>
+                            <p class="lead">
+                                Penulisan pseudo class untuk link harus memperhatikan urutan tertentu,yaitu :
+                                <ul>
+                                    <li>Pseudo class <span style="color:red;">:hover</span> harus ditulis seterlah <span style="color:red;">:link</span> dan <span style="color:red;">:visited</span> </li>
+                                    <li>Pseudo class <span style="color:red;">:active</span> harus ditulis setelah <span style="color:red;">:hover</span></li>
+                                </ul>
+                                <br> Contoh penulisan pada CSS :
+                                <div class="code">
+                                    <span style="color:green;">a:link</span> {<br>
+                                    <span style="color:red;">color</span>: green;<br>
+                                    <span style="color:red;">text-decoration</span>: none; <br> }
+                                    <br>
+                                    <span style="color:green;">:visited</span> {<br>
+                                    <span style="color:red;">color</span>: green;<br> }
+                                    <br>
+                                    <span style="color:green;">:hover</span> {<br>
+                                    <span style="color:red;">color</span>: red; <br> }
+                                    <br>
+                                    <span style="color:green;">a:active</span><br> {<br>
+                                    <span style="color:red;">color</span>: green; <br> }
+                                </div><br> Jika tidak memenuhi kaidah diatas, maka style yang kita buat tidak akan bekerja sebagaimana mestinya, hal ini disebabkan karena semua selector diatas memiliki prioritas yang sama (baca: specification), sehingga
+                                jika <span style="color:red;">:link</span> berada diurutan dipaling bawah, akan menimmpa (overide) semua style diatasnya, salah satu akibatnya pseudo-class :hover tidak akan bekerja, oleh karena itu, selalu perhatikan urutan
+                                penulisannya. Untuk memudahkan menghafal urutan, ada yang membuatnya menjadi suatu istilah yaitu : LoVe HAte (Link Visited Hover Avtive) atau LVHA.
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/tag-html.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/styling-font.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/format-text.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/styling-table.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -223,37 +174,28 @@
                                 List Kursus
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                1. Pengenalan HTML
+                                1. Pengenalan CSS
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Tag HTML
+                                2. Styling Font
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>3. Paragraf</strong>
+                                <strong>3. Styling Link</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Pemformatan Teks
+                                4. Styling Tabel
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                5. Hyperlink
+                                5. Styling Button
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                6.  List
+                                6. Styling Image
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                7. Gambar
+                                7. Icon
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                8. Tabel
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                9. Form
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                10. Font
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                11. QUIZ HTML
+                                8. Color
                             </a>
                         </div>
                     </div>

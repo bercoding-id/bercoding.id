@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Font | BerCODING ID</title>
+    <title>Pengenalan JavaScript | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,72 +78,88 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Font</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Pengenalan javascript</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Mengatur Size, Color dan Style Huruf(Font)</h3>
                             <p class="lead">
-                                Sama seperti halnya ketika kita bekerja menggunakan Microsoft word atau open office dan software pengetikan tulisan lainnya kita bisa mengatur tulisan sesuai dengan yang kita butuhkan atau inginkan. Kita bisa mengatur ukuran, jenis, gaya tulisan dan lainnya.
-                                <br> Sama jugan dengan HTML bisa seperti itu, hanya saja kita harus memasukkan tag yang di butuhkan, sedangkan software yang tadi disebutkan sudah teresedia pilihan dan button nya yang memudahkan kita. <br> Untuk mengatur
-                                huruf pada HTML anda dapat menggunakan tag &lt;font&gt; dan tag penutup &lt;/font&gt;. Tag ini mempunyai beberapa atribut untuk mengatur formatting style dari suatu teks.
+                                JavaScript adalah bahasa pemrograman yang wajib kamu pelajari jika ingin mendalami duni <b>web Development</b>. Saat ini JavaScript tidak hanya digunakan di sisi <i>client (browser)</i> saja. Tetapi JavaScript juga digunakan
+                                pada server, console, program desktop, mobile, IoT, game, dan masih banyak lainnya. Hal ini membuat bahasa JavaScript semakin populer.<br>
+                                <h2 class="font-weight-bold">Apa Itu JavaScript?</h2>
+                                JavaScript adalah bahasa pemrograman yang awalnya dirancang untuk berjalan di atas browser. Namun, seiring perkembangan zaman, javascript tidak hanya berjalan di atas browser saja. Tetapi JavaScript juga dapat digunakan pada sisi server, Game, IoT, Destop,
+                                Dan lainnya. <br> JavaScript awalnya bernama <b>Mocha</b>, lalu berubah menjadi <b>LiveScript</b> saat browser Netscape Navigator 2.0 rilis versi beta (September 1995). Namun, setelah itu
+                                dinamai ulang menjadi javascript.
+                                <br> Pada tahun 1996, Netscape mengirimkan standarisasi ECMA-262 ke Ecma International. Sehinga lahirlah standarisasi kode JavaScript bernama ECMAScript atau ES. Saat ini ECMAScript sudah mencapai versi 8 (ES8).
                             </p>
-                            <h2 class="font-weight-bold">Ukuran Font (Font Size)</h2>
+                            <table border="1" width="500px">
+                                <tr align="center">
+                                    <th>Versi ECMAScript</th>
+                                    <th>Tahun Rilis</th>
+                                </tr>
+                                <tr align="center">
+                                    <td> ES 1 </td>
+                                    <td> Juni 1997</td>
+                                </tr>
+                                <tr align="center">
+                                    <td> ES 2 </td>
+                                    <td> Juni 1998</td>
+                                </tr>
+                                <tr align="center">
+                                    <td> ES 3 </td>
+                                    <td> Desember 1999 </td>
+                                </tr>
+                                <tr align="center">
+                                    <td> ES 4 </td>
+                                    <td> Terbengkalai </td>
+                                </tr>
+                                <tr align="center">
+                                    <td> ES 5 </td>
+                                    <td> Desember 2009 </td>
+                                </tr>
+                                <tr align="center">
+                                    <td> ES 5.1 </td>
+                                    <td> Juni 2011 </td>
+                                </tr>
+                                <tr align="center">
+                                    <td> ES 6 </td>
+                                    <td> Juni 2015 </td>
+                                </tr>
+                                <tr align="center">
+                                    <td> ES 7 </td>
+                                    <td> Juni 2016 </td>
+                                </tr>
+                                <tr align="center">
+                                    <td> ES 8 </td>
+                                    <td> Juni 2017 </td>
+                                </tr>
+                            </table> <br>
+                            <h2 class="font-weight-bold">Peralatan untuk Belajar JavaScript</h2>
                             <p class="lead">
-                                Size = n adalah atribut yang digunakan untuk mengatur besarnya ukuran font. Dan nilai n berkisar antara 0 (ukuran terkecil) sampai dengan yang terbesar 7. Untuk jelasnya dan Anda bisa memahami dengan baik, ini contoh dalam penulisannya : <br>
+                                Ada beberapa yang harus Anda persiapkan untuk belajar JavaScript, diantaranya : <br>
+                                <ol>
+                                    <li>Web Browser (Google Chrome, Firefox, Opera, Dan lainnya)</li>
+                                    <li>Teks Editor (Rekomendasi VS Code)</li>
+                                </ol><br>
+                                <h2 class="font-weight-bold">Mengenal Console JavaScript</h2>
+                                Sering kita dengar kalau belajar JavaScript iu susah, dikarenakan saat melihat hasilnya di web browser, pesan error-nya tidak tampil. Pendapat itu tidak benar. karena kita bisa melihatnya melalui <i>console</i>.<br>
+                                <i>Console JavaScript</i> dapat kita buka melalui <b>Inspect Element -> Console</b>. <br>
+                                <img src="../../../assets/img/hasil code/js/console.jpg" alt="console" class="img-fluid"><br> Di dalam <i>Console</i>, kita bisa menulis fungsi atau kode-kode javascript dan hasilnya akan langsung ditampilka. <br> Misalnya,
+                                mari kita coba dengan code berikut ini : <br>
                                 <pre class="code">
-&lt;body&gt;
-  &lt;font size="1"&gt;Ini adalah ukuran Font 1&lt;/font&gt &lt;br&gt;
-  &lt;font size="2"&gt;Ini adalah ukuran Font 2&lt;/font&gt &lt;br&gt;
-  &lt;font size="3"&gt;Ini adalah ukuran Font 3&lt;/font&gt &lt;br&gt;
-  &lt;font size="4"&gt;Ini adalah ukuran Font 4&lt;/font&gt &lt;br&gt;
-  &lt;font size="5"&gt;Ini adalah ukuran Font 5&lt;/font&gt &lt;br&gt;
-  &lt;font size="6"&gt;Ini adalah ukuran Font 6&lt;/font&gt &lt;br&gt;
-  &lt;font size="7"&gt;Ini adalah ukuran Font 7&lt;/font&gt &lt;br&gt;
-&lt;/body&gt;
-</pre> <br> Dan jika anda membukanya di browser maka akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/font-size.jpg" alt="size" class="img-fluid"><br>
-                            </p>
-                            <h2 class="font-weight-bold">Jenis Font</h2>
-                            <p class="lead">
-                                Untuk mengatur jenis font, kita bisa menggunakan atribut face dengan sintaksis face=string. Nilai string berupa nama dari jenis font yang kita inginkan, dibawah ini adalah contoh dari penulisan jenis font : <br>
-                                <pre class="code">
-&lt;body&gt;
-  &lt;font face="Tahoma"&gt;Ini adalah jenis tulisan Tahoma 1&lt;/font&gt &lt;br&gt;
-  &lt;font face="Arial"&gt;Ini adalah jenis tulisan Arial 2&lt;/font&gt &lt;br&gt;
-  &lt;font face="Courier New"&gt;Ini adalah jenis tulisan Courier 3&lt;/font&gt &lt;br&gt;
-  &lt;font face="Century Gothic"&gt;Ini adalah jenis tulisan Century Gothic&lt;/font&gt &lt;br&gt;
-  &lt;font face="Time New Roman"&gt;Ini adalah jenis tulisan Time New Roman&lt;/font&gt &lt;br&gt;
-&lt;/body&gt;
-</pre> <br> Dan jika anda membukanya di browser maka akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/font-face.jpg" alt="font-face" class="img-fluid"><br>
-                            </p>
-                            <h2 class="font-weight-bold">Warna Font</h2>
-                            <p class="lead">
-                                Untuk mengatur warna font kita dapat menggunakan atribut color dengan sintaksis color=#RRGGBB. Nilai RRGGBB adalah kombinasi dari angka dalam bilangan hexa yang menunjukan kapasitas warna merah (RR) hijau (GG), biru (BB). Kita juga dapat menggunakan konstanta
-                                warna yang ada pada browser. <br>
-                                <pre class="code">
-&lt;body&gt;
-  &lt;font color="Black"&gt;Ini adalah Warna hitam&lt;/font&gt &lt;br&gt;
-  &lt;font color="blue"&gt;Ini adalah Warna biru&lt;/font&gt &lt;br&gt;
-  &lt;font color="red"&gt;Ini adalah Warna merah&lt;/font&gt &lt;br&gt;
-  &lt;font color="green"&gt;Ini adalah Warna hijau&lt;/font&gt &lt;br&gt;
-  &lt;font color="yellow"&gt;Ini adalah Warna kuning&lt;/font&gt &lt;br&gt;
-  &lt;font color="purple"&gt;Ini adalah Warna ungu&lt;/font&gt &lt;br&gt;
-  &lt;font color="#ffffff"&gt;Ini adalah Warna putih&lt;/font&gt &lt;br&gt;
-  &lt;font color="#000000"&gt;Ini adalah Warna hitam&lt;/font&gt &lt;br&gt;
-  &lt;font color="#f0f0g88f"&gt;Ini adalah Warna pink&lt;/font&gt &lt;
-&lt;/body&gt;
-</pre> <br>
-                                <img src="../../../assets/img/hasil code/font-color.jpg" alt="color" class="img-fluid"><br>
+console.log("Hi Brother");
+alert("Saya sedang belajar JavaScript");
+                                </pre>
+                                <br> Maka hasilnya akan seperti ini : <br>
+                                <img src="../../../assets/img/hasil code/js/console.jpg" alt="console" class="img-fluid"><br>
+                                <br>
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/form.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/kursus-js.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/quiz.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/penulisan-js.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -155,37 +171,43 @@
                                 List Kursus
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                1. Pengenalan HTML
+                                <strong>1. Pengenalan JavaScript </strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Tag HTML
+                                2. Penulisan JavaScript
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Paragraf
+                                3. Fungsi Output
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Pemformatan Teks
+                                4. Variabel dan Tipe Data
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                5. Hyperlink
+                                5. Jendela Dialog
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                6.  List
+                                6. Operator
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                7. Gambar
+                                7. Percabangan
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                8. Tabel
+                                8. Perulangan
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                9. Form
+                                9. Struktur Data Array
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>10. Font</strong>
+                                10. DOM API untum Manipulasi HTML
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                11. QUIZ HTML
+                                11. Fungsi
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                12. Objek di JavaScript
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                13. Objek Math
                             </a>
                         </div>
                     </div>

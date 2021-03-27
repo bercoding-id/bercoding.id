@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Perulangan JavaScript | BerCODING ID</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../../../assets/img/bercoding3.png" rel="icon">
+    <link href="../../../assets/img/bercoding3.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="../../../assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../../../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-9 d-flex align-items-center">
+                    <h1 class="logo mr-auto">
+                        <a href="../../../index.html"><img src="../../../assets/img/bercoding4.png" alt="" class="img-fluid"></a>
+                    </h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul>
+                            <li class="active"><a href="../../index.html">Home</a></li>
+                            <li><a href="../../../about/about.html">Tentang Kami</a></li>
+                            <li><a href="#">Layanan</a></li>
+                            <li><a href="../../../portofolio/all-portfolio.html">Portofolio</a></li>
+                            <li class="drop-down"><a href="">Kursus</a>
+                                <ul>
+                                    <li><a href="../../../web-dev.html">Web Development</a></li>
+                                    <li><a href="../../../desk-app.html">Desktop App Development</a></li>
+                                    <li><a href="../../../database.html">Database Management</a></li>
+                                    <li><a href="../../../ui-ux.html">UI/UX Design</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../../../contact/contact.html">Hubungi Kami</a></li>
+                        </ul>
+                    </nav>
+                    <!-- .nav-menu -->
+
+                    <a href="../../../login/index.html" class="get-started-btn scrollto"><i class="bx bx-user-circle"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Jumbotron ======= -->
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-sm-6 col-md-8">
+                    <div class="jumbotron-full-bg bg-white text-md-left ">
+                        <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
+                            <h2 class="display-4" style="font-size: 35px;">Perulangan</h2>
+                            <hr class="my-2 border-dark mb-3">
+                            <p class="lead">
+                                Anda pasti kesulitan jika harus mengulang lebih dari 1X, misalkan Anda ingin menampilkan <span style="color:red;">"Selamat Datang di BerCODING.ID!"</span>, jika kita menggunakan fungsi <span style="color:red;">"document.write()"</span>,
+                                Wow pasti sangat melelahkan sekali harus mengetik ulang setiap statemant, seperti berikut : <br>
+                                <pre class="code">
+document.write("&lt;p&gt;Selamat Datang di BerCODING.ID!");
+document.write("&lt;p&gt;Selamat Datang di BerCODING.ID!");
+document.write("&lt;p&gt;Selamat Datang di BerCODING.ID!");
+document.write("&lt;p&gt;Selamat Datang di BerCODING.ID!");
+document.write("&lt;p&gt;Selamat Datang di BerCODING.ID!");
+document.write("&lt;p&gt;Selamat Datang di BerCODING.ID!");
+document.write("&lt;p&gt;Selamat Datang di BerCODING.ID!");
+document.write("&lt;p&gt;Selamat Datang di BerCODING.ID!");
+document.write("&lt;p&gt;Selamat Datang di BerCODING.ID!");
+</pre><br> Hasilnya seperti berikut : <br>
+                                <img src="../../../assets/img/hasil code/js/document-write.jpg" alt="document.write" class="img-fluid"><br> <br> Memang tidak salah menggunakan cara seperti itu, Namun, jika kita ingin mengulang misalkan 1000 kali, pasti
+                                butuh waktu lama dan pasti melelahkan untuk melakukannya. <br> Perulangan dapat membantu kita untuk mengeksekusi kode yang berulang-ulang berapapun yang kita ingingkan. <br><br> Secara umum, perulangan dibagi menjadi dua
+                                bagian, yaitu : <i>counted loop</i> dan <i>uncounted loop</i>. <br>
+                                <br>
+                                <ul>
+                                    <li><b>Counted Loop</b> Merupakan perulangan yang jelas dan sudah tentu banyak perulangannya</li>
+                                    <li> Sedangkan <b>Uncounted Loop</b>, merupakan perulangan yang tidak jelas berapa kali ia harus mengulanginya</li>
+                                </ul>
+                                Perulangan yang termasuk ke dalam <i>Counted Loop</i> : <br>
+                                <ol>
+                                    <li>Perulangan For</li>
+                                    <li>Perulangan Foreach</li>
+                                    <li>Perulangan Repeat</li>
+                                </ol>
+                                Perulangan yang termasuk ke dalam <i>Uncounted Loop</i> : <br>
+                                <ol>
+                                    <li>Perulangan While</li>
+                                    <li>Perulangan Do/While</li>
+                                </ol>
+                            </p>
+                            <h2 class="font-weight-bold">Perulangan Menggunakan For</h2>
+                            <p class="lead">
+                                Dikarenakan perulangan <span style="color:red;">for</span> sudah jelas berapa kali dia akan mengulang, jadi dia termasuk ke dalam <i>Counted Loop</i>.<br> Struktur penulisannya seperti berikut : <br>
+                                <pre class="code">
+for(let i = 0; i < 10; i++){
+  document.write("&lt;p&gt;Perulangan ke- " + i + "&lt;/p&gt;")
+}
+</pre> <br> Yang perlu Anda sangat perhatikan ialah, kondisi yang ada di dalam kurung setelah kata <span style="color:red;">for</span>. <br><br> Kondisi ini yang akan menentukan berapa kali akan mengulanginya : <br>
+                                <ul>
+                                    <li>Hitungan akan dimulai dari <span style="color:red;">0</span> (<span style="color:red;">i = 0</span>)</li>
+                                    <li>Hitungannya sampai berapa? Sampai <span style="color:red;">i < 10 </span></li>
+                                    <li>Di setiap perulangan <span style="color:red;">i</span> akan bertambah <span style="color:red;">+1</span> (<span style="color:red;">i++</span>)</li>
+                                </ul>
+                                Variabel <span style="color:red;">i</span> pada perulangan <span style="color:red;">for</span> berfungsi untuk menyimpan nilai hitungan. <br> Jadi setiap perulangan dilakukan niali <span style="color:red;">i</span> akan
+                                selalu berambah satu. Karena kita menentukannya di bagian <span style="color:red;">i++</span> Hasil output dari code yang kita tuliskan barusan, sebagai berikut : <br> <br>
+                                <img src="../../../assets/img/hasil code/js/for.jpg" alt="perulangan-for" class="img-fluid"><br><br> Tidak hanya untuk menghitung maju, denga <span style="color:red;">for</span>, kita juga bisa menghitung mundur <br> Sebagai
+                                Berikut : <br>
+                                <pre class="code">
+for(counter = 15; counter > 0; counter--){
+  document.write("&lt;p&gt;Perulangan ke " +counter+"&lt;/p&gt;");
+}
+</pre><br> Hasilnya akan seperti berikut : <br><br>
+                                <img src="../../../assets/img/hasil code/js/for-kurang.jpg" alt="hitung mundur" class="img-fluid"><br><br> Lah ko kenapa hitungannya tidak sampai (<span style="color:red;">0</span>)? <br> Nah, karena kondisi yang kita berikan
+                                kepada <span style="color:red;">counter > 0</span>. Maka apabila <span style="color:red;">counter</span> bernilai <span style="color:red;">0</span>, maka kondisi ini akan menjadi <span style="color:red;">false</span>. <br>                                Kecuali kita menggunakan operator lebih besar sama dengan (<span style="color:red;">>=</span>), maka jika
+                                <span style="color:red;">counter</span> bernilai <span style="color:red;">0</span>, kondisi akan menjadi <span style="color:red;">true</span>. <br>
+                            </p>
+                            <h2 class="font-weight-bold">Perulangan Menggunakan While</h2>
+                            <p class="lead">
+                                Perulagan <span style="color:red;">while</span> merupakan perulangan yang termasuk dalam perulangan <i>Uncounted Loop</i>. <br> Perulangan <span style="color:red;">while</span> juga dapat menjadi perulangan yang <i>counted loop</i>                                dengan memberikan <i>counter</i> di dalamnya. <br> Sebagai contoh berikut ini : <br>
+                                <pre class="code">
+var ulangi = confirm("Apakah anda ingin mengulanginya?");
+var counter = 0;
+
+  while(ulangi){
+    counter++;
+    ulangi = confirm("Apakah anda ingin mengulanginya?");
+}
+
+  document.write("Perulangan sudah dilakukan sebanyak " + counter + "Kali");
+</pre> Hasilnya akan seperti, berikut ini : <br><br>
+                                <video src="../../../assets/img/hasil code/js/while.mp4" class="img-fluid" controls muted loop autoplay>
+                            <source src="../../../assets/img/hasil code/js/while.mp4" type="video/mp4">
+                          </video>
+                                <br> Di code yang barusan kita buta, perulangan selama variabel <span style="color:red;">ulangi</span> bernilai
+                                <span style="color:red;">true</span>. <br> Di code itu kita menggunakan juga fungsi dari <span style="color:red;">confirm()</span> untuk menampilkan dialog konfirmasi. <br> Selama Anda memilik <b>OK</b> pada konfirmasi,
+                                maka variabel <span style="color:red;">ulangi</span> akan terus menerus bernilai <span style="color:red;">true</span>. Namun, jika Anda memilih <b>Cancel</b>, maka variabel <span style="color:red;">ulangi</span> akan berubah
+                                nilainya menjadi <span style="color:red;">false</span>. <br> Saat variabel <span style="color:red;">ulangi</span> bernilai <span style="color:red;">false</span>, disitulah perulangan akan berhenti. <br>
+                            </p>
+                            <h2 class="font-weight-bold">Perulangan Menggunakan Do/While</h2>
+                            <p class="lead">
+                                Perulangan <span style="color:red;">do/while</span> akan melakukan perulangan sebanyak <span style="color:red;">1</span> kali terlebih dahulu, lalau mengecek kondisi yang ada di dalam kurung <span style="color:red;">while</span>.
+                                <br> Struktur penulisannya, sebagai berikut : <br>
+                                <pre class="code">
+do {
+  // blok kode yang akan diulangi
+} while (&lt;kondsi&gt;);
+</pre> <br> Perbedaan antara <span style="color:red;">while</span> dan <span style="color:red;">do/while</span> ialah : <br> Perulangan <span style="color:red;">Do/While</span> akan mengecek kondisi di belakang (sesudah
+                                mengulang), <br> sedangkan <span style="color:red;">while</span> akan mengecek di depan atau diawalan (sebelum mengulan). <br>
+                            </p>
+                            <h2 class="font-weight-bold">Perulangan Menggunakan Foreach</h2>
+                            <p class="lead">
+                                Perulangan <span style="color:red;">Foreach</span> pada umumnya digunakan untuk mencetak item di dalam array. <br> Perulangan ini termasuk ke dalam perulangan <i>counted loop</i>, karena jumlah perulangannya akan ditentukan
+                                oleh panjang nya jumlah dari array. <br> Ada dua cara untuk menggunakan perulangan <span style="color:red;">foreach</span>, diantaranya : <br>
+                                <ol>
+                                    <li>Menggunakan <span style="color:red;">for</span> dengan operator <span style="color:red;">in</span></li>
+                                    <li>Menggunakan method <span style="color:red;">forEach()</span></li>
+                                </ol>
+                                Sebagai contoh : <br><br> Berikut ini bentuk perulangan <i>"foreach"</i> tanpa menggunakan operator <span style="color:red;">in</span> : <br>
+
+                                <pre class="code">
+var languages = ["JavaScript", "CSS", "HTML", "Python"];
+
+for(i = 0; i < languages.length; i++){
+  document.write(i+ ". "+ languages[i] + "&lt;br&gt;");
+}
+</pre> <br><br> Perulangan ini dapat dibuat lebih sederhana lagi dengan menggunakan operator <span style="color:red;">in</span>, sebagai berikut : <br> <br>
+                                <pre class="code">
+var languages = ["JavaScript", "CSS", "HTML", "Python"];
+
+for(i in languages){
+  document.write(i+". " + languages[i] + "&lt;br&gt;");
+}
+</pre> <br> Hasilnya akan seperti ini : <br><br>
+                                <img src="../../../assets/img/hasil code/js/foreach.jpg" alt="foreach" class="img-fluid"><br><br> Cara kedua dalam membuat perulangan <span style="color:red;">foreach</span> dengan menggunakan method
+                                <span style="color:red;">forEach()</span> dari array. <br> Contoh : <br><br>
+                                <pre class="code">
+// nilai array
+  var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu" ];
+
+// Lalu kita tampilkan semua hari
+// dengan menggunakan method forEach
+days.forEach(function(day){
+  document.write("&lt;p&gt;" +day + "&lt;/p&gt;");
+});
+</pre><br> Hasilnya akan seperti berikut ini : <br><br>
+                                <img src="../../../assets/img/hasil code/js/foreach-array-js.jpg" alt="foreach" class="img-fluid"><br><br>
+                            </p>
+                            <h2 class="font-weight-bold">Perulangan Menggunakan Method repeat()</h2>
+                            <p class="lead">
+                                Perulangan dengan method atau fungsi <span style="color:red;">repeat()</span> termasuk ke dalam perulangan <i>counted loop</i>. <br> Fungsi ini khusus digunakan untuk mengulang sebuah teks (string). Jika mengulang dengan
+                                menggunakan fungsi <span style="color:red;">for</span> : <br>
+                                <pre class="code">
+for(let i = 0; i < 100; i++){
+  document.write("Ulangi kalimat ini!!");
+}
+</pre> <br> Dan apabila kita menggunakan method/fungsi <span style="color:red;">repeat()</span> : <br>
+                                <pre class="code">
+document.write("Ulangi kalimat ini!!");
+</pre><br><br> Hasilnya akan seperti, berikut ini : <br><br>
+                                <img src="../../../assets/img/hasil code/js/repeat.jpg" alt="repeat" class="img-fluid">
+                            </p>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item mr-auto ml-auto px-auto">
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/percabangan-js.html" tabindex="-1">&laquo; Sebelumnya</a>
+                            </li>
+                            <li class="page-item mr-auto ml-auto px-auto">
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/data-array-js.html">Selanjutnya &raquo;</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-6 col-md-4 border border-top-bottom-right-0 bg-light mt-5 d-none d-sm-block">
+                    <div class="container py-3">
+                        <div class="list-group mt-5">
+                            <h3 class="text-center">
+                                List Kursus
+                            </h3>
+                            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                  1. Pengenalan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  2. Penulisan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  3. Fungsi Output
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  4. Variabel dan Tipe Data
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  5. Jendela Dialog
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  6. Operator
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                7. Percabangan
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <strong>8. Perulangan</strong>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  9. Struktur Data Array
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  10. DOM API untum Manipulasi HTML
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  11. Fungsi
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  12. Objek di JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  13. Objek Math
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Jumbotron -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>BerCODING ID</h3>
+                        <p>
+                            Jl. Sedap Malam IV No.25 <br> Rancaekek Kencana, Kabupaten Bandung 40394<br> Jawa Barat <br><br>
+                            <strong>Phone:</strong> +62 813-2275-1816<br>
+                            <strong>Email:</strong> bercoding.id@gmail.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links ">
+                        <h4>Lainnya</h4>
+                        <ul>
+                            <li><i class=""></i> <a href="../../../about/about.html">Tim kami</a></li>
+                            <li><i class=""></i> <a href="# ">Galeri</a></li>
+                            <li><i class=""></i> <a href="# ">Rekrutmen</a></li>
+                            <li><i class=""></i> <a href="# ">Syarat dan ketentuan</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links ">
+                        <h4>Pelayanan kami</h4>
+                        <ul>
+                            <li><i class=""></i> <a href="../../../web-dev.html ">Web Development</a></li>
+                            <li><i class=""></i> <a href="../../../database.html ">Database Management</a></li>
+                            <li><i class=""></i> <a href="../../../desk-app.html ">Desktop App Development</a></li>
+                            <li><i class=""></i> <a href="../../../ui-ux.html ">UI/UX Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter ">
+                        <h4>Ikuti kami</h4>
+                        <p>Ikuti kami untuk mendapat berita terbaru</p>
+                        <div class="social-links text-center text-md-left pt-3 pt-md-0 ">
+                            <a href="https://twitter.com" class="twitter "><i class="bx bxl-twitter "></i></a>
+                            <a href="https://facebook.com " class="facebook "><i class="bx bxl-facebook "></i></a>
+                            <a href="https://instagram.com/bercoding.id/ " class="instagram "><i class="bx bxl-instagram "></i></a>
+                            <a href="# " class="google-plus "><i class="bx bxl-skype "></i></a>
+                            <a href="# " class="linkedin "><i class="bx bxl-linkedin "></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container ">
+
+            <div class="copyright-wrap d-md-flex py-4 ">
+                <div class="mr-md-auto text-center text-md-left ">
+                    <div class="copyright" id="copyright">
+                        &copy;
+                        <script>
+                            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+                        </script> BERCODING ID
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="# " class="back-to-top "><i class="icofont-simple-up "></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="../../../assets/vendor/jquery/jquery.min.js "></script>
+    <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../../../assets/vendor/jquery.easing/jquery.easing.min.js "></script>
+    <script src="../../../assets/vendor/php-email-form/validate.js "></script>
+    <script src="../../../assets/vendor/waypoints/jquery.waypoints.min.js "></script>
+    <script src="../../../assets/vendor/counterup/counterup.min.js "></script>
+    <script src="../../../assets/vendor/owl.carousel/owl.carousel.min.js "></script>
+    <script src="../../../assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="../../../assets/vendor/venobox/venobox.min.js "></script>
+    <script src="../../../assets/vendor/aos/aos.js "></script>
+
+    <!-- Template Main JS File -->
+    <script src="../../../assets/js/main.js "></script>
+
+</body>
+
+</html>

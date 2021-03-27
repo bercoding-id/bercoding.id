@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Font | BerCODING ID</title>
+    <title>Percabangan JavaScript | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,72 +78,167 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Font</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Percabangan</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Mengatur Size, Color dan Style Huruf(Font)</h3>
+                            <h2>Percabangan <i>if</i></h2>
                             <p class="lead">
-                                Sama seperti halnya ketika kita bekerja menggunakan Microsoft word atau open office dan software pengetikan tulisan lainnya kita bisa mengatur tulisan sesuai dengan yang kita butuhkan atau inginkan. Kita bisa mengatur ukuran, jenis, gaya tulisan dan lainnya.
-                                <br> Sama jugan dengan HTML bisa seperti itu, hanya saja kita harus memasukkan tag yang di butuhkan, sedangkan software yang tadi disebutkan sudah teresedia pilihan dan button nya yang memudahkan kita. <br> Untuk mengatur
-                                huruf pada HTML anda dapat menggunakan tag &lt;font&gt; dan tag penutup &lt;/font&gt;. Tag ini mempunyai beberapa atribut untuk mengatur formatting style dari suatu teks.
-                            </p>
-                            <h2 class="font-weight-bold">Ukuran Font (Font Size)</h2>
-                            <p class="lead">
-                                Size = n adalah atribut yang digunakan untuk mengatur besarnya ukuran font. Dan nilai n berkisar antara 0 (ukuran terkecil) sampai dengan yang terbesar 7. Untuk jelasnya dan Anda bisa memahami dengan baik, ini contoh dalam penulisannya : <br>
+                                Percabangan <i>if</i> merupakan percabangan yang memiliki <b>satu blok pilihan</b> saja , di saat kondisi bernilai benar. <br> Penulisannya sebagai berikut : <br>
                                 <pre class="code">
-&lt;body&gt;
-  &lt;font size="1"&gt;Ini adalah ukuran Font 1&lt;/font&gt &lt;br&gt;
-  &lt;font size="2"&gt;Ini adalah ukuran Font 2&lt;/font&gt &lt;br&gt;
-  &lt;font size="3"&gt;Ini adalah ukuran Font 3&lt;/font&gt &lt;br&gt;
-  &lt;font size="4"&gt;Ini adalah ukuran Font 4&lt;/font&gt &lt;br&gt;
-  &lt;font size="5"&gt;Ini adalah ukuran Font 5&lt;/font&gt &lt;br&gt;
-  &lt;font size="6"&gt;Ini adalah ukuran Font 6&lt;/font&gt &lt;br&gt;
-  &lt;font size="7"&gt;Ini adalah ukuran Font 7&lt;/font&gt &lt;br&gt;
-&lt;/body&gt;
-</pre> <br> Dan jika anda membukanya di browser maka akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/font-size.jpg" alt="size" class="img-fluid"><br>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;Operator&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;script&gt;
+        var totalBelanja = prompt("Total Belanja?", 0);
+
+        if(totalBelanja > 100000){
+          document.write("&lt;h2&gt;Selamat Anda dapat hadiah!!!&lt;/h2&gt;");
+        }
+        document.write("&lt;p&gt;Terimakasi sudah mampir disini&lt;/p&gt;");
+      &lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre> <br> Hasilnya akan seperti ini : <br>
+                                <video src="../../../assets/img/hasil code/js/if.mp4" class="img-fluid" autoplay controls loop muted>
+                            <source src="../../../assets/img/hasil code/js/if.mp4" type="video/mp4">
+                          </video>
                             </p>
-                            <h2 class="font-weight-bold">Jenis Font</h2>
+                            <h2 class="font-weight-bold">Percabangan <i>if/else</i></h2>
                             <p class="lead">
-                                Untuk mengatur jenis font, kita bisa menggunakan atribut face dengan sintaksis face=string. Nilai string berupa nama dari jenis font yang kita inginkan, dibawah ini adalah contoh dari penulisan jenis font : <br>
+                                Percabangan <i>if/else</i> merupakan percabangan yang memiliki <b>dua blok pilihan</b>. <br> Pilihan pertama untuk kondisi <b>benar</b>, dan pilihan kedua untuk kondisi <b>sala</b> (<i>else</i>). <br> Penulisannya sebagai
+                                berikut : <br>
                                 <pre class="code">
-&lt;body&gt;
-  &lt;font face="Tahoma"&gt;Ini adalah jenis tulisan Tahoma 1&lt;/font&gt &lt;br&gt;
-  &lt;font face="Arial"&gt;Ini adalah jenis tulisan Arial 2&lt;/font&gt &lt;br&gt;
-  &lt;font face="Courier New"&gt;Ini adalah jenis tulisan Courier 3&lt;/font&gt &lt;br&gt;
-  &lt;font face="Century Gothic"&gt;Ini adalah jenis tulisan Century Gothic&lt;/font&gt &lt;br&gt;
-  &lt;font face="Time New Roman"&gt;Ini adalah jenis tulisan Time New Roman&lt;/font&gt &lt;br&gt;
-&lt;/body&gt;
-</pre> <br> Dan jika anda membukanya di browser maka akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/font-face.jpg" alt="font-face" class="img-fluid"><br>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Operator&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script&gt;
+      var password = prompt("Password : ");
+
+      if(password == "gedung"){
+        document.write("&lt;h2&gt;Selamat Datang!!!&lt;/h2&gt;");
+      }else{
+        document.write("&lt;p&gt;Pasword yang anda masukan salah,&lt;/p&gt;");
+      }
+      document.write("&lt;p&gt;Terimakasi sudah mampir disini&lt;/p&gt;");
+
+    &lt;/script&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+  </pre> <br> Hasilnya akan seperti ini : <br>
+                                <video src="../../../assets/img/hasil code/js/if-else.mp4" class="img-fluid" autoplay controls loop muted>
+                            <source src="../../../assets/img/hasil code/js/if-else.mp4" type="video/mp4">
+                          </video>
+
                             </p>
-                            <h2 class="font-weight-bold">Warna Font</h2>
+                            <h2 class="font-weight-bold">Percabangan <i>if/else/if</i></h2>
                             <p class="lead">
-                                Untuk mengatur warna font kita dapat menggunakan atribut color dengan sintaksis color=#RRGGBB. Nilai RRGGBB adalah kombinasi dari angka dalam bilangan hexa yang menunjukan kapasitas warna merah (RR) hijau (GG), biru (BB). Kita juga dapat menggunakan konstanta
-                                warna yang ada pada browser. <br>
+                                Percabangan <i>if/else/if</i> merupakan percabangan yang memiliki <b>lebih dari
+                            dua blok pilihan</b>. <br> Ini adalah blok untuk percabangan <i>if/else/if</i>. Kita bisa menambahkan berapapun blok yang kita inginkan. <br>
                                 <pre class="code">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Operator&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script&gt;
+      var nilai = prompt("Inputkan nilai akhir:");
+      var grade = "";
+      if(nilai >= 90) grade = "A"
+      else if(nilai >= 80) grade = "B+"
+      else if(nilai >= 70) grade = "B"
+      else if(nilai >= 60) grade = "C+"
+      else if(nilai >= 50) grade = "C"
+      else if(nilai >= 40) grade = "D"
+      else grade = "F";
+
+      document.write(`&lt;p&gt;Grade anda : ${grade}&lt;/p&gt;`);
+
+    &lt;/script&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+  </pre> <br> Hasilnya akan seperti ini : <br>
+                                <video src="../../../assets/img/hasil code/js/if-else-if.mp4" class="img-fluid" autoplay controls loop muted>
+                            <source src="../../../assets/img/hasil code/js/if-else-if.mp4" type="video/mp4">
+                          </video>
+
+                            </p>
+                            <h2 class="font-weight-bold">Percabangan <i>switch/case</i></h2>
+                            <p class="lead">
+                                Percabangan <i>switch/case</i> adalah bentuk lain dari percabangan <i>if/else/if</i>. <br> Struktur percabangan <i>switch/case</i>, seperti berikut : <br>
+                                <pre class="code">
+switch(variabel){
+  case&lt;value&gt:
+    // blok kode
+    break;
+    case&lt;value&gt:
+      // blok kode
+      break;
+    default:
+      // blok kode
+}
+</pre> <br> Dalam pembuatan blok kode (<span style="color:red;">case</span>) tidak ada batasannya, kita bisa membuat sebanyak yang diinginkan di dalam blok switch. <br>
+                                <span style="color:red;">&lt;value&gt;</span>, kita bisa isi dengan nilai yang nanti akan dibandingkan dengan <span style="color:red;">variabel</span>. <br> setiap <span style="color:red;">case</span> harus diakhiri dengan
+                                <span style="color:red;">breakl</span>. Khusus untuk <span style="color:red;">default</span>, tidak perlu diakhiri dengan <span style="color:red;">break</span> karena dia terletak di bagian akhir. <br> Pemberian <span style="color:red;">break</span>                                bertujuan agar program berhenti mengecek <span style="color:red;">case</span> berikutnya saat sebuah <span style="color:red;">case</span> terpenuhi. <br> Contohnya : <br>
+                                <pre class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Operator&lt;/title&gt;
+&lt;/head&gt;
 &lt;body&gt;
-  &lt;font color="Black"&gt;Ini adalah Warna hitam&lt;/font&gt &lt;br&gt;
-  &lt;font color="blue"&gt;Ini adalah Warna biru&lt;/font&gt &lt;br&gt;
-  &lt;font color="red"&gt;Ini adalah Warna merah&lt;/font&gt &lt;br&gt;
-  &lt;font color="green"&gt;Ini adalah Warna hijau&lt;/font&gt &lt;br&gt;
-  &lt;font color="yellow"&gt;Ini adalah Warna kuning&lt;/font&gt &lt;br&gt;
-  &lt;font color="purple"&gt;Ini adalah Warna ungu&lt;/font&gt &lt;br&gt;
-  &lt;font color="#ffffff"&gt;Ini adalah Warna putih&lt;/font&gt &lt;br&gt;
-  &lt;font color="#000000"&gt;Ini adalah Warna hitam&lt;/font&gt &lt;br&gt;
-  &lt;font color="#f0f0g88f"&gt;Ini adalah Warna pink&lt;/font&gt &lt;
+  &lt;script&gt;
+    var answer = prompt("Kamu Beruntung! Silahkan pilih hadiamu dengan memasukan angka 1 sampai 5");
+    var hadiah = "";
+
+    switch(answer){
+      case "1":
+        hadiah = "Roko";
+        break;
+      case "2":
+        hadiah = "Mie";
+        break;
+      case "3":
+        hadiah = "Sticker";
+        break;
+      case "4":
+        hadiah = "Es Cream";
+        break;
+     case "5":
+        hadiah = "Cash Rp. 1.000.000";
+        break;
+     default:
+        document.write("&lt;p&gt;Woow! Anda salah memilih&lt;/p&gt;");
+    }
+    if(hadiah == ""){
+      document.write("&lt;p&gt;Kamu gagal mendapatkan hadiah&lt;/p&gt;");
+    }else {
+      document.write("&lt;h2&gt;Selamat Kamu telah mendapatkan hadiah " + hadiah + "&lt;/h2&gt;");
+    }
+
+  &lt;/script&gt;
 &lt;/body&gt;
-</pre> <br>
-                                <img src="../../../assets/img/hasil code/font-color.jpg" alt="color" class="img-fluid"><br>
+&lt;/html&gt;
+</pre> <br> Hasilnya akan seperti ini : <br>
+                                <video src="../../../assets/img/hasil code/js/case.mp4" class="img-fluid" autoplay controls loop muted>
+                            <source src="../../../assets/img/hasil code/js/case.mp4" type="video/mp4">
+                          </video>
+
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/form.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/operator-js.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/quiz.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/perulangan-js.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -155,38 +250,44 @@
                                 List Kursus
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                1. Pengenalan HTML
+                                  1. Pengenalan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  2. Penulisan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  3. Fungsi Output
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  4. Variabel dan Tipe Data
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  5. Jendela Dialog
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  6. Operator
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <strong>7. Percabangan</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Tag HTML
-                            </a>
+                                  8. Perulangan
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Paragraf
-                            </a>
+                                  9. Struktur Data Array
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Pemformatan Teks
-                            </a>
+                                  10. DOM API untum Manipulasi HTML
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                5. Hyperlink
-                            </a>
+                                  11. Fungsi
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                6.  List
-                            </a>
+                                  12. Objek di JavaScript
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                7. Gambar
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                8. Tabel
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                9. Form
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <strong>10. Font</strong>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                11. QUIZ HTML
-                            </a>
+                                  13. Objek Math
+                              </a>
                         </div>
                     </div>
                 </div>

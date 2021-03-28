@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Submission | BerCODING ID</title>
+    <title>Fungsi JavaScript | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -54,7 +54,7 @@
                                     <li><a href="../../../web-dev.html">Web Development</a></li>
                                     <li><a href="../../../desk-app.html">Desktop App Development</a></li>
                                     <li><a href="../../../database.html">Database Management</a></li>
-                                    <li><a href="../../../framework.html">Framework Tutorials</a></li>
+                                    <li><a href="../../../ui-ux.html">UI/UX Design</a></li>
                                 </ul>
                             </li>
                             <li><a href="../../../contact/contact.html">Hubungi Kami</a></li>
@@ -78,21 +78,124 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Submission</h2>
+                            <h2 class="display-4" style="font-size: 35px;">FUNGSI</h2>
                             <hr class="my-2 border-dark mb-3">
                             <p class="lead">
-
+                                Fungsi adalah sub-program yang bisa digunakan kembali baik di dalam program itu sendiri, maupun di program yang lain. Fungsi di dalan JavaScript adalah sebuah objek. Karena memiliki properti, dalam fungsi di JavaScript ada 4 cara untuk membuatnya.
+                                <ol>
+                                    <li>Menggunakan cara biasa</li>
+                                    <li>Menggunakan ekspresi</li>
+                                    <li>Menggunakan tanda panah (=>)</li>
+                                    <li>dan menggunakan <i>Constructor</i>.</li>
+                                </ol>
                             </p>
+                            <h2 class="font-weight-bold">Membuat Fungsi dengan Cara Biasa</h2>
+                            <p class="lead">
+                                Cara inilah yang paling sering digunakan, terutama pada pemula belajar JavaScript.
+                                <pre class="code">
+function namaFungsi(){
+  console.log("Hello Dunia!");
+}
+</pre><br>
+                            </p>
+                            <h2 class="font-weight-bold">Membuat Fungsi dengan Ekspresi</h2>
+                            <p class="lead">
+                                Dalam membuat fungsi menggunakan ekspresi ini, kita menggunakan variabel, lalu diisi dengan fungsi. Fungsi ini sebenarnya adalah fungsi anonim (<i>anonymous function</i>) atau fungsi tanpa nama.
+                                <pre class="code">
+var namaFungsi = function(){
+  console.log("Hello Dunia!");
+}
+</pre><br>
+                            </p>
+                            <h2 class="font-weight-bold">Menggunakan Fungsi dengan Tanda Panah</h2>
+                            <p class="lead">
+                                Dengan seiringnya waktu, cara inilah yang sering digunakan di kode JavaScript, karena cara ini jauh lebih sederhana. Akan tetapi sulit dipahami bagi pemula. Fungsi mulai muncul pada standar ES6.
+                                <pre class="code">
+var namaFungsi = () => {
+  console.log("Hallo Dunia!");
+}
 
+// Jika isi dari fungsi hanya satu baris Anda bisa menulis seperti ini
+  var namaFungsi = () => console.log("Hallo Dunia!");
+</pre><br>
+                            </p>
+                            <h2 class="font-weight-bold">Menggunakan Fungsi dengan Kostruktor</h2>
+                            <p class="lead">
+                                Cara ini sebenarnya tidak direkomendasikan. Soalnya <i>body</i> fungsinya dibuat dalam bentuk string yang dapat mempengaruhi kinerja <i>engine</i> JavaScript.
+                                <pre class="code">
+var namaFungsi = new Function('console.log("Hallo Dunia!");');
+</pre><br> Bagi Anda yang baru mempelajari tentang JavaScript ini, kita rekomendarikan menggunakan cara yang pertama dulu, Nanti kalau Anda sudah terbiasa baru coba gunakan cara ke-2 dan ke-3.
+                            </p>
+                            <h2 class="font-weight-bold">Memanggil/Eksekusi Fungsi</h2>
+                            <p class="lead">
+                                Kita bisa memanggil fungsi di dalam kode JavaScript dengan menuliskan nama fungsinya seperti ini : <br>
+                                <pre class="code">
+namaFungsi()
+</pre><br><br> Contohnya : <br>
+                                <pre class="code">
+// pembuatan Fungsi
+  function sayHello(){
+    console.log("Hallo Dunia!");
+  }
+
+// Memanggil fungsi
+  sayHello() // maka hasilnya akan -> Hallo Dunia!
+</pre><br> Selain dengan cara itu, kita juga bisa memanggil fungsi melalui atribut event, pada HTML. <br>
+                                <pre class="code">
+  &lt;html&gt;
+    &lt;head&gt;
+     &lt;meta charset="utf-8"&gt;
+      &lt;title&gt;Penulisan Fungsi&lt;/title&gt;
+      &lt;script&gt;
+        // buat fungsi
+        var sayHallo = () => alert("Hallo Kawan!");
+      &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;a href="#" onclick="sayHallo()"&gt;Klik Dong!&lt;/a&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+  </pre> <br> Hasilnya akan seperti ini : <br>
+                                <video src="../../../assets/img/hasil code/js/fungsi.mp4" class="img-fluid" controls autoplay muted loop>
+                                <source src="../../../assets/img/hasil code/js/fungsi.mp4" type="video/mp4">
+                            </video>
+                            </p>
+                            <h2 class="font-weight-bold">Fungsi dengan Parameter</h2>
+                            <p class="lead">
+                                Parameter sendiri ialah variabel yang menyimpan nilai untuk diproses di dalam fungsi <br>
+                                <pre class="code">
+function bagi(a, b){
+  hasilBagi = a / b;
+  console.log("Hasil bagi a/b = " + hasilBagi);
+}
+</pre><br>
+                            </p>
+                            <h2 class="font-weight-bold">Fungsi yang Mengembalikan Nilai</h2>
+                            <p>
+                                Supaya pengolahan nilai di dalam fungsi dapat digunakan untuk proses berikutnya, maka fungsi harus bisa mengembalikan nilai.<br> Untuk mengembalikan nilai pada fungsi, dengan menggunakan kata kunci <span style="color:red;">return</span>                                kemudian diikuti dengan nilai atau variabel yang akan dikembalika. <br>
+                                <pre class="code">
+function bagi(a,b){
+  hasilBagi = a / b;
+  return hasilBagi;
+}
+
+// Cara memanggil fungsi
+  var nilai1 = 20;
+  var nilai2 = 5;
+  var hasil = bagi(nilai1, nilai2);
+
+  console.log(hasil); // hasilnya akan -> 4
+</pre><br>
+                            </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/font.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/DOM-API-js.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="#">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/objek-js.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -104,38 +207,44 @@
                                 List Kursus
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                1. Pengenalan HTML
+                                  1. Pengenalan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  2. Penulisan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  3. Fungsi Output
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  4. Variabel dan Tipe Data
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  5. Jendela Dialog
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  6. Operator
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                7. Percabangan
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  8. Perulangan
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                9. Struktur Data Array
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                10. DOM API untuk Manipulasi HTML
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <strong>11. Fungsi</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Tag HTML
-                            </a>
+                                  12. Objek di JavaScript
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Paragraf
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                4. Pemformatan Teks
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                5. Hyperlink
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                6.  List
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                7. Gambar
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                8. Tabel
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                9. Form
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                10. Font
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <strong>11. QUIZ HTML</strong>
-                            </a>
+                                  13. Submission
+                              </a>
                         </div>
                     </div>
                 </div>
@@ -179,7 +288,7 @@
                             <li><i class=""></i> <a href="../../../web-dev.html ">Web Development</a></li>
                             <li><i class=""></i> <a href="../../../database.html ">Database Management</a></li>
                             <li><i class=""></i> <a href="../../../desk-app.html ">Desktop App Development</a></li>
-                            <li><i class=""></i> <a href="../../../framework.html ">Framework Tutorials</a></li>
+                            <li><i class=""></i> <a href="../../../ui-ux.html ">UI/UX Design</a></li>
                         </ul>
                     </div>
 

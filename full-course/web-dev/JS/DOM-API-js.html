@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Icon | BerCODING ID</title>
+    <title>DOM API JavaScript | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -54,7 +54,7 @@
                                     <li><a href="../../../web-dev.html">Web Development</a></li>
                                     <li><a href="../../../desk-app.html">Desktop App Development</a></li>
                                     <li><a href="../../../database.html">Database Management</a></li>
-                                    <li><a href="../../../framework.html">Framework Tutorials</a></li>
+                                    <li><a href="../../../ui-ux.html">UI/UX Design</a></li>
                                 </ul>
                             </li>
                             <li><a href="../../../contact/contact.html">Hubungi Kami</a></li>
@@ -78,44 +78,46 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Styling Icon CSS</h2>
+                            <h2 class="display-4" style="font-size: 35px;">DOM API Untuk Manipulasi HTML</h2>
                             <hr class="my-2 border-dark mb-3">
                             <p class="lead">
-                                Untuk menggunakan icon, kita bisa menggunakan beberapa library diantaranya yang bisa Anda gunakan ialah
-                                <h2 class="font-weight-bold">Font Awesome Icon</h2>
-                                <p class="lead">
-                                    Unuk menggunakan icon Font Awesome, tambahkan link berikut di bagian head. <br>
-                                    <pre class="code">
-&lt;head&gt;
-  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
-&lt;/head&gt;
-                                </pre> <br> Selanjutnya gunakan tag i atau span untuk menggunakannya. <br>
-                                    <pre class="code">
-&lt;html&gt;
-  &lt;head&gt;
-     &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;i class="fa fa-cloud"&gt;&lt;/i&gt;
-    &lt;i class="fa fa-heart"&gt;&lt;/i&gt;
-    &lt;i class="fa fa-car"&gt;&lt;/i&gt;
-    &lt;i class="fa fa-file"&gt;&lt;/i&gt;
-    &lt;i class="fa fa-bars"&gt;&lt;/i&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-                                </pre> <br> Hasil dari apa yang sudah kita tulis sebagai berikut : <br>
-                                    <img src="../../../assets/img/hasil code/css/icon1.jpg" alt="icon1" class="img-fluid"><br>
-                                </p>
+                                DOM merupakan singkatan dari <i>Document Object Model</i>. <br> Yang berarti, dokumen (HTML) yang dimodelkan dalam sebuah objek. <br> Objek dari dokumen ini menyediakan sekumpulan fungsi dan atribut/data yang bisa kita
+                                manfaatkan dalam membuat program JavaScript. Inilah yang disebut API (<i>Application Programming Interface</i>). <br> Dalam penggunakan DOM tidah hanya untuk dokumen HTML, tetapi DOM juga bisa digunakan untuk dokumen misalnya
+                                XML dan SVG. bt Cara Penggunaan objek DOM di JavaScript bernama <span style="color:red;">document</span>. Objek ini berisi segala hal yang kita butuhkan untuk memanipulasi HTML. <br> Jika kita coba ketikkan <span style="color:red;">document</span>                                pada <i>console</i> JavaScript, maka yang akan tampil adalah kode HTML. <br> Di dalam objek <span style="color:red;">document</span>, terdapat fungsi-fungsi dan atribut yang bisa kita pergunakan untuk memanipulasi dokument
+                                HTML. Kita bisa menggunakan fungsi <span style="color:red;">document.write()</span>, fungsinya untuk menuliskan sesuatu ke dokumen HTML. <br> Contoh : <br>
+                                <pre class="code">
+document.write("Hallo Dunia!");
+document.write("&lt;h2&gt;Apa kabar semuanya&lt;/h2&gt;");
+</pre><br> Maka akan seperti ini : <br>
+                                <video src="../../../assets/img/hasil code/js/doc.mp4" class="img-fluid" autoplay muted controls loop>
+                            <source src="../../../assets/img/hasil code/js/doc.mp4" type="video/mp4">
+                          </video>
+                            </p>
+                            <h2 class="font-weight-bold">Mengakses Elemen Tertentu dengan DOM</h2>
+                            <p class="code">
+                                Objek <span style="color:red;">document</span> adalah model dari dokumen HTML. Objek ini berisi kumpulan fungsi dan atribut berupa objek dari elemen HTML.<br> Apabila Anda ingin mengakses elemen yang spresifik, terdapat
+                                beberapa fungsi yang bisa Anda gunakan, diantaranya : <br>
+                                <ul>
+                                    <li><span style="color:red;">getElementById()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">id</span>.</li>
+                                    <li><span style="color:red;">getElementByName()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">name</span>.</li>
+                                    <li><span style="color:red;">getElementByClassName()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">class</span>.</li>
+                                    <li><span style="color:red;">getElementByTagName()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">nama tag</span>.</li>
+                                    <li><span style="color:red;">getElementByTagNameNS()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">nama tag</span>.</li>
+                                    <li><span style="color:red;">querySelector()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">query</span>.</li>
+                                    <li><span style="color:red;">querySelectorAll()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">query</span>.</li>
+                                    <li>Dan lainnya.</li>
+                                </ul>
+
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/styling-image.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/data-array-js.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/styling-color.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/fungsi-js.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -127,32 +129,44 @@
                                 List Kursus
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                1. Pengenalan CSS
+                                  1. Pengenalan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  2. Penulisan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  3. Fungsi Output
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  4. Variabel dan Tipe Data
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  5. Jendela Dialog
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  6. Operator
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                7. Percabangan
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                  8. Perulangan
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                9. Struktur Data Array
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <strong>10. DOM API untuk Manipulasi HTML</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Styling Font
-                            </a>
+                                  11. Fungsi
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Styling Link
-                            </a>
+                                  12. Objek di JavaScript
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Styling Tabel
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                5. Styling Button
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                6. Styling Image
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <strong>7. Icon</strong>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                8. Color
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                9. Submission
-                            </a>
+                                  13. Submission
+                              </a>
                         </div>
                     </div>
                 </div>
@@ -196,7 +210,7 @@
                             <li><i class=""></i> <a href="../../../web-dev.html ">Web Development</a></li>
                             <li><i class=""></i> <a href="../../../database.html ">Database Management</a></li>
                             <li><i class=""></i> <a href="../../../desk-app.html ">Desktop App Development</a></li>
-                            <li><i class=""></i> <a href="../../../framework.html ">Framework Tutorials</a></li>
+                            <li><i class=""></i> <a href="../../../ui-ux.html ">UI/UX Design</a></li>
                         </ul>
                     </div>
 

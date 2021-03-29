@@ -2,6 +2,11 @@
 # General
 --------------------------------------------------------------*/
 
+.video-fluid {
+    width: 100%;
+    height: auto;
+}
+
 
 /*style jumbotron*/
 

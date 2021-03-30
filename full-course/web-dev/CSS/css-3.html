@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Penulisan JavaScript | BerCODING ID</title>
+    <title>Styling Link | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -54,7 +54,7 @@
                                     <li><a href="../../../web-dev.html">Web Development</a></li>
                                     <li><a href="../../../desk-app.html">Desktop App Development</a></li>
                                     <li><a href="../../../database.html">Database Management</a></li>
-                                    <li><a href="../../../ui-ux.html">UI/UX Design</a></li>
+                                    <li><a href="../../../framework.html">Framework Tutorials</a></li>
                                 </ul>
                             </li>
                             <li><a href="../../../contact/contact.html">Hubungi Kami</a></li>
@@ -78,110 +78,91 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Penulisan javascript</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Styling Link CSS</h2>
                             <hr class="my-2 border-dark mb-3">
+                            <h3 class="font-weight-bold">Pengenalan styling Link</h3>
                             <p class="lead">
-                                JavaScript memiliki 3 gaya dalam penulisannya diantaranya : <br>
-                                <ol>
-                                    <li> <i>Embed</i> (Kode JavaScript ditempel langsung pada HTML) </li>
-                                    <li> <i>Inline</i> (Kode JavaScript ditulis pada atribut HTML) </li>
-                                    <li> <i>Eksternal</i> (Kode JavaScript ditulis terpisah dengan file HTML) </li>
-                                </ol>
+                                Dalam penulisan Styling CSS ada beberapa Property, Seperti : <br>
+                                <span style="color:red;">color</span>, <span style="color:red;">font-size</span>, <span style="color:red;">display</span>, <span style="color:red;">text-direction</span>, dll, hingga kerangka dalam HTML menjadi lebih menarik
+                                lagi, disamping itu juga dapat diberi style menggunakan beberapa <u>pseudo class</u>, yaitu : <br>
+                                <u>
+                                <li> <span style="color:red;">a:link</span>, style untuk element a normal, belum diklik. </li>
+                                <li> <span style="color:red;">a:visited</span>, style untuk element a dimana link telah dikunjungi/di klik. </li>
+                                <li> <span style="color:red;">a:hover</span>, style untuk element a ketika mouse berada diaas element (:hover). </li>
+                                <li> <span style="color:red;">a:active</span>, style untuk element a ketika di klik (mouse ditekan, belum dilepas). </li>
+                              </u>
                             </p>
-                            <h2 class="font-weight-bold">Menulis JavaScript pada Tag (Embed)</h2>
+                            <br>
+
+                            <h3 class="font-weigt-bold">Pseudo Class :link</h3>
                             <p class="lead">
-                                Dalam penulisan kode JavaScript menggunakan tag &lt;script&gt; adalah cara yang sudah sering para web Development gunakan. Tag &lt;script&gt; dapat kita buat di dalam tag &lt;head&gt; maupun &lt;body&gt;. <br> Contoh dalam
-                                penulisannya, Anda bisa lihat seperti dibawah ini : <br>
-                                <pre class="code">
-&lt;html&gt;
-  &lt;head&gt;
-   &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;Penulisan JavaScript&lt;/title&gt;
-    &lt;script&gt;
-      console.log("Hi, Ini kode JavaScript");
-    &lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-      document.write("Javascript itu keren!");
-  &lt;/body&gt;
-&lt;/html&gt;
-</pre> <br> Hasilnya : <br>
-                                <img src="../../../assets/img/hasil code/js/hasil2.jpg" alt="hasil2" class="img-fluid"><br> <br> Mungkin anda bingung untuk menentukan mana yang lebih baik dari 2 cara penulisan tersebut. Kedua cara ini memang tidak di
-                                salahkan tetapi penulisan di akhir &lt;body&gt; akan lebih meningkatkan kecepatan displat atau tampilannya konten di web. <br> Karena, jika kita tulis di dalam &lt;head&gt;, script tersebut akan dieksekusi terlebih dahulu
-                                dikarenakan dalam HTML program itu akan membaca dari atas ke bawah. Jadi, disarankan dalam menulis kode javascript di dalam &lt;body&gt;. tepatnya sebelum tag penutup &lt;/body&gt;
+                                Mungkin sebagian bertanya mengapa ada <span style="color:red;">:link</span>? bukankan element <span style="color:red;">a</span> otomatis merupakan link?, jawabnya mengacu pasa <span style="color:blue;">Spesifikasi CSS</span>                                bahwa <span style="color:red;">:link</span> disini mengacu pada semua element HTML yang memiliki attribut <span style="color:red;">a:link{}</span> sama dengan <span style="color:red;">a[href]{}</span> (element a yang memiliki
+                                attribute href, dengan nilai apapun) atau cukup
+                                <span style="color:red;">a{}</span>.
                             </p>
-                            <h2 class="font-weight-bold">Menulis JavaScript pada File Eksternal</h2>
+                            <h3 class="font-weight-bold">Pseudo Class :visited</h3>
                             <p class="lead">
-                                Cara kedua, kita bisa menulis Javascript di file yang terpisah dengan HTML. Biasanya digunakan jika kita tidak ingin Javascript bercampur dengan kode HTML (kesukaan masing-masing). <br> Caranya, buatlah sebuah file yang
-                                berekstensi <b>.js</b>, dan di simpan dalam satu folder yang sama. File ini kita isi denga kode javascript <br> Dan ini contoh isi dari file tersebut : <br>
-                                <pre class="code">
-document.write("Kode Javascript penulisan Eksternal")
-                              </pre> lalu isi file HTML dengan code dibawah ini : <br>
-                                <pre class="code">
-&lt;html&gt;
-  &lt;head&gt;
-      &lt;meta charset="utf-8"&gt;
-      &lt;title&gt;Penulisan Eksternal&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-
-      &lt;script src="kode-script.js"&gt;&lt;/script&gt;
-
-  &lt;/body&gt;
-&lt;/html&gt;
-</pre> <br> Maka hasilnya akan seprti dibawah ini : <br>
-                                <img src="../../../assets/img/hasil code/js/hasil3.jpg" alt="hasil3" class="img-fluid"><br><br> Pada file HTML, kita tetap menggunakan tag &lt;script&gt;. Akan tetapi, tag ini tidak kita isi dengan kode JavaScript. Karna
-                                kita hanya membuat sebuah tautan yang menghubungkan antara file HTML dan File JavaScript, dengan menggunakan atribut <b>src</b> untuk menjalankan kode javascript yang ada di file eksternal. Walaupun tidak punya isi tag
-                                &lt;script&gt; harus tetap di tutup dengan tap penutup &lt;/script&gt;. <br> Dan jika file javascript-nya berada di folder yang berbeda dengan file HTML, kita bisa menambahkan sesuai alamat path foldernya. Misal struktur
-                                foldernya seperti ini : <br> Jika file <i>kode-script.js</i> berada di dalam folder js, maka Anda harus menulisnya : <br> <br>
-                                <pre class="code">
-
-&lt;script src="js/kode-script.js"&gt;&lt;/script&gt;
-                              </pre>
+                                Psedo class <span style="color:red;">:visited</span> digunakan ketika user telah mengunjungi url/link tersebut, hal ini untuk mempermudah user untuk membedakan link yang telah dikunjungi (di click) dan yang belum dikunjungi.
+                                Untuk alasan keamanan, seperti yang dijelaskan oleh Mozilla pada halamannya, hanya beberapa Property yang diijinkan untuk di berikan style, yaitu :
+                                <ul>
+                                    <li> <span style="color:blue">color</span> </li>
+                                    <li> <span style="color:blue">background-color</span> (dab sub properties nya) </li>
+                                    <li> <span style="color:blue">outline-color</span></li>
+                                    <li> Warna untuk fill dan stroke </li>
+                                </ul>
+                                <br> Property Pseudo class <span style="color:red;">:visited</span> dapat bekerja jika sebelumnya telah didefinisikan pada pseudo class
+                                <span style="color:red;">:link</span>, misal : kita ingin merubah warna link yang telah kita kunjungi menjadi menjadi merah dengan menuliskan properties <span style="color:red;">color: red</span> pada Pseudo class
+                                <span style="color:red;">:visited</span>, warna link tersebut dapat berubah jika pada pseudo class <span style="color:red;">:link</span> juga telah didefinisikan properties color nya.
                             </p>
-                            <h2 class="font-weight-bold">Menulis JavaScript Pada Javascript (Inline)</h2>
+                            <h3 class="font-weight-bold">Pseudo Class :hover</h3>
                             <p class="lead">
-                                Untuk penulisan JavaScript pada atribut pada umumnya dilakukan pada atribut event. <br> Contoh : <br>
-                                <pre class="code">
-&lt;button onclick="alert('Selamat Anda Berhasil !!!')"&gt;Coba Di Klik&lt;/button&gt;
-</pre><br> Hasil dari code di atas akan seperti di bawah ini : <br>
-                                <video class="video-fluid z-depth-1" autoplay loop controls muted>
-                                    <source src="../../../assets/img/hasil code/js/onclick.mp4" type="video/mp4" />
-                                </video>
-                                <br> Penulisan javascript tidak hanya bisa di tulis di atribut onclick saja, atribut onclick adalah salah satu event yang ada di HTML, kode JavaScript bisa ditulis di semua atribut event. Selalu ingat bahwa penulisan JavaScript
-                                harus pada atribut event! bukan atribut biasa <br> Penulisan atribut event di HTML diawali dengan on, misalnya untuk event click, maka pada atribut HTML ditulis onclick. <br> Contoh, supaya Anda bisa mencintai materi ini
-                                : <br> <br>
-                                <pre class="code">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Penulisan Javascript di Atriibut&gt;&lt;/title&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;textarea onkeyup="document.getElementById('counter').innerText = this.value.length" cols="30" rows="10"&gt;&lt;/textarea&gt;
-    &lt;p&gt;Panjang: &lt;span id="counter"&gt;0&lt;/span&gt; karakter&lt;/p&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</pre> <br> <br> <br> Pada contoh ini, kita menggunkan even keyup, maka ditulis onkeyup. Event ini terjadi saat kita melepas tombol di keyboard. Jadi nantinya saat kita mengetik pada elen &l;textarea&gt;, maka kode JavaScript
-                                yang ada di onkeyup akan dieksekusi. Kode JavaScript tersebut berfungsi untuk menampilkan jumlah karakter yang di ketik di dalam textarea. <br><br> Maka hasilnya akan seperti di bawah ini : <br> <br>
-                                <video class="video-fluid z-depth-1" autoplay loop controls muted>
-                                    <source src="../../../assets/img/hasil code/js/onkeyup.mp4" type="video/mp4" />
-                                </video>
+                                Pseudo Class <span style="color:red;">:hover</span> akan aktif pada saat mouse berada diatas element. Class ini dapat digunakan pada semua element, namun khusus untuk browser Internet Explorer versi 6 dan sebelumnya, pseudo
+                                class <span style="color:red;">:hover</span> hanya dapat digunakan pada element anchor. Pseudo class <span style="color:red;">:hover</span> pada element selain anchor salah satunya digunakan untuk membuat dropdown menu
+                                yang biasanya diterapkan pada element &lt;li&ht;.
+                            </p>
+                            <h3 class="font-weigt-bold">Pseudo Class :acrive</h3>
+                            <p class="lead">
+                                Pseudo class :active digunakan ketika link di klik dan mouse pada posisi ditekan (belum dilepas), dan biasanya fungsionalnya hanya terlihat sepintas.
+                            </p>
+                            <h3 class="font-weight-bold">Pseudo class :focus</h3>
+                            <p class="lead">
+                                Pseudo class :focus aktif ketika link mendapatkan focus, focus disini pada inputbox ketika ada cursor didalamnya, untuk link, pseudo class ini aktif salah satunya ketika kita menekan tab pada keybord untuk beralih dari bagian satu ke bagian lain, dan
+                                ketika mengenai link, maka pseudo class :focus akan aktif.
+                            </p>
+                            <h3 class="font-weight-bold">Kaidah penulisan</h3>
+                            <p class="lead">
+                                Penulisan pseudo class untuk link harus memperhatikan urutan tertentu,yaitu :
+                                <ul>
+                                    <li>Pseudo class <span style="color:red;">:hover</span> harus ditulis seterlah <span style="color:red;">:link</span> dan <span style="color:red;">:visited</span> </li>
+                                    <li>Pseudo class <span style="color:red;">:active</span> harus ditulis setelah <span style="color:red;">:hover</span></li>
+                                </ul>
+                                <br> Contoh penulisan pada CSS :
+                                <div class="code">
+                                    <span style="color:green;">a:link</span> {<br>
+                                    <span style="color:red;">color</span>: green;<br>
+                                    <span style="color:red;">text-decoration</span>: none; <br> }
+                                    <br>
+                                    <span style="color:green;">:visited</span> {<br>
+                                    <span style="color:red;">color</span>: green;<br> }
+                                    <br>
+                                    <span style="color:green;">:hover</span> {<br>
+                                    <span style="color:red;">color</span>: red; <br> }
+                                    <br>
+                                    <span style="color:green;">a:active</span><br> {<br>
+                                    <span style="color:red;">color</span>: green; <br> }
+                                </div><br> Jika tidak memenuhi kaidah diatas, maka style yang kita buat tidak akan bekerja sebagaimana mestinya, hal ini disebabkan karena semua selector diatas memiliki prioritas yang sama (baca: specification), sehingga
+                                jika <span style="color:red;">:link</span> berada diurutan dipaling bawah, akan menimmpa (overide) semua style diatasnya, salah satu akibatnya pseudo-class :hover tidak akan bekerja, oleh karena itu, selalu perhatikan urutan
+                                penulisannya. Untuk memudahkan menghafal urutan, ada yang membuatnya menjadi suatu istilah yaitu : LoVe HAte (Link Visited Hover Avtive) atau LVHA.
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../JS/pengenalan-js.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/css-2.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../JS/fungsi output-js.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/css-4.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -190,46 +171,34 @@ document.write("Kode Javascript penulisan Eksternal")
                     <div class="container py-3">
                         <div class="list-group mt-5">
                             <h3 class="text-center">
-                                List Kursus
+                                Daftar Modul
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                1. Pengenalan JavaScript
+                                Pengenalan CSS
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>2. Penulisan JavaScript</strong>
+                                Styling Font
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Fungsi Output
+                                <strong>Styling Link</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Variabel dan Tipe Data
+                                Styling Tabel
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                5. Jendela Dialog
+                                Styling Button
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                6. Operator
+                                Styling Image
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                7. Percabangan
+                                Icon
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                8. Perulangan
+                                Color
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                9. Struktur Data Array
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                10. DOM API untum Manipulasi HTML
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                11. Fungsi
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                12. Objek di JavaScript
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                13. Submission
+                                Submission
                             </a>
                         </div>
                     </div>
@@ -274,7 +243,7 @@ document.write("Kode Javascript penulisan Eksternal")
                             <li><i class=""></i> <a href="../../../web-dev.html ">Web Development</a></li>
                             <li><i class=""></i> <a href="../../../database.html ">Database Management</a></li>
                             <li><i class=""></i> <a href="../../../desk-app.html ">Desktop App Development</a></li>
-                            <li><i class=""></i> <a href="../../../ui-ux.html ">UI/UX Design</a></li>
+                            <li><i class=""></i> <a href="../../../framework.html ">Framework Tutorials</a></li>
                         </ul>
                     </div>
 

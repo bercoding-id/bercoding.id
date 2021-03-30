@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Fungsi JavaScript | BerCODING ID</title>
+    <title>Tabel | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -54,7 +54,7 @@
                                     <li><a href="../../../web-dev.html">Web Development</a></li>
                                     <li><a href="../../../desk-app.html">Desktop App Development</a></li>
                                     <li><a href="../../../database.html">Database Management</a></li>
-                                    <li><a href="../../../ui-ux.html">UI/UX Design</a></li>
+                                    <li><a href="../../../framework.html">Framework Tutorials</a></li>
                                 </ul>
                             </li>
                             <li><a href="../../../contact/contact.html">Hubungi Kami</a></li>
@@ -78,124 +78,178 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">FUNGSI</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Tabel</h2>
                             <hr class="my-2 border-dark mb-3">
+                            <h3 class="font-weight-bold">Membuat Tabel</h3>
                             <p class="lead">
-                                Fungsi adalah sub-program yang bisa digunakan kembali baik di dalam program itu sendiri, maupun di program yang lain. Fungsi di dalan JavaScript adalah sebuah objek. Karena memiliki properti, dalam fungsi di JavaScript ada 4 cara untuk membuatnya.
-                                <ol>
-                                    <li>Menggunakan cara biasa</li>
-                                    <li>Menggunakan ekspresi</li>
-                                    <li>Menggunakan tanda panah (=>)</li>
-                                    <li>dan menggunakan <i>Constructor</i>.</li>
-                                </ol>
-                            </p>
-                            <h2 class="font-weight-bold">Membuat Fungsi dengan Cara Biasa</h2>
-                            <p class="lead">
-                                Cara inilah yang paling sering digunakan, terutama pada pemula belajar JavaScript.
-                                <pre class="code">
-function namaFungsi(){
-  console.log("Hello Dunia!");
-}
-</pre><br>
-                            </p>
-                            <h2 class="font-weight-bold">Membuat Fungsi dengan Ekspresi</h2>
-                            <p class="lead">
-                                Dalam membuat fungsi menggunakan ekspresi ini, kita menggunakan variabel, lalu diisi dengan fungsi. Fungsi ini sebenarnya adalah fungsi anonim (<i>anonymous function</i>) atau fungsi tanpa nama.
-                                <pre class="code">
-var namaFungsi = function(){
-  console.log("Hello Dunia!");
-}
-</pre><br>
-                            </p>
-                            <h2 class="font-weight-bold">Menggunakan Fungsi dengan Tanda Panah</h2>
-                            <p class="lead">
-                                Dengan seiringnya waktu, cara inilah yang sering digunakan di kode JavaScript, karena cara ini jauh lebih sederhana. Akan tetapi sulit dipahami bagi pemula. Fungsi mulai muncul pada standar ES6.
-                                <pre class="code">
-var namaFungsi = () => {
-  console.log("Hallo Dunia!");
-}
+                                Tabel digunakan untuk menyajikan data dalam bentuk kolom dan baris. Untuk mengawali pembuatan Tabel di awali dengan tag <em style="color:red;"><<em style="color:red;">table></em></em>. Tabel sudah identik dengan baris dan
+                                kolom,dalam penulisan baris di dalam tabel bisa gunakan tag <em style="color:red;"><<em style="color:red;">tr></em></em>. dan untuk pembuatan kolom Anda bisa menggunakan tag <em style="color:red;"><<em style="color:red;">td></em></em>.
+                                Td kependekan dari <strong>"table data"</strong> yang berarti tempat menyimpan data <i>(data cell)</i>. Sebuah cell data dapat berupa teks, image, list, paragraf, form, tabel, dll.
+                                <br> Contoh : <br>
 
-// Jika isi dari fungsi hanya satu baris Anda bisa menulis seperti ini
-  var namaFungsi = () => console.log("Hallo Dunia!");
-</pre><br>
-                            </p>
-                            <h2 class="font-weight-bold">Menggunakan Fungsi dengan Kostruktor</h2>
-                            <p class="lead">
-                                Cara ini sebenarnya tidak direkomendasikan. Soalnya <i>body</i> fungsinya dibuat dalam bentuk string yang dapat mempengaruhi kinerja <i>engine</i> JavaScript.
                                 <pre class="code">
-var namaFungsi = new Function('console.log("Hallo Dunia!");');
-</pre><br> Bagi Anda yang baru mempelajari tentang JavaScript ini, kita rekomendarikan menggunakan cara yang pertama dulu, Nanti kalau Anda sudah terbiasa baru coba gunakan cara ke-2 dan ke-3.
-                            </p>
-                            <h2 class="font-weight-bold">Memanggil/Eksekusi Fungsi</h2>
-                            <p class="lead">
-                                Kita bisa memanggil fungsi di dalam kode JavaScript dengan menuliskan nama fungsinya seperti ini : <br>
-                                <pre class="code">
-namaFungsi()
-</pre><br><br> Contohnya : <br>
-                                <pre class="code">
-// pembuatan Fungsi
-  function sayHello(){
-    console.log("Hallo Dunia!");
-  }
+<<em style="color:red;">body</em>>
+    <<em style="color:red;">table</em> border="1px solid black">
+         <<em style="color:red;">tr</em>>
+            <<em style="color:red;">td</em>> Nama <<em>/</em><em style="color:red;">td</em>>
+            <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+         <<em>/</em><em style="color:red;">tr</em>>
 
-// Memanggil fungsi
-  sayHello() // maka hasilnya akan -> Hallo Dunia!
-</pre><br> Selain dengan cara itu, kita juga bisa memanggil fungsi melalui atribut event, pada HTML. <br>
-                                <pre class="code">
-  &lt;html&gt;
-    &lt;head&gt;
-     &lt;meta charset="utf-8"&gt;
-      &lt;title&gt;Penulisan Fungsi&lt;/title&gt;
-      &lt;script&gt;
-        // buat fungsi
-        var sayHallo = () => alert("Hallo Kawan!");
-      &lt;/script&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;a href="#" onclick="sayHallo()"&gt;Klik Dong!&lt;/a&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;
-  </pre> <br> Hasilnya akan seperti ini : <br>
-                                <video src="../../../assets/img/hasil code/js/fungsi.mp4" class="img-fluid" controls autoplay muted loop>
-                                <source src="../../../assets/img/hasil code/js/fungsi.mp4" type="video/mp4">
-                            </video>
+         <<em style="color:red;">tr</em>>
+            <<em style="color:red;">td</em>> Michael <<em>/</em><em style="color:red;">td</em>>
+            <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+         <<em>/</em><em style="color:red;">tr</em>>
+    <<em>/</em><em style="color:red;">table</em>>
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/table.jpg" alt="table" class="img-fluid">
+
                             </p>
-                            <h2 class="font-weight-bold">Fungsi dengan Parameter</h2>
+                            <h3 class="font-weight-bold">Menggabungkan Sel Tabel</h3>
+                            <p class="lead"> Atribut yang digunakan untuk menggabungkan sel tabel adalah <b style="color:red">rowspan</b> dan <b style="color:red">colspan</b> :
+                                <ul>
+                                    <li><b style="color:red">rowspan</b> untuk menggabungkan baris</li>
+                                    <li><b style="color:red">colspan</b> untuk menggabungkan kolom</li>
+                                </ul>
+                                <img src="../../../assets/img/hasil code/rowspan.jpg" alt="contoh" class="img-fluid"> <br>
+                                <br> Contoh : <br>
+
+                                <pre class="code">
+<<em style="color:red;">table</em> border="1" Cellpadding="10">
+
+<<em style="color:red;">tr</em>>
+          <<em style="color:red;">th</em> <em style="color:green;">rowspan</em>="2" <em style="color:green">bgcolor</em><em style="color:red">=</em><em style="color:orange">"yellow"</em>> Nama <<em>/</em><em style="color:red;">th</em>>
+          <<em style="color:red;">th</em> <em style="color:green;">colspan</em>="2" <em style="color:green">bgcolor</em><em style="color:red">=</em><em style="color:orange">"green"</em>> Nilai<<em>/</em><em style="color:red;">th</em>>
+<<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+              <<em style="color:red;">td</em>> UTS <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> UAS <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+              <<em style="color:red;">td</em>> Michael <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 80 <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 75 <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+              <<em style="color:red;">td</em>> Dimas <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 85 <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 90 <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+              <<em style="color:red;">td</em>> Rani <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 90 <<em>/</em><em style="color:red;">td</em>>
+              <<em style="color:red;">td</em>> 90 <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+<<em>/</em><em style="color:red;">table</em>>
+</pre>
+
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/colspan.jpg" alt="colspan" class="img-fluid">
+                            </p>
+                            <h3 class="font-weight-bold">Cellpadding</h3>
                             <p class="lead">
-                                Parameter sendiri ialah variabel yang menyimpan nilai untuk diproses di dalam fungsi <br>
+                                Digunakan untuk mengatur padding cell (jarak antara border dengan konten).
+                                <br> Contoh : <br>
                                 <pre class="code">
-function bagi(a, b){
-  hasilBagi = a / b;
-  console.log("Hasil bagi a/b = " + hasilBagi);
-}
-</pre><br>
+<<em style="color:red;">table</em> border="1" Cellpadding="10">
+
+  <<em style="color:red;">tr</em>>
+     <<em style="color:red;">td</em>> Nama <<em>/</em><em style="color:red;">td</em>>
+     <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+  <<em>/</em><em style="color:red;">tr</em>>
+
+  <<em style="color:red;">tr</em>>
+      <<em style="color:red;">td</em>> Michael <<em>/</em><em style="color:red;">td</em>>
+      <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+  <<em>/</em><em style="color:red;">tr</em>>
+
+<<em>/</em><em style="color:red;">table</em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/cellpading.jpg" alt="cellpading" class="img-fluid">
                             </p>
-                            <h2 class="font-weight-bold">Fungsi yang Mengembalikan Nilai</h2>
-                            <p>
-                                Supaya pengolahan nilai di dalam fungsi dapat digunakan untuk proses berikutnya, maka fungsi harus bisa mengembalikan nilai.<br> Untuk mengembalikan nilai pada fungsi, dengan menggunakan kata kunci <span style="color:red;">return</span>                                kemudian diikuti dengan nilai atau variabel yang akan dikembalika. <br>
+                            <h3 class="font-weight-bold">Cellspacing</h3>
+                            <p class="lead">
+                                Digunakan untuk memberi jarak antar cell.
+                                <br> Contoh : <br>
                                 <pre class="code">
-function bagi(a,b){
-  hasilBagi = a / b;
-  return hasilBagi;
-}
+<<em style="color:red;">table</em> border="1" Cellspacing="10">
+    <<em style="color:red;">tr</em>>
+           <<em style="color:red;">td</em> > Nama <<em>/</em><em style="color:red;">td</em>>
+           <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
 
-// Cara memanggil fungsi
-  var nilai1 = 20;
-  var nilai2 = 5;
-  var hasil = bagi(nilai1, nilai2);
+    <<em style="color:red;">tr</em>>
+           <<em style="color:red;">td</em> > Michael <<em>/</em><em style="color:red;">td</em>>
+           <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
 
-  console.log(hasil); // hasilnya akan -> 4
-</pre><br>
+<<em>/</em><em style="color:red;">table</em>>
+</pre>
+                                <br> Hasil :<br>
+                                <img src="../../../assets/img/hasil code/spacing.jpg" alt="Cellspacing" class="img-fluid">
+                            </p>
+                            <h3 class="font-weight-bold">Background Warna</h3>
+                            <p class="lead">
+                                Untuk memberi background warna pada tabel dengan menggunakan <strong>bgcolor</strong>.
+                                <br> Contoh : <br>
+
+                                <pre class="code">
+<<em style="color:red;">table</em> border="1" Cellpadding="10">
+    <<em style="color:red;">tr</em>>
+         <<em style="color:red;">td</em> <em style="color:green">bgcolor</em><em style="color:red">=</em><em style="color:orange">"yellow"</em>> Nama <<em>/</em><em style="color:red;">td</em>>
+         <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em> <em style="color:green">bgcolor</em><em style="color:red">=</em><em style="color:orange">"#00ff80"</em>>
+        <<em style="color:red;">td</em> > Michael <<em>/</em><em style="color:red;">td</em>>
+        <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+<<em>/</em><em style="color:red;">table</em>>
+</pre>
+
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/bgcolor.jpg" alt="bgcolor" class="img-fluid"> <br>
+                            </p>
+                            <h3 class="font-weight-bold">Warna Border</h3>
+                            <p class="lead">
+                                Untuk memberi warna pada border dengan menggunakan <strong>bordercolor</strong>.
+                                <br> Contoh : <br>
+
+                                <pre class="code">
+<<em style="color:red;">table</em> border="1" bordercolor="red">
+    <<em style="color:red;">tr</em>>
+           <<em style="color:red;">td</em> > Nama <<em>/</em><em style="color:red;">td</em>>
+           <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+    <<em style="color:red;">tr</em>>
+           <<em style="color:red;">td</em> > Michael <<em>/</em><em style="color:red;">td</em>>
+           <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+    <<em>/</em><em style="color:red;">tr</em>>
+
+<<em>/</em><em style="color:red;">table</em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/bordercolor.jpg" alt="bordercolor" class="img-fluid">
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../JS/DOM-API-js.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-7.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../JS/objek-js.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-9.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -204,47 +258,41 @@ function bagi(a,b){
                     <div class="container py-3">
                         <div class="list-group mt-5">
                             <h3 class="text-center">
-                                List Kursus
+                                Daftar Modul
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                  1. Pengenalan JavaScript
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                  2. Penulisan JavaScript
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                  3. Fungsi Output
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                  4. Variabel dan Tipe Data
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                  5. Jendela Dialog
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                  6. Operator
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                7. Percabangan
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                  8. Perulangan
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                9. Struktur Data Array
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                10. DOM API untuk Manipulasi HTML
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <strong>11. Fungsi</strong>
+                                Pengenalan HTML
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                  12. Objek di JavaScript
-                              </a>
+                                Tag HTML
+                            </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                  13. Submission
-                              </a>
+                                Paragraf
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Pemformatan Teks
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Hyperlink
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                List
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Gambar
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <strong>Tabel</strong>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Form
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Font
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Submission
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -288,7 +336,7 @@ function bagi(a,b){
                             <li><i class=""></i> <a href="../../../web-dev.html ">Web Development</a></li>
                             <li><i class=""></i> <a href="../../../database.html ">Database Management</a></li>
                             <li><i class=""></i> <a href="../../../desk-app.html ">Desktop App Development</a></li>
-                            <li><i class=""></i> <a href="../../../ui-ux.html ">UI/UX Design</a></li>
+                            <li><i class=""></i> <a href="../../../framework.html ">Framework Tutorials</a></li>
                         </ul>
                     </div>
 

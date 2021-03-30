@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Pengenalan JavaScript | BerCODING ID</title>
+    <title>DOM API JavaScript | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,93 +78,46 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Pengenalan javascript</h2>
+                            <h2 class="display-4" style="font-size: 35px;">DOM API Untuk Manipulasi HTML</h2>
                             <hr class="my-2 border-dark mb-3">
                             <p class="lead">
-                                JavaScript adalah bahasa pemrograman yang wajib kamu pelajari jika ingin mendalami duni <b>web Development</b>. Saat ini JavaScript tidak hanya digunakan di sisi <i>client (browser)</i> saja. Tetapi JavaScript juga digunakan
-                                pada server, console, program desktop, mobile, IoT, game, dan masih banyak lainnya. Hal ini membuat bahasa JavaScript semakin populer.<br>
-                                <h2 class="font-weight-bold">Apa Itu JavaScript?</h2>
-                                JavaScript adalah bahasa pemrograman yang awalnya dirancang untuk berjalan di atas browser. Namun, seiring perkembangan zaman, javascript tidak hanya berjalan di atas browser saja. Tetapi JavaScript juga dapat digunakan pada sisi server, Game, IoT, Destop,
-                                Dan lainnya. <br> JavaScript awalnya bernama <b>Mocha</b>, lalu berubah menjadi <b>LiveScript</b> saat browser Netscape Navigator 2.0 rilis versi beta (September 1995). Namun, setelah itu
-                                dinamai ulang menjadi javascript.
-                                <br> Pada tahun 1996, Netscape mengirimkan standarisasi ECMA-262 ke Ecma International. Sehinga lahirlah standarisasi kode JavaScript bernama ECMAScript atau ES. Saat ini ECMAScript sudah mencapai versi 8 (ES8).
-                            </p>
-                            <table class="table table-bordered text-center">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Versi ECMAScript</th>
-                                        <th scope="col">Tahun Rilis</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>ES 1</td>
-                                        <td>Juni 1997</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ES 2</td>
-                                        <td>Juni 1998</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ES 3</td>
-                                        <td>Desember 1999</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ES 4</td>
-                                        <td>Terbengkalai</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ES 5</td>
-                                        <td>Desember 2009</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ES 5.1</td>
-                                        <td>Juni 2011</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ES 6</td>
-                                        <td>Juni 2015</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ES 7</td>
-                                        <td>Juni 2016</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ES 8</td>
-                                        <td>Juni 2017</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <br>
-                            <h2 class="font-weight-bold">Peralatan untuk Belajar JavaScript</h2>
-                            <p class="lead">
-                                Ada beberapa yang harus Anda persiapkan untuk belajar JavaScript, diantaranya : <br>
-                                <ol>
-                                    <li>Web Browser (Google Chrome, Firefox, Opera, Dan lainnya)</li>
-                                    <li>Teks Editor (Rekomendasi VS Code)</li>
-                                </ol><br>
-                                <h2 class="font-weight-bold">Mengenal Console JavaScript</h2>
-                                Sering kita dengar kalau belajar JavaScript iu susah, dikarenakan saat melihat hasilnya di web browser, pesan error-nya tidak tampil. Pendapat itu tidak benar. karena kita bisa melihatnya melalui <i>console</i>.<br>
-                                <i>Console JavaScript</i> dapat kita buka melalui <b>Inspect Element -> Console</b>. <br>
-                                <img src="../../../assets/img/hasil code/js/console.jpg" alt="console" class="img-fluid"><br> Di dalam <i>Console</i>, kita bisa menulis fungsi atau kode-kode javascript dan hasilnya akan langsung ditampilka. <br> Misalnya,
-                                mari kita coba dengan code berikut ini : <br>
+                                DOM merupakan singkatan dari <i>Document Object Model</i>. <br> Yang berarti, dokumen (HTML) yang dimodelkan dalam sebuah objek. <br> Objek dari dokumen ini menyediakan sekumpulan fungsi dan atribut/data yang bisa kita
+                                manfaatkan dalam membuat program JavaScript. Inilah yang disebut API (<i>Application Programming Interface</i>). <br> Dalam penggunakan DOM tidah hanya untuk dokumen HTML, tetapi DOM juga bisa digunakan untuk dokumen misalnya
+                                XML dan SVG. bt Cara Penggunaan objek DOM di JavaScript bernama <span style="color:red;">document</span>. Objek ini berisi segala hal yang kita butuhkan untuk memanipulasi HTML. <br> Jika kita coba ketikkan <span style="color:red;">document</span>                                pada <i>console</i> JavaScript, maka yang akan tampil adalah kode HTML. <br> Di dalam objek <span style="color:red;">document</span>, terdapat fungsi-fungsi dan atribut yang bisa kita pergunakan untuk memanipulasi dokument
+                                HTML. Kita bisa menggunakan fungsi <span style="color:red;">document.write()</span>, fungsinya untuk menuliskan sesuatu ke dokumen HTML. <br> Contoh : <br>
                                 <pre class="code">
-console.log("Hi Brother");
-alert("Saya sedang belajar JavaScript");
-                                </pre>
-                                <br> Maka hasilnya akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/js/console.jpg" alt="console" class="img-fluid"><br>
-                                <br>
+document.write("Hallo Dunia!");
+document.write("&lt;h2&gt;Apa kabar semuanya&lt;/h2&gt;");
+</pre><br> Maka akan seperti ini : <br>
+                                <video src="../../../assets/img/hasil code/js/doc.mp4" class="img-fluid" autoplay muted controls loop>
+                            <source src="../../../assets/img/hasil code/js/doc.mp4" type="video/mp4">
+                          </video>
+                            </p>
+                            <h2 class="font-weight-bold">Mengakses Elemen Tertentu dengan DOM</h2>
+                            <p class="code">
+                                Objek <span style="color:red;">document</span> adalah model dari dokumen HTML. Objek ini berisi kumpulan fungsi dan atribut berupa objek dari elemen HTML.<br> Apabila Anda ingin mengakses elemen yang spresifik, terdapat
+                                beberapa fungsi yang bisa Anda gunakan, diantaranya : <br>
+                                <ul>
+                                    <li><span style="color:red;">getElementById()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">id</span>.</li>
+                                    <li><span style="color:red;">getElementByName()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">name</span>.</li>
+                                    <li><span style="color:red;">getElementByClassName()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">class</span>.</li>
+                                    <li><span style="color:red;">getElementByTagName()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">nama tag</span>.</li>
+                                    <li><span style="color:red;">getElementByTagNameNS()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">nama tag</span>.</li>
+                                    <li><span style="color:red;">querySelector()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">query</span>.</li>
+                                    <li><span style="color:red;">querySelectorAll()</span> berfungsi untuk memilih elemen berdasarkan atribut dari <span style="color:red;">query</span>.</li>
+                                    <li>Dan lainnya.</li>
+                                </ul>
+
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../JS/kursus-js.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/js-9.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../JS/penulisan-js.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/js-11.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -173,47 +126,47 @@ alert("Saya sedang belajar JavaScript");
                     <div class="container py-3">
                         <div class="list-group mt-5">
                             <h3 class="text-center">
-                                List Kursus
+                                Daftar Modul
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                <strong>1. Pengenalan JavaScript </strong>
+                                Pengenalan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Penulisan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Fungsi Output
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Variabel dan Tipe Data
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Jendela Dialog
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Operator
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Percabangan
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Perulangan
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Struktur Data Array
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <strong>DOM API untuk Manipulasi HTML</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Penulisan JavaScript
-                            </a>
+                                Fungsi
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Fungsi Output
-                            </a>
+                                Objek di JavaScript
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Variabel dan Tipe Data
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                5. Jendela Dialog
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                6. Operator
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                7. Percabangan
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                8. Perulangan
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                9. Struktur Data Array
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                10. DOM API untum Manipulasi HTML
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                11. Fungsi
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                12. Objek di JavaScript
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                13. Submission
-                            </a>
+                                Submission
+                              </a>
                         </div>
                     </div>
                 </div>

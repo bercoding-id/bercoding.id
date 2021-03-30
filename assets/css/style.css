@@ -11,9 +11,6 @@
 /*style jumbotron*/
 
 @media screen and (max-width: 768px) {
-    .jumbotron p {
-        font-size: 16px;
-    }
     .jumbotron .display-4 {
         font-size: 30px;
     }
@@ -28,10 +25,6 @@
 .jumbotron .display-4 {
     color: black;
     margin-top: 40px;
-}
-
-.jumbotron p {
-    color: black;
 }
 
 body {

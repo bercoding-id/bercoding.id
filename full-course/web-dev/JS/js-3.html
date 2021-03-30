@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Styling Link | BerCODING ID</title>
+    <title>Fungsi Output JavaScript | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -54,7 +54,7 @@
                                     <li><a href="../../../web-dev.html">Web Development</a></li>
                                     <li><a href="../../../desk-app.html">Desktop App Development</a></li>
                                     <li><a href="../../../database.html">Database Management</a></li>
-                                    <li><a href="../../../framework.html">Framework Tutorials</a></li>
+                                    <li><a href="../../../ui-ux.html">UI/UX Design</a></li>
                                 </ul>
                             </li>
                             <li><a href="../../../contact/contact.html">Hubungi Kami</a></li>
@@ -78,91 +78,126 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Styling Link CSS</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Fungsi Output javascript</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Pengenalan styling Link</h3>
                             <p class="lead">
-                                Dalam penulisan Styling CSS ada beberapa Property, Seperti : <br>
-                                <span style="color:red;">color</span>, <span style="color:red;">font-size</span>, <span style="color:red;">display</span>, <span style="color:red;">text-direction</span>, dll, hingga kerangka dalam HTML menjadi lebih menarik
-                                lagi, disamping itu juga dapat diberi style menggunakan beberapa <u>pseudo class</u>, yaitu : <br>
-                                <u>
-                                <li> <span style="color:red;">a:link</span>, style untuk element a normal, belum diklik. </li>
-                                <li> <span style="color:red;">a:visited</span>, style untuk element a dimana link telah dikunjungi/di klik. </li>
-                                <li> <span style="color:red;">a:hover</span>, style untuk element a ketika mouse berada diaas element (:hover). </li>
-                                <li> <span style="color:red;">a:active</span>, style untuk element a ketika di klik (mouse ditekan, belum dilepas). </li>
-                              </u>
+                                Output adalah sebuah tampilan program yang pada umumnya untuk memperlihatkan hasil akhir. Output pada umumnya ditampilkan dalam bentuk teks dengan fungsi <span style="color:red;">print()</span> <br> <br> Ada 4 cara menampilkan
+                                ouput pada javascript, diantaranya : <br>
+                                <ol>
+                                    <li>Menggunakan Fungsi <span style="color:red;">console.log()</span>;</li>
+                                    <li>Menggunakan Fungsi <span style="color:red;">alert()</span>;</li>
+                                    <li>Menggunakan Fungsi <span style="color:red;">document.write()</span>;</li>
+                                    <li>Menggunakan Fungsi <span style="color:red;">innerHTML</span>.</li>
+                                </ol>
+                                <br>
                             </p>
-                            <br>
+                            <h2 class="font-weight-bold">Menggunakan Fungsi <span style="color:red;">console.log()</span> </h2>
+                            <p class="lead">
+                                Fungsi pada <span style="color:red;">console.log()</span> adalah fungsi untuk menampilkan teks ke console Javascript. Contoh penggunaannya seperti berikut : <br> <br>
+                                <pre class="code">
+console.log("Hello World!");
+                              </pre>
+                                <br> Hasilnya akan seperti ini : <br><br>
+                                <img src="../../../assets/img/hasil code/js/console-log.jpg" alt="console.log" class="img-fluid"> <br><br> fungsi <span style="color:red;">console.log()</span> pada umumnya digunakan untuk <i>debugging</i>. Dikatenakan
+                                setiap pesan error di JavaScript selalu ditampilkan di dalam Console. <br><br> Selain <span style="color:red;">console.log()</span>, terdap juga bebera fungsi yang bisa Anda gunakan untuk
+                                <i>debugging</i> seperti <span style="color:red;">console.debug()</span>, <span style="color:red;">console.info()</span>,
+                                <span style="color:red;">console.error()</span>, <span style="color:red;">console.dir()</span>, Dan masih banyak lainnya.
+                            </p>
+                            <h2 class="font-weight-bold">Menggunakan Fungsi <span style="color:red;">alert()</span></h2>
+                            <p class="lead">
+                                Fungsi <span style="color:red;">alert()</span> adalah fungsi untuk menampilkan jendela dialog. Fungsi sebenarnya berada pada objek <span style="color:red;">window</span>. <br> Sebagai contoh seperti di bawah ini : <br><br>
+                                <pre class="code">
+  window.alert("Hello World!");
+                                </pre> <br> Bisa juga ditulis seperti dibawah ini : <br><br>
+                                <pre class="code">
+  alert("Hello World!");
+                                </pre> <br> Fungsi <span style="color:red;">alert()</span>, hanya bisa digunakan di dalam browser saja.<br> Supaya Anda mudah untuk memahami materi ini, dibawah ini kita akan menggunakan
+                                fungsi <span style="color:red;">alert()</span> dalam file HTML : <br><br>
 
-                            <h3 class="font-weigt-bold">Pseudo Class :link</h3>
-                            <p class="lead">
-                                Mungkin sebagian bertanya mengapa ada <span style="color:red;">:link</span>? bukankan element <span style="color:red;">a</span> otomatis merupakan link?, jawabnya mengacu pasa <span style="color:blue;">Spesifikasi CSS</span>                                bahwa <span style="color:red;">:link</span> disini mengacu pada semua element HTML yang memiliki attribut <span style="color:red;">a:link{}</span> sama dengan <span style="color:red;">a[href]{}</span> (element a yang memiliki
-                                attribute href, dengan nilai apapun) atau cukup
-                                <span style="color:red;">a{}</span>.
                             </p>
-                            <h3 class="font-weight-bold">Pseudo Class :visited</h3>
+                            <pre class="code">
+  &lt;html&gt;
+    &lt;head&gt;
+     &lt;meta charset="utf-8"&gt;
+      &lt;title&gt;PenulisanFungsi Output JavaScript&lt;/title&gt;
+      &lt;script&gt;
+        alert("Hi, Selamat datang di BeRCODING.ID");
+
+        function sayHello(){
+          alert("Hello!");
+        }
+      &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;button onclick="sayHello()"&gt;Klik Dong &lt;/button&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+  </pre> <br> Hasilnya akan seperti ini : <br>
+                            <img src="../../../assets/img/hasil code/js/alert.jpg" alt="alert" class="img-fluid"> <br><br>
+                            <h2 class="font-weight-bold">Menggunakan Fungsi <span style="color:red;">document.write()</span></h2>
                             <p class="lead">
-                                Psedo class <span style="color:red;">:visited</span> digunakan ketika user telah mengunjungi url/link tersebut, hal ini untuk mempermudah user untuk membedakan link yang telah dikunjungi (di click) dan yang belum dikunjungi.
-                                Untuk alasan keamanan, seperti yang dijelaskan oleh Mozilla pada halamannya, hanya beberapa Property yang diijinkan untuk di berikan style, yaitu :
-                                <ul>
-                                    <li> <span style="color:blue">color</span> </li>
-                                    <li> <span style="color:blue">background-color</span> (dab sub properties nya) </li>
-                                    <li> <span style="color:blue">outline-color</span></li>
-                                    <li> Warna untuk fill dan stroke </li>
-                                </ul>
-                                <br> Property Pseudo class <span style="color:red;">:visited</span> dapat bekerja jika sebelumnya telah didefinisikan pada pseudo class
-                                <span style="color:red;">:link</span>, misal : kita ingin merubah warna link yang telah kita kunjungi menjadi menjadi merah dengan menuliskan properties <span style="color:red;">color: red</span> pada Pseudo class
-                                <span style="color:red;">:visited</span>, warna link tersebut dapat berubah jika pada pseudo class <span style="color:red;">:link</span> juga telah didefinisikan properties color nya.
+                                Objek <span style="color:red;">document</span> ialah objek yang mewakili dokumen HTML di dalam Javascript. <br> Dalam objek <span style="color:red;">document</span>, terdapat fungsi <span style="color:red;">write()</span>                                untuk menulis sesuatu ke dokumen HTML. <br> Contoh : <br><br>
                             </p>
-                            <h3 class="font-weight-bold">Pseudo Class :hover</h3>
-                            <p class="lead">
-                                Pseudo Class <span style="color:red;">:hover</span> akan aktif pada saat mouse berada diatas element. Class ini dapat digunakan pada semua element, namun khusus untuk browser Internet Explorer versi 6 dan sebelumnya, pseudo
-                                class <span style="color:red;">:hover</span> hanya dapat digunakan pada element anchor. Pseudo class <span style="color:red;">:hover</span> pada element selain anchor salah satunya digunakan untuk membuat dropdown menu
-                                yang biasanya diterapkan pada element &lt;li&ht;.
+                            <pre class="code">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;PenulisanFungsi Output JavaScript&lt;/title&gt;
+      &lt;script&gt;
+          document.write("&lt;h1&gt;Hello Dunia!&lt;/h1&gt;")
+          document.write("&lt;hr&gt;")
+          document.write("&lt;p&gt;Sela Berusaha Dan Berjuang&lt;/p&gt;")
+          document.write("Selamat Datang di &lt;b&gt;BeRCODING.ID&lt;/b&gt;")
+      &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre> <br> <br> Dan hasil dari code yang kita tulis, akan seperti di bawah ini : <br>
+                            <img src="../../../assets/img/hasil code/js/write.jpg" alt="document.write" class="img-fluid"><br> Selain dari fungsi <span style="color:red;">wtite()</span>, objek <span style="color:red;">document</span> juga menyediakan
+                            berbagai macam untuk memanipulasi dokumen HTML.
                             </p>
-                            <h3 class="font-weigt-bold">Pseudo Class :acrive</h3>
+                            <h2 class="font-weight-bold">Menggunakan <span style="color:red;">innerHTML</span></h2>
                             <p class="lead">
-                                Pseudo class :active digunakan ketika link di klik dan mouse pada posisi ditekan (belum dilepas), dan biasanya fungsionalnya hanya terlihat sepintas.
-                            </p>
-                            <h3 class="font-weight-bold">Pseudo class :focus</h3>
-                            <p class="lead">
-                                Pseudo class :focus aktif ketika link mendapatkan focus, focus disini pada inputbox ketika ada cursor didalamnya, untuk link, pseudo class ini aktif salah satunya ketika kita menekan tab pada keybord untuk beralih dari bagian satu ke bagian lain, dan
-                                ketika mengenai link, maka pseudo class :focus akan aktif.
-                            </p>
-                            <h3 class="font-weight-bold">Kaidah penulisan</h3>
-                            <p class="lead">
-                                Penulisan pseudo class untuk link harus memperhatikan urutan tertentu,yaitu :
-                                <ul>
-                                    <li>Pseudo class <span style="color:red;">:hover</span> harus ditulis seterlah <span style="color:red;">:link</span> dan <span style="color:red;">:visited</span> </li>
-                                    <li>Pseudo class <span style="color:red;">:active</span> harus ditulis setelah <span style="color:red;">:hover</span></li>
-                                </ul>
-                                <br> Contoh penulisan pada CSS :
-                                <div class="code">
-                                    <span style="color:green;">a:link</span> {<br>
-                                    <span style="color:red;">color</span>: green;<br>
-                                    <span style="color:red;">text-decoration</span>: none; <br> }
-                                    <br>
-                                    <span style="color:green;">:visited</span> {<br>
-                                    <span style="color:red;">color</span>: green;<br> }
-                                    <br>
-                                    <span style="color:green;">:hover</span> {<br>
-                                    <span style="color:red;">color</span>: red; <br> }
-                                    <br>
-                                    <span style="color:green;">a:active</span><br> {<br>
-                                    <span style="color:red;">color</span>: green; <br> }
-                                </div><br> Jika tidak memenuhi kaidah diatas, maka style yang kita buat tidak akan bekerja sebagaimana mestinya, hal ini disebabkan karena semua selector diatas memiliki prioritas yang sama (baca: specification), sehingga
-                                jika <span style="color:red;">:link</span> berada diurutan dipaling bawah, akan menimmpa (overide) semua style diatasnya, salah satu akibatnya pseudo-class :hover tidak akan bekerja, oleh karena itu, selalu perhatikan urutan
-                                penulisannya. Untuk memudahkan menghafal urutan, ada yang membuatnya menjadi suatu istilah yaitu : LoVe HAte (Link Visited Hover Avtive) atau LVHA.
+                                <span style="color:red;">innerHTML</span>ialah sebuah atribut di dalam (objek) elemen HTML yang berisikan sring HTML. <br> Dengan <span style="color:red;">inner HTML</span>, kita dapat menampilan output ke elemen yang lebih
+                                spesifik lagi.
+                                <br> Contohnya : <br> <br>
+                            </p> <pre class="code">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;PenulisanFungsi Output JavaScript&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;h1&gt;Belajar JavaScript&lt;/h1&gt;
+    &lt;div id="output"&gt;&lt;/div&gt;
+
+      &lt;script&gt;
+          // Membuat sebuah objek elemen
+            var hasil = document.getElementById("output");
+
+          // Menampilkan output ke elemen hasil
+            hasil.innerHTML = "&lt;p&gt;I Love JavaScript&lt;/p&gt;";
+      &lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre> <br> <br> Hasilnya akan seperti dibawah ini : <br> <br>
+                            <img src="../../../assets/img/hasil code/js/inner.jpg" alt="inner" class="img-fluid"> <br><br>
+
+
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/styling-font.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/js-2.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/styling-table.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/js-4.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -171,34 +206,46 @@
                     <div class="container py-3">
                         <div class="list-group mt-5">
                             <h3 class="text-center">
-                                List Kursus
+                                Daftar Modul
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                1. Pengenalan CSS
+                                Pengenalan JavaScript
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Styling Font
+                                Penulisan JavaScript
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>3. Styling Link</strong>
+                                <strong>Fungsi Output</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Styling Tabel
+                                Variabel dan Tipe Data
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                5. Styling Button
+                                Jendela Dialog
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                6. Styling Image
+                                Operator
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                7. Icon
+                                Percabangan
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                8. Color
+                                Perulangan
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                9. Submission
+                                Struktur Data Array
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                DOM API untum Manipulasi HTML
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Fungsi
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Objek di JavaScript
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Submission
                             </a>
                         </div>
                     </div>
@@ -243,7 +290,7 @@
                             <li><i class=""></i> <a href="../../../web-dev.html ">Web Development</a></li>
                             <li><i class=""></i> <a href="../../../database.html ">Database Management</a></li>
                             <li><i class=""></i> <a href="../../../desk-app.html ">Desktop App Development</a></li>
-                            <li><i class=""></i> <a href="../../../framework.html ">Framework Tutorials</a></li>
+                            <li><i class=""></i> <a href="../../../ui-ux.html ">UI/UX Design</a></li>
                         </ul>
                     </div>
 

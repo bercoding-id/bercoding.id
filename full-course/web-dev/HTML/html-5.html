@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Color | BerCODING ID</title>
+    <title>Hyperlink | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,126 +78,82 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Styling Color CSS</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Hyperlink HTML</h2>
                             <hr class="my-2 border-dark mb-3">
+                            <h3 class="font-weight-bold">Hyperlink</h3>
                             <p class="lead">
-                                Color (warna) bisa digunakan dengan beberapa cara. Berikut akan dijelaskan cara penggunaannya. <br>
-                                <h2 class="font-weight-bold">Color Names</h2>
-                                Untuk menggunakan color/warna bisa dengan menggunakan nama warna yang akan Anda pakai. <br> Contoh : <br>
+                                Dokumen HTML mempunyai kemampuan untuk memberikan link dari satu teks atau gambar menuju ke dokumen/halaman Lain dalam suatu dokumen. Browser web akan menyorot teks atau gambar yang diidentifikasikan sebagai link dengan warna atau garis bawah untuk menunjukkan
+                                bahwa itu adalah hypertext link. <br> HTML menggunakan tag
+                                <em style="color:red;"><</em><em style="color:red;">a></em></em> yang disebut sebagai tag anchor untuk membuat suatu link kepada dokumen lain.
+                                <br> Contoh :
+
+                                <!--menampilkan contoh code-->
                                 <pre class="code">
-&lt;head&gt;
-   &lt;style type="text/css"&gt;
-    .dodgerBlue {
-      background-color: DodgerBlue;
-    }
-    .tomato {
-      background-color: Tomato;
-    }
-  &lt/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1 class="dodgerBlue"&gt; DodgerBlue &lt;/h1&gt;
-  &lt;h1 class="tomato"&gt; Tomato &lt;/h1&gt;
-&lt;/body&gt;
-                              </pre><br> Hasil dari code yang kita tuliskan di atas, akan seperti dibawah ini : <br>
-                                <img src="../../../assets/img/hasil code/css/color.jpg" alt="color" class="img-fluid"> <br>
-                                <h2 class="font-weight-bold">Menggunakan RGB</h2>
-                                Selain menggunakan color names, dalam styling color juga bisa menggunakan kombinasi nilai RGB (red, green, blue) dengan nilai 0 sampai 255. <br> Contoh : <br>
+<<em style="color:red;">body</em>>
+  <<em style="color:red;">p</em>>
+      <<em style="color:red;">a </em><em style="color:green;">href</em>="<em color:blue;>https://www.bercoding.id</em>"</em>>Contoh Hyperlink<<em>/</em><em style="color:red;">a</em></em>>
+  <<em>/<em style="color:red;">p</em></em>>
+<<em>/<em style="color:red;">body</em></em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/link.jpg" alt="hasil Hyperlink" class="img-fluid">
+                            </p>
+                            <h3 class="font-weight-bold">Membuat link untuk Tab Baru</h3>
+                            <p class="lead">
+                                Untuk membuat link supaya membuka tab baru dapat ditambahkan atribut: <i>target="_blank"</i>
+                                <br> Contoh : <br>
+
+                                <!--menampilkan contoh code-->
                                 <pre class="code">
-&lt;head&gt;
-   &lt;style type="text/css"&gt;
-      .red {
-        background-color: rgb(255, 0, 0);
-      }
+  <<em style="color:red;">body</em>>
+    <<em style="color:red;">p</em>>
+          <<em style="color:red;">a </em><em style="color:green;">href</em>="<em color:blue;>https://www.bercoding.id</em>"</em> <em style="color:orange;">type</em>="<em style="color:green;">_blank</em>">Contoh Hyperlink<<em>/</em><em style="color:red;">a</em></em>>
+    <<em>/<em style="color:red;">p</em></em>>
+  <<em>/<em style="color:red;">body</em></em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/link2.jpg" alt="_blank" class="img-fluid">
+                            </p>
+                            <h3 class="font-weight-bold">Mailto</h3>
+                            <p class="lead">
+                                Berikut ini adalah contoh link untuk menghubungkan ke sebuah alamat email.
+                                <br> Contoh :
 
-      .green {
-        background-color: rgb(0, 255, 0);
-      }
-
-      .blue {
-        background-color: rgb(0, 0, 255);
-      }
-
-      .hex {
-        background-color: rgb(100, 50, 70);
-      }
-  &lt/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1 class="red"&gt; 255, 0, 0 (Red) &lt;/h1&gt;
-    &lt;h1 class="green"&gt; 0, 255, 0 (Green) &lt;/h1&gt;
-    &lt;h1 class="blue"&gt; 0, 0, 255 (blue) &lt;/h1&gt;
-    &lt;h1 class="hex"&gt; 100, 50, 70 &lt;/h1&gt;
-&lt;/body&gt;
-                              </pre> <br>
-                                <img src="../../../assets/img/hasil code/css/color1.jpg" alt="color1" class="img-fluid"><br>
-                                <h2 class="font-weight-bold">Menggunakan RGBA</h2>
-                                Ini adalah salah satu dari styling color dengan menggunakan kombilasi nilai RGBA (red, green, blue, alpa) dengan nilai 0 sampai 255 dan alpha digunakan untuk mengatur transparansi. Nilai alpha berupa bilangan float (pecahan desimal) antara 0 (transparan)
-                                hingga 1 (tidak transparan). <br> Contoh : <br>
+                                <!--menampilkan contoh code-->
                                 <pre class="code">
-&lt;head&gt;
-   &lt;style type="text/css"&gt;
-      .red {
-        background-color: rgb(255, 0, 0, 1);
-      }
+  <<em style="color:red;">body</em>>
+      <<em style="color:red;">p</em>>
+            <<em style="color:red;">a </em> <em style="color:orange">href</em>=<em style=color:red;>"mailto:bercoding.id@gmail.com"></em>Contoh Hyperlink mailto <<em>/</em><em style="color:red;">a</em></em>>
+      <<em>/<em style="color:red;">p</em></em>>
+  <<em>/<em style="color:red;">body</em></em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/mailto.jpg" alt="mailto" class="img-fluid">
+                            </p>
+                            <h3 class="font-weight-bold">Image Hyperlink </h3>
+                            <p class="lead">
+                                Hyperlink dengan gambar, dalam menanamkan link di sebuah gambar memang terlihat seperti tidak ada yang berubah tetapi ketika Anda mengklik gambar tersebut halaman secara otomatis akan beralih ke Hyperlink yang sudah anda buat.
+                                <br> Contoh : <br>
+                                <!--menampilkan contoh code-->
+                                <p class="code1">
+                                    <<em style="color:red">a</em> <em style="color:green;">href</em><em style="color:red;">=</em><em style="color:orange;">"#"</em>>
+                                        <<em style="color:red;">img</em> <em style="color:green;">src</em>
+                                            <em style="color:red;">=</em><em style="color:orange;">"https://www.bercoding.id/img/logo.jpg" </em> /<em>></em>
+                                            <<em>/</em><em style="color:red;">a</em>>
+                                </p>
 
-      .green {
-        background-color: rgba(0, 255, 0, .5);
-      }
-
-      .hex {
-        background-color: rgb(100, 50, 70, .8);
-      }
-  &lt/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1 class="red"&gt; 255, 0, 0, 1 (Red) &lt;/h1&gt;
-    &lt;h1 class="green"&gt; 0, 255, 0, .5 (Green) &lt;/h1&gt;
-    &lt;h1 class="hex"&gt; 100, 50, 70, .8 &lt;/h1&gt;
-&lt;/body&gt;
-                              </pre> <br> Hasil dari code di atas, akan seperti dibawah ini : <br> <br>
-                                <img src="../../../assets/img/hasil code/css/rgba.jpg" alt="RGBA" class="img-fluid"> <br>
-
-                                <h2 class="font-weight-bold">Menggunakan HEX</h2>
-                                Styling color juga bisa dibentuk menggunakan hexadecimal dengan format <b>#rrggbb</b> rr(red) , gg(green), bb(blue) dengan nilai antara 00 sampai ff (sama dengan 0 sampai 255). <br> Contoh penggunannya : <br> <br>
-                                <pre class="code">
-&lt;head&gt;
-   &lt;style type="text/css"&gt;
-      .contoh1 {
-        background-color: #ff0000;
-      }
-
-      .contoh2 {
-        background-color: #00ff00;
-      }
-
-      .contoh3 {
-        background-color: #0000ff;
-      }
-
-      .contoh4 {
-        background-color: #643246;
-      }
-  &lt/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1 class="contoh1"&gt; #ff0000 &lt;/h1&gt;
-    &lt;h1 class="contoh2"&gt;#00ff00 &lt;/h1&gt;
-    &lt;h1 class="contoh3"&gt;#0000ff&lt;/h1&gt;
-    &lt;h1 class="contoh4"&gt;#643246&lt;/h1&gt;
-&lt;/body&gt;
-                              </pre> <br> Hasil dari code di atas, akan seperti dibawah ini : <br> <br>
-                                <img src="../../../assets/img/hasil code/css/hex.jpg" alt="hexadecimal" class="img-fluid"> <br>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/link img.jpg" alt="link image" class="img-fluid">
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/styling-icon.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-4.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="#">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-6.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -206,34 +162,40 @@
                     <div class="container py-3">
                         <div class="list-group mt-5">
                             <h3 class="text-center">
-                                List Kursus
+                                Daftar Modul
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                1. Pengenalan CSS
+                                Pengenalan HTML
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Styling Font
+                                Tag HTML
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Styling Link
+                                Paragraf
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Styling Tabel
+                                Pemformatan Teks
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                5. Styling Button
+                                <strong>Hyperlink</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                6. Styling Image
+                                List
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                7. Icon
+                                Gambar
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>8. Color</strong>
+                                Tabel
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                9. Submission
+                                Form
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Font
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Submission
                             </a>
                         </div>
                     </div>

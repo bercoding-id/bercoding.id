@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Jendela Dialog JavaScript | BerCODING ID</title>
+    <title>Pengenalan HTML | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -54,7 +54,7 @@
                                     <li><a href="../../../web-dev.html">Web Development</a></li>
                                     <li><a href="../../../desk-app.html">Desktop App Development</a></li>
                                     <li><a href="../../../database.html">Database Management</a></li>
-                                    <li><a href="../../../ui-ux.html">UI/UX Design</a></li>
+                                    <li><a href="../../../framework.html">Framework Tutorials</a></li>
                                 </ul>
                             </li>
                             <li><a href="../../../contact/contact.html">Hubungi Kami</a></li>
@@ -78,109 +78,55 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Jendela Dialog</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Pengenalan HTML</h2>
                             <hr class="my-2 border-dark mb-3">
+                            <h3 class="font-weight-bold">Apa Itu HTML?</h3>
                             <p class="lead">
-                                Jendela dialog merupakan jendela yang digunakan untuk berinteraksi dengan pengguna. <br> Ada 3 macam jendela dialog pada JavaScript : <br>
-                                <ul>
-                                    <li>Jendela dialog <span style="color:red;">alert()</span></li>
-                                    <li>Jendela dialog <span style="color:red;">confirm()</span></li>
-                                    <li>Jendela dialog <span style="color:red;">promp()</span></li>
-                                </ul>
-                            </p>
-                            <h2 class="font-weight-bold">1. Dialog Alert</h2>
-                            <p class="lead">
-                                Dialog <span style="color:red;">alert()</span> pada umumnya digunakan untuk menampilkan sebuah pesan peringatan atau informasi pada website. <br> Fungsi <span style="color:red;">alert()</span> berada dalam objek <span style="color:red;">window()</span>.
-                                Kita bisa menggunakan seperti dibawah ini : <br>
-                                <pre class="code">
-window.alert("Hello Dunia!");
-
-// bisa juga seperti ini
-
-  alert("Hallo Dunia!");</pre> <br> Karena objek <span style="color:red;">window</span> memiliki sifat global, kita boleh tidak menulisnya. Dialog <span style="color:red;">alert()</span> tidak akan mengembalikan nilai apa-apa
-                                saat dieksekusi. <br> Contohnya : <br>
-                                <pre class="code">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Dialog Alert&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;script&gt;
-      alert("Selamat Datang Untuk Belajar");
-    &lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt; </pre> <br> Hasil dari code di atas akan seperti dibawah ini : <br>
-                                <img src="../../../assets/img/hasil code/js/dialog-alert.jpg" alt="dialog-alert" class="img-fluid"> <br> Dialog <span style="color:red;">alert()</span> memiliki satu parameter yang harus diberikan, yaitu : teks yang akan
-                                ditampilkan pada dialog. Pada contoh di atas, kita memberikan nilai teks <span style="color:red;">"Selamat Datang
-                            Untuk Belajar"</span>
-                            </p>
-                            <h2 class="font-weight-bold">2. Dialog Confirm</h2>
-                            <p class="lead">
-                                Dialog <span style="color:red;">confirm()</span> digunakan untuk melakukan konfirmasi dalam melakukan tindakan tertentu. <br> Misalnya : <br> Saat kita menghapus sesuatu, maka ada baiknya menampilkan dialog <span style="color:red;">confirm()</span>.
-                                Dialog confirm dapat dibuat dengan fungsi <span style="color:red;">confirm()</span>. <br> Dialog <span style="color:red;">confirm()</span> akan mengembalikan nilai <span style="color:red;">true</span> apabila kita memilih
-                                tomboh <b>OK</b> dan akan mengembalikan nilai <span style="color:red;">false</span> apabila kita memilih tombol <b>Cancel</b>. <br> Nilai kembalian ini dapat kita tampung di dalam variabel untuk diproses. <br> Contoh :
+                                Berbicara soal HTML tidak hanya terbatas pada pengertiannya saja. Anda harus tahu seluk-beluknya jika ingin mahir bahasa markup yang satu ini. <strong>HTML</strong> adalah singkatan dari
+                                <strong>Hypertext Markup Languange</strong>. HTML memungkinkan seorang user untuk membuat dan menyusun bagian paragraf, heading, link atau tautan, dan blockquote untuk halaman web dan aplikasi.
+                                <br> HTML bukanlah bahasa pemrograman, dan itu berarti HTML tidak punya kemampuan untuk membuat fungsionalitas yang dinamis. Sebagai gantinya, HTML memungkinkan user untuk mengorganisir dan memformat dokumen, sama seperti
+                                Microsoft Word.
+                                <br>
+                                <br> Ketika bekerja dengan HTML, Anda menggunakan struktur kode yang sederhana (tag dan attribute) untuk <i>Mark Up</i> halaman website. Misalnya, Anda membuat sebuah paragraf dengan menempatkan <i>enclosed text</i> di
+                                antara tag pembuka
+                                <em style="color:red;"><<em style="color:red;">p></em></em> dan tag penutup <em style="color:red;"><<em style="color:red;">/p></em></em>
+                                <br>
                                 <br>
                                 <pre class="code">
-  &lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-    &lt;head&gt;
-      &lt;title&gt;Dialog Confirm&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;script&gt;
-        var yakin = confirm("Apakah kamu yakin akan mengunjugi Google?");
-
-        if (yakin) {
-          window.location = "https://www.google.com";
-        } else {
-          document.write("Baiklah, tetap disini :) ");
-        }
-      &lt;/script&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;
-</pre> <br> Hasilnya akan seperti ini : <br>
-                                <video class="video-fluid z-depth-1" autoplay loop controls muted>
-                                    <source src="../../../assets/img/hasil code/js/confirm.mp4" type="video/mp4" />
-                                </video><br>
+&lt;p&gt;This is how you add a paragraph in HTML.&lt;/p&gt;
+&lt;p&gt; You can have more than one!&lt;/p&gt;
+</pre>
+                                <br> Kesimpulannya, pengertian HTML sebagai bahasa Markup sangatlah mudah untuk dipahami bahkan bagi webmaster pemula di bidang web development sekalipun.
                             </p>
-                            <h2 class="font-weight-bold">3. Dialog Prompt</h2>
+
+                            <h3 class="font-weight-bold"> Bagaimana Cara Kerja HTML?</h3>
                             <p class="lead">
-                                Dialog <span style="color:red;">promt()</span> berfungsi untuk mengambil sebuah inputan dari pengguna. <br> Dialog <span style="color:red;">promt()</span> akan mengembalikan nilai string dari apa yang diinputkan oleh pengguna/user.
-                                <br> Contoh : <br>
+                                Dokumen HTML adalah file yang diakhiri dengan ekstensi <b><i> .html </i></b> atau <b>.htm</b>. ekstensi file ini bisa dilihat dengan menggunakan web browser apapun (seperti Google Chrome, Safari, atau Mozila Firefox). Browser
+                                tersebut membaca file HTML dan me-render kontennya sehingga user internet bisa melihat dan membacanya. <br> <br> Masing-masing halaman HTML terdiri atas seperangkat <b>tags</b> (bisa disebut juga <b>elements</b>), yang
+                                mengacu pada
+                                <i>building block</i> halaman website. Tag tersebut membuat hirarki yang menyusun konten hingga menjadi bagian, paragraf, heading, dan <i>block</i> konten lainnya. <br> Sebagian besar element HTML memiliki tag pembuka dan
+                                penutup yang menggunakan syntax <b><<b>b></b></b> <b><<b>/b></b></b>. <br> Berikut contoh kode dari susunan atau struktur HTML:
+                                <br>
+                                <br>
+
+                                <!-- menampilkan contoh code -->
                                 <pre class="code">
-&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Dialog Prompt&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;script&gt;
-        var nama = prompt("Nama Kamu Siapa?", " ");
-        document.write("&lt;p&gt;Selamat Datang" + " " + nama + "&lt;/p&gt;")
-    &lt;/script&gt;
-  &lt;/body&gt;
+   &lt;head&gt;
+      &lt;title&gt;This is Title&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt; This is paragraph &lt;/p&gt;
+   &lt;/body&gt;
 &lt;/html&gt;
-</pre> <br> Hasilnya akan seperti ini : <br>
-                                <video class="video-fluid z-depth-1" autoplay loop controls muted>
-                                    <source src="../../../assets/img/hasil code/js/prompt.mp4" type="video/mp4" />
-                                </video>
-                                <br> Dialog <span style="color:red;">promt()</span> memiliki beberapa parameter yang wajib diberikan, diantaranya : <br>
-                                <ol>
-                                    <li>Teks yang akan ditampilkan pada form</li>
-                                    <li>Nilai default untuk field input.</li>
-                                </ol>
-                                Pada contoh code di atas, kita memberikan nilai default-nya berupa string kosong dengan tanda petik <span style="color:red;">" "</span>.
+</pre>
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
-                            <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../JS/variabel-js.html" tabindex="-1">&laquo; Sebelumnya</a>
-                            </li>
-                            <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../JS/operator-js.html">Selanjutnya &raquo;</a>
+                            <li class="page-item ml-5 mr-5 px-auto">
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-2.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -189,47 +135,41 @@ window.alert("Hello Dunia!");
                     <div class="container py-3">
                         <div class="list-group mt-5">
                             <h3 class="text-center">
-                                List Kursus
+                                Daftar Modul
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                  1. Pengenalan JavaScript
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                  2. Penulisan JavaScript
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                  3. Fungsi Output
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                  4. Variabel dan Tipe Data
-                              </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <strong>5. Jendela Dialog</strong>
+                                <strong>Pengenalan HTML</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                  6. Operator
-                              </a>
+                                <strong>Tag HTML</strong>
+                            </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                  7. Percabangan
-                              </a>
+                                Paragraf 
+                            </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                  8. Perulangan
-                              </a>
+                                Pemformatan Teks
+                            </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                  9. Struktur Data Array
-                              </a>
+                                Hyperlink
+                            </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                  10. DOM API untum Manipulasi HTML
-                              </a>
+                                List
+                            </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                  11. Fungsi
-                              </a>
+                                Gambar
+                            </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                  12. Objek di JavaScript
-                              </a>
+                                Tabel
+                            </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                  13. Submission
-                              </a>
+                                Form
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Font
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Submission
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -273,7 +213,7 @@ window.alert("Hello Dunia!");
                             <li><i class=""></i> <a href="../../../web-dev.html ">Web Development</a></li>
                             <li><i class=""></i> <a href="../../../database.html ">Database Management</a></li>
                             <li><i class=""></i> <a href="../../../desk-app.html ">Desktop App Development</a></li>
-                            <li><i class=""></i> <a href="../../../ui-ux.html ">UI/UX Design</a></li>
+                            <li><i class=""></i> <a href="../../../framework.html ">Framework Tutorials</a></li>
                         </ul>
                     </div>
 

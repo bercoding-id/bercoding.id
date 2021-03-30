@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Gambar | BerCODING ID</title>
+    <title>Jendela Dialog JavaScript | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -54,7 +54,7 @@
                                     <li><a href="../../../web-dev.html">Web Development</a></li>
                                     <li><a href="../../../desk-app.html">Desktop App Development</a></li>
                                     <li><a href="../../../database.html">Database Management</a></li>
-                                    <li><a href="../../../ui-ux.html">Framework Tutorials</a></li>
+                                    <li><a href="../../../ui-ux.html">UI/UX Design</a></li>
                                 </ul>
                             </li>
                             <li><a href="../../../contact/contact.html">Hubungi Kami</a></li>
@@ -78,82 +78,109 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Gambar</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Jendela Dialog</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Menyertakan Gambar</h3>
                             <p class="lead">
-                                Gambar di dalam suatu web page merupakan daya penarik bagi pengunjung suatu website. Umumnya website dilengkapi dengan gambar-gambar untuk membuat orang tertarik untuk melihat dan membaca isi yang ada di suatu website. Setiap gambar akan butuh waktu tambahan
-                                untuk download dan memperlambat awal penampilan suatu dokumen dalam browser. Untuk itu perlu hati-hati untuk menyertakan gambar dalam dokumen website. Cara untuk menyertakan sebuah image dalam dokumen web adalah sebagai
-                                berikut :
-                                <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">nama_image</em>">
-                                    <br> Contoh : <br>
-                                    <pre class="code">
-<<em style="color:red;">body</em>>
-     <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>">
-<<em>/</em><em style="color:red;">body</em>>
-</pre>
-                                    <br> Hasil : <br>
-                                    <img src="../../../assets/img/hasil code/link img.jpg" alt="logo" class="img-fluid">
+                                Jendela dialog merupakan jendela yang digunakan untuk berinteraksi dengan pengguna. <br> Ada 3 macam jendela dialog pada JavaScript : <br>
+                                <ul>
+                                    <li>Jendela dialog <span style="color:red;">alert()</span></li>
+                                    <li>Jendela dialog <span style="color:red;">confirm()</span></li>
+                                    <li>Jendela dialog <span style="color:red;">promp()</span></li>
+                                </ul>
                             </p>
-                            <h3 class="font-weight-bold">Teks Alternatif untuk Image</h3>
+                            <h2 class="font-weight-bold">1. Dialog Alert</h2>
                             <p class="lead">
-                                Atribut <em style="color:red;">alt</em> adalah atribut untuk memberikan teks alternatif pada gambar saat gambar gagal ditampilkan. <br> Contoh : <br>
-
+                                Dialog <span style="color:red;">alert()</span> pada umumnya digunakan untuk menampilkan sebuah pesan peringatan atau informasi pada website. <br> Fungsi <span style="color:red;">alert()</span> berada dalam objek <span style="color:red;">window()</span>.
+                                Kita bisa menggunakan seperti dibawah ini : <br>
                                 <pre class="code">
-  <<em style="color:red;">body</em>>
-       <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">alt</em><em style="color:red;">=</em><em style="color:green;">"logo"</em>>
-  <<em>/</em><em style="color:red;">body</em>>
-</pre>
+window.alert("Hello Dunia!");
 
-                                <br> Hasil : <br>
-                                <img src="../../../assets/img/hasil code/alt image.jpg" alt="alt" class="img-fluid">
+// bisa juga seperti ini
+
+  alert("Hallo Dunia!");</pre> <br> Karena objek <span style="color:red;">window</span> memiliki sifat global, kita boleh tidak menulisnya. Dialog <span style="color:red;">alert()</span> tidak akan mengembalikan nilai apa-apa
+                                saat dieksekusi. <br> Contohnya : <br>
+                                <pre class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Dialog Alert&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script&gt;
+      alert("Selamat Datang Untuk Belajar");
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt; </pre> <br> Hasil dari code di atas akan seperti dibawah ini : <br>
+                                <img src="../../../assets/img/hasil code/js/dialog-alert.jpg" alt="dialog-alert" class="img-fluid"> <br> Dialog <span style="color:red;">alert()</span> memiliki satu parameter yang harus diberikan, yaitu : teks yang akan
+                                ditampilkan pada dialog. Pada contoh di atas, kita memberikan nilai teks <span style="color:red;">"Selamat Datang
+                            Untuk Belajar"</span>
                             </p>
-                            <h3 class="font-weight-bold">Image Border</h3>
+                            <h2 class="font-weight-bold">2. Dialog Confirm</h2>
                             <p class="lead">
-                                Memberikan border atau bingkai pada gambar.
-                                <!--menampilkan contoh code-->
-                                <br> Contoh :<pre class="code">
-<<em style="color:red;">body</em>>
-   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">alt</em><em style="color:red;">=</em><em style="color:green;">"logo"</em> border="3px solid black;">
-<<em>/</em><em style="color:red;">body</em>>
-</pre>
+                                Dialog <span style="color:red;">confirm()</span> digunakan untuk melakukan konfirmasi dalam melakukan tindakan tertentu. <br> Misalnya : <br> Saat kita menghapus sesuatu, maka ada baiknya menampilkan dialog <span style="color:red;">confirm()</span>.
+                                Dialog confirm dapat dibuat dengan fungsi <span style="color:red;">confirm()</span>. <br> Dialog <span style="color:red;">confirm()</span> akan mengembalikan nilai <span style="color:red;">true</span> apabila kita memilih
+                                tomboh <b>OK</b> dan akan mengembalikan nilai <span style="color:red;">false</span> apabila kita memilih tombol <b>Cancel</b>. <br> Nilai kembalian ini dapat kita tampung di dalam variabel untuk diproses. <br> Contoh :
+                                <br>
+                                <pre class="code">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;Dialog Confirm&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;script&gt;
+        var yakin = confirm("Apakah kamu yakin akan mengunjugi Google?");
 
-                                <br> Hasil : <br>
-                                <img src="../../../assets/img/hasil code/link img.jpg" style="width: 300px; border: 3px solid black;">
-
+        if (yakin) {
+          window.location = "https://www.google.com";
+        } else {
+          document.write("Baiklah, tetap disini :) ");
+        }
+      &lt;/script&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+</pre> <br> Hasilnya akan seperti ini : <br>
+                                <video class="video-fluid z-depth-1" autoplay loop controls muted>
+                                    <source src="../../../assets/img/hasil code/js/confirm.mp4" type="video/mp4" />
+                                </video><br>
                             </p>
-                            <h3 class="font-weight-bold">Image Alignment</h3>
+                            <h2 class="font-weight-bold">3. Dialog Prompt</h2>
                             <p class="lead">
-                                Mengatur gambar rata kiri <i>(left)</i>, tengah <i>(center)</i>, atau kanan <i>(right)</i>.
-                                <!--menampilkan contoh code-->
-                                <br> Contoh :<pre class="code">
-<<em style="color:red;">body</em>>
-   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">align</em>="center">
-<<em>/</em><em style="color:red;">body</em>>
-</pre>
-
-                                <br> Contoh :<pre class="code">
-<<em style="color:red;">body</em>>
-   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">align</em>="left">
-<<em>/</em><em style="color:red;">body</em>>
-</pre>
-
-                                <br> Contoh :<pre class="code">
-<<em style="color:red;">body</em>>
-   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">align</em>="right">
-<<em>/</em><em style="color:red;">body</em>>
-</pre>
-
+                                Dialog <span style="color:red;">promt()</span> berfungsi untuk mengambil sebuah inputan dari pengguna. <br> Dialog <span style="color:red;">promt()</span> akan mengembalikan nilai string dari apa yang diinputkan oleh pengguna/user.
+                                <br> Contoh : <br>
+                                <pre class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Dialog Prompt&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script&gt;
+        var nama = prompt("Nama Kamu Siapa?", " ");
+        document.write("&lt;p&gt;Selamat Datang" + " " + nama + "&lt;/p&gt;")
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre> <br> Hasilnya akan seperti ini : <br>
+                                <video class="video-fluid z-depth-1" autoplay loop controls muted>
+                                    <source src="../../../assets/img/hasil code/js/prompt.mp4" type="video/mp4" />
+                                </video>
+                                <br> Dialog <span style="color:red;">promt()</span> memiliki beberapa parameter yang wajib diberikan, diantaranya : <br>
+                                <ol>
+                                    <li>Teks yang akan ditampilkan pada form</li>
+                                    <li>Nilai default untuk field input.</li>
+                                </ol>
+                                Pada contoh code di atas, kita memberikan nilai default-nya berupa string kosong dengan tanda petik <span style="color:red;">" "</span>.
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/list.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/js-4.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/tabel.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/js-6.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -162,41 +189,47 @@
                     <div class="container py-3">
                         <div class="list-group mt-5">
                             <h3 class="text-center">
-                                List Kursus
+                                Daftar Modul
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                1. Pengenalan HTML
+                                Pengenalan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Penulisan JavaScript
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Fungsi Output
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Variabel dan Tipe Data
+                              </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <strong>Jendela Dialog</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Tag HTML
-                            </a>
+                                Operator
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Paragraf
-                            </a>
+                                Percabangan
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Pemformatan Teks
-                            </a>
+                                Perulangan
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                5. Hyperlink
-                            </a>
+                                Struktur Data Array
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                6.  List
-                            </a>
+                                DOM API untum Manipulasi HTML
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>7. Gambar</strong>
-                            </a>
+                                Fungsi
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                8. Tabel
-                            </a>
+                                Objek di JavaScript
+                              </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                9. Form
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                10. Font
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                11. Submission
-                            </a>
+                                Submission
+                              </a>
                         </div>
                     </div>
                 </div>
@@ -240,7 +273,7 @@
                             <li><i class=""></i> <a href="../../../web-dev.html ">Web Development</a></li>
                             <li><i class=""></i> <a href="../../../database.html ">Database Management</a></li>
                             <li><i class=""></i> <a href="../../../desk-app.html ">Desktop App Development</a></li>
-                            <li><i class=""></i> <a href="../../../ui-ux.html ">Framework Tutorials</a></li>
+                            <li><i class=""></i> <a href="../../../ui-ux.html ">UI/UX Design</a></li>
                         </ul>
                     </div>
 

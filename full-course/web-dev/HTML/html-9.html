@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Pengenalan CSS | BerCODING ID</title>
+    <title>Form | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,105 +78,105 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Pengenalan CSS</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Form</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Pengertian CSS</h3>
+                            <h3 class="font-weight-bold">Membuat Form</h3>
                             <p class="lead">
-                                CSS atau Cascading Style Sheet merupakan aturan untuk mengatur beberapa komponen dalam sebuah website sehingga akan lebih terstruktur dan seragam. <br> CSS dapat mengendalikan ukuran gambar, warna bagian tubuh pada teks,
-                                warna tabel, ukuran border, warna border, warna hyperlink, warna mouse over, jarak antar paragraf, jarak antar teks, margin kiri, kanan, atas, bawah, dan parameter lainnya. <br> Berikut adalah cara penggunaan CSS :
+                                Form HTML adalah sebuah area yang mengandung elemen-elemen form. Elemen form adalah sebuah elemen yang memungkinkan user untuk memasukkan informasi seperti text, textarea, menu drop-down, radio button, checkbox, dll. Sebuah form didefinisikan dengan tag
+                                <em style="color:red"><</em><em style="color:red;">form></em>.
                             </p>
-                            <h3 class="font-weight-bold">Inline Style</h3>
+                            <h3 class="font-weight-bold">Field Text</h3>
                             <p class="lead">
-                                Inline CSS ialah dimana kita akan menuliskan kode secara langsung pada atribut elemen HTML. Setiap elemen HTML memiliki atribut style, di situlah inline CSS ditulis. <br> Menurut saya dengan cara ini kurang efisien karena
-                                setiap tag HTML yang diberikan harus memiliki style masing-masing. Anda akan lebih sulit dalam mengatur website jika hanya menggunakan inline CSS. Sebab, Inline CSS digunakan hanya untuk mengubah satu elemen saja. <br>                                Dibawah ini Adalah contoh dari pemakaian Inline Style (Inline CSS) :
-                                <br> Contoh : <br>
-                                <!--untuk menampilkan contoh code -->
+                                Contoh :
                                 <pre class="code">
-<<em style="color:red;">body</em>>
-  <<em style="color:red;">p</em> <em style="color:orange;">style</em>="color:red;"></em>
-  Inline CSS ialah dimana kita akan menuliskan kode secara langsung pada atribut elemen HTML. Setiap
-  elemen HTML memiliki atribut style, di situlah inline CSS ditulis.
-  Menurut saya dengan cara ini kurang efisien karena setiap tag HTML yang diberikan harus memiliki style
-  masing-masing. Anda akan lebih sulit dalam mengatur website jika hanya menggunakan inline CSS. Sebab, Inline CSS
-  digunakan hanya untuk mengubah satu elemen saja. <br> Dibawah ini Adalah contoh dari pemakaian Inline Style (Inline CSS) :
-  <<em style="color:red;">/p</em>>
-<<em>/</em><em style="color:red;">body</em>>
+<<em style="color:red;">label</em>>Nama : <<em>/</em><em style="color:red;">label</em>>
+<<em style="color:red;">input</em> <em style="color:green;">type</em><em style="color:red;">=</em><em style="color:orange;">"text"</em> <em style="color:green;">name</em><em style="color:red;">=</em><em style="color:orange;">"info"</em>>
 </pre>
-                                <br> Hasil dari code yang sudah kita buat di atas, akan seperti dibawah ini : <br>
-                                <img src="../../../assets/img/hasil code/css/pengenalan.jpg" alt="pengenalan" class="img-fluid"> <br>
-                            </p>
-                            <h3 class="font-weight-bold">Internal CSS</h3>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/fieltext.jpg" alt="fieltext" class="img-fluid">
+                            </p> <br>
+                            <h3 class="font-weight-bold">Field Text - Password</h3>
                             <p class="lead">
-                                Internal CSS hanya bisa digunakan pada satu halaman saja <i>(CSS tidak bisa digunakan untuk halaman lain)</i>. Penulisan CSS ini diletakkan di dalam elemen head dengan diawali dengan tag <em style="color:red"><</em>
-                                <em style="color:red;">style></em> dan diakhiri dengan <em style="color:red"><</em><em style="color:red;">/style></em>
-                                <br> Contoh : <br>
-                                <!--untuk menampilkan contoh code -->
+                                Contoh : <br>
+
                                 <pre class="code">
-<<em style="color:red;">head</em>>
-  <<em style="color:red;">style</em> type="text/css">
-   <em style="color:red;">h2</em> {
-     font-family: arial;
-     Color: Green;
-     font-size : 30px;
-   }
-   <em style="color:red;">p</em> {
-     font-family: arial;
-     align: justify;
-   }
-  <<em>/</em><em style="color:red;">style</em>>
-<<em>/</em><em style="color:red;">head</em>>
-<<em style="color:red;">body</em>>
-  <<em style="color:red;">h2</em>> Contoh Dari penggunaan Internal CSS <<em style="color:red;">/h2</em>>
-
-    <<em style="color:red;">p</em>>
-        Inline CSS ialah dimana kita akan menuliskan kode secara langsung pada atribut elemen HTML. Setiap
-        elemen HTML memiliki atribut style, di situlah inline CSS ditulis.
-        Menurut saya dengan cara ini kurang efisien karena setiap tag HTML yang diberikan harus memiliki style
-        masing-masing. Anda akan lebih sulit dalam mengatur website jika hanya menggunakan inline CSS. Sebab, Inline CSS digunakan hanya untuk mengubah satu elemen saja.
-        Dibawah ini Adalah contoh dari pemakaian Inline Style (Inline CSS) :
-    <<em style="color:red;">/p</em>>
-  <<em>/</em><em style="color:red;">body</em>>
+<<em style="color:red;">label</em>>Password : <<em>/</em><em style="color:red;">label</em>>
+<em style="color:red;">input</em> <em style="color:green;">type</em><em style="color:red;">=</em><em style="color:orange;">"password"</em> <em style="color:green;">name</em><em style="color:red;">=</em><em style="color:orange;">"info"</em>>
 </pre>
-                                <br> Hasil dari contoh code di atas, Anda bisa melihat gambar di bawah ini : <br> <br>
-                                <img src="../../../assets/img/hasil code/css/internal.jpg" alt="internal" class="img-fluid">
-
-                            </p>
-                            <h3 class="font-weight-bold">External CSS</h3>
-                            <p class="lead">
-                                Dengan External CSS, kita bisa menggunakan style untuk beberapa halaman dalam suatu website. Untuk menggunakannya, kode CSS yang ditulis terpisah dengan kode HTML Eksternal CSS ditulis di sebuah file khusus yang berekstensi .css . dalam peletakan file
-                                eksternal CSS dengan menuliskan link file eksternal CSS di dalam tag <em style="color:red;"><<em style="color:red;">head></em></em>.
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/password.jpg" alt="fieltext" class="img-fluid">
                                 <br>
-                                <br>Sebagai Contoh saya membuat file CSS dengan nama styling.css berikut isi kode dari file styling.css <br>
+                            </p>
+                            <h3 class="font-weight-bold">Checkbox</h3>
+                            <p class="lead">
+                                Contoh :<br>
+                                <pre class="code">
+<<em style="color:red;">label</em>>Hobi : <<em>/</em><em style="color:red;">label</em>> <<em style="color:red;">br</em>>
+
+<<em style="color:red;">label</em>>Musik <<em>/</em><em style="color:red;">label</em>>
+  <<em style="color:red;">input</em> <em style="color:orange;">type</em><em style="color:red;">=</em><em style="color:green;">"checkbox"</em> name="info">
+<<em style="color:red;">label</em>>Olahraga<<em>/</em><em style="color:red;">label</em>>
+  <<em style="color:red;">input</em> <em style="color:orange;">type</em><em style="color:red;">=</em><em style="color:green;">"checkbox"</em> name="info">
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/checkbox.jpg" alt="fieltext" class="img-fluid">
+                            </p> <br>
+                            <h3 class="font-weight-bold">Radio Button</h3>
+                            <p class="lead">
+                                Contoh : <br>
 
                                 <pre class="code">
-   <em style="color:red;">h2</em> {
-       font-family: arial;
-       Color: Green;
-       font-size : 30px;
-     }
-   <em style="color:red;">p</em> {
-       font-family: arial;
-       align: justify;
-     }
-</pre>
-                                <p>Untuk menyambungkan/menggunakan file styling.css yang sudah kita buat, Anda perlu menambahkannya ke dalan file html. Dengan menggunakan tag <em style="color:red;"><<em style="color:red;">link></em></em> <br>
-                                    <pre class="code">
-<<em style="color:red;">head</em>>
-      <<em style="color:red;">link </em> <em style="color:green;">rel</em>="stylesheet" type="text/css" <em style="color:red;">href</em>="styling.css">
-<<em>/</em><em style="color:red;">head</em>>
-     <<em style="color:red;">body</em>>
-          <<em style="color:red;">h2</em>> BeRCODING.ID <<em style="color:red;">/h2</em>>
-     <<em style="color:red;">p</em>>Contoh Dari penggunaan External CSS<<em style="color:red;">/p</em>>
-<<em>/</em><em style="color:red;">body</em>>
+<<em style="color:red;">label</em>>Hobi : <<em>/</em><em style="color:red;">label</em>> <<em style="color:red;">br</em>>
+
+<<em style="color:red;">label</em>>Musik <<em>/</em><em style="color:red;">label</em>>
+  <<em style="color:red;">input</em> <em style="color:orange;">type</em><em style="color:red;">=</em><em style="color:green;">"radio"</em> name="info">
+<<em style="color:red;">label</em>>Olahraga<<em>/</em><em style="color:red;">label</em>>
+  <<em style="color:red;">input</em> <em style="color:orange;">type</em><em style="color:red;">=</em><em style="color:green;">"radio"</em> name="info">
+</pre> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/radiobutton.jpg" alt="fieltext" class="img-fluid">
+                                <br>
+                            </p>
+                            <h3 class="font-weight-bold">Textarea </h3>
+                            <p class="lead">
+                                Contoh :
+                                <pre class="code">
+  <<em style="color:red;">label</em>>Feedback <<em>/</em><em style="color:red;">label</em>> <<em style="color:red;">br</em>>
+<<em style="color:red;">textarea</em> <em style="color:orange;">name</em><em style="color:red;">=</em><em style="color:green;">"Feedback"</em>> <<em>/</em><em style="color:red;">textarea</em>>
 </pre>
 
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/textarea.jpg" alt="fieltext" class="img-fluid">
+                                <br>
+                            </p>
+                            <h3 class="font-weight-bold">File Upload</h3>
+                            <p class="lead">
+                                Contoh : <br>
 
+                                <pre class="code">
+<<em style="color:red;">p</em>> Upload<<em style="color:red;">input</em> <em style="color:orange;">type</em><em style="color:red;">=</em><em style="color:green;">"file"</em> <<em>/</em><em style="color:red;">p</em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/file upload.jpg" alt="fieltext" class="img-fluid">
+                            </p>
+                            <h3 class="font-weight-bold">Button Controls</h3>
+                            <p class="lead">
+                                Contoh : <br>
+                                <pre class="code">
+  <<em style="color:red;">button</em> <em style="color:orange;">type</em><em style="color:red;">=</em><em style="color:green;">"submit"</em>> Kirim <<em>/</em><em style="color:red;">button</em>>
+</pre>
+                                <br> Hasil : <br>
+                                <img src="../../../assets/img/hasil code/button.jpg" alt="fieltext" class="img-fluid">
+                                <br>
+                            </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
-                            <li class="page-item ml-5 mr-5 px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/styling-font.html">Selanjutnya &raquo;</a>
+                            <li class="page-item mr-auto ml-auto px-auto">
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-8.html" tabindex="-1">&laquo; Sebelumnya</a>
+                            </li>
+                            <li class="page-item mr-auto ml-auto px-auto">
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-10.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -185,34 +185,40 @@
                     <div class="container py-3">
                         <div class="list-group mt-5">
                             <h3 class="text-center">
-                                List Kursus
+                                Daftar Modul
                             </h3>
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                <strong>1. Pengenalan CSS</strong>
+                                Pengenalan HTML
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                2. Styling Font
+                                Tag HTML
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                3. Styling Link
+                                Paragraf
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                4. Styling Tabel
+                                Pemformatan Teks
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                5. Styling Button
+                                Hyperlink
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                6. Styling Image
+                                List
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                7. Icon
+                                Gambar
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                8. Color
+                                Tabel
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                9. Submission
+                                <strong>Form</strong>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Font
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Submission
                             </a>
                         </div>
                     </div>

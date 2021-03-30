@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Variabel dan Tipe Data JavaScript | BerCODING ID</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../../../assets/img/bercoding3.png" rel="icon">
+    <link href="../../../assets/img/bercoding3.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="../../../assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../../../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-9 d-flex align-items-center">
+                    <h1 class="logo mr-auto">
+                        <a href="../../../index.html"><img src="../../../assets/img/bercoding4.png" alt="" class="img-fluid"></a>
+                    </h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul>
+                            <li class="active"><a href="../../index.html">Home</a></li>
+                            <li><a href="../../../about/about.html">Tentang Kami</a></li>
+                            <li><a href="#">Layanan</a></li>
+                            <li><a href="../../../portofolio/all-portfolio.html">Portofolio</a></li>
+                            <li class="drop-down"><a href="">Kursus</a>
+                                <ul>
+                                    <li><a href="../../../web-dev.html">Web Development</a></li>
+                                    <li><a href="../../../desk-app.html">Desktop App Development</a></li>
+                                    <li><a href="../../../database.html">Database Management</a></li>
+                                    <li><a href="../../../ui-ux.html">UI/UX Design</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../../../contact/contact.html">Hubungi Kami</a></li>
+                        </ul>
+                    </nav>
+                    <!-- .nav-menu -->
+
+                    <a href="../../../login/index.html" class="get-started-btn scrollto"><i class="bx bx-user-circle"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Jumbotron ======= -->
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-sm-6 col-md-8">
+                    <div class="jumbotron-full-bg bg-white text-md-left ">
+                        <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
+                            <h2 class="display-4" style="font-size: 35px;">Variabel dan Tipe Data</h2>
+                            <hr class="my-2 border-dark mb-3">
+                            <p class="lead">
+                                Dalam pembuatan variabel, pada umumnya digunakan di JavaScript dengan menggunakan kata kunci
+                                <span style="color:red;">var</span> lalu diikuti dengan nama variabel dan nilainya. <br> Contoh : <br>
+                                <pre class="code">
+var tittle ="Belajar Pemrograman di BERCODING.ID";
+                              </pre> <br> Pada contoh di atas, kita membuat variabel yang bernama <span style="color:red;">title</span> dengan nilai berupa teks <i>(string)</i> : <span style="color:red;">"Belajar Pemrograman JavaScript"</span>.
+                                <br> Contoh Lagi Nih biar Anda semakin paham : <br>
+                                <pre class="code">
+var siteName = "BERCODING";
+var url = "https://www.google.com";
+var visitorCount = 2021;
+                             </pre> <br> Selain menggunakan kata kunci <span style="color:red;">var</span> kita juga bisa membuat variabel dengan kata kunci <span style="color:red;">let</span> atau tanpa awalan apapun.
+                                Seperti dibawah ini : <br><br>
+                                <pre class="code">
+// Membuat variabel dengan kata kunci let
+  let price = 20000;
+
+// variabel tanpa awalan apapun
+  stock = 12
+                             </pre> <br> Perbedaan dari keduanya ialah, terletak pada jangkauan dan penggunaannya. Dan nilai dari variabel tersebut harus di isi, dikarenakan jika tidak diisi variabel yang Anda buat akan
+                                bernilai <span style="color:red;">undefined</span> (belum ditentukan).
+                            </p>
+                            <h2 class="font-weight-bold">Menampilkan isi Variabel</h2>
+                            <p class="lead;">
+                                Unuk menampilkan isi dari variabel yang kita buat, kita bisa memanfaatkan dari fungsi-fungsi menampilkan output diantaranya : <br>
+                                <ul>
+                                    <li>Fungsi <span style="color:red;">console.log()</span> menampilkan sebuah output ke console JavaScript </li>
+                                    <li>Fungsi <span style="color:red;">document.write()</span> menampilkan output ke dokumen HTML </li>
+                                    <li>Fungsi <span style="color:red;">alert()</span> menampilkan output ke dalam jendela dialog </li>
+                                </ul>
+                                Setelah anda mengetahui dari setiap fungsinya, alangkah baiknya kita langsung praktik. <br> Sekarang Anda buatlah file bernama <span style="color:red;">variabel-JavaScript.html</span>, lalau anda bisa isikan dengan kode
+                                berikut ini : <br>
+                                <pre class="code">
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;meta charset="utf-8"&gt;
+      &lt;title&gt;Variabel dan Tipe Data&lt;/title&gt;
+        &lt;script&gt;
+          // variabel
+          var name = "BeRCODING";
+          var year = 2021;
+          var isActive = true;
+          var url = "https://www.BeRCODING.com";
+
+          // menampilan dari variabel ke jendela dialog (alert)
+          alert("Selamat datang di " + name);
+
+          // menampilkan dari variabel ke dalam HTML
+          document.write("Tempat Belajar : " + name + "&lt;br&gt;");
+          document.write("Tahun Berdiri : " + year + "&lt;br&gt;");
+          document.write("Status Aktif : "+ isActive + "&lt;br&gt;");
+          document.write("Alamat Url : " + url + "&lt;br&gt;");
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+  &lt;/html&gt;
+  </pre> <br> Setelah Anda sudah menuliskan kode nya, coba Anda buka dengan browser dan perhatikanlah hasilnya. <br><br>
+                                <img src="../../../assets/img/hasil code/js/variabel.jpg" alt="variabel" class="img-fluid"> <br> Arti dari simbo (<span style="color:red;">+</span>) pada contoh code di atas adalah untuk menggabungkan, bukan menjumlahkan.
+                            </p>
+                            <h2 class="font-weight-bold">Mengisi Ulang Variabel</h2>
+                            <p class="lead">
+                                Variabel yang bersifat <i>mutable</i>, tidak membatasi kita untuk merubah ulang nilai dari variabel sebelumnya, dikarenakan dengan memiliki sifat <i>mutabel</i> variabel bisa merubah ulang nilai sebelumnya. <br> Contoh
+                                <br>
+                                <pre class="code">
+// Nilai awal variabel
+  var age = 21;
+
+// Nilai bari pada variabel sebelumnya
+  age = 25;
+</pre> <br> Dalam merubah nilai variabel sebelumnya, kita tidak memerlukan kata kunci <span style="color:red;">var</span> dikarenakan kata kunci itu hanya dibutuhkan di saat kita membuat variabel saja. Sedangkan untuk merubah
+                                nilai variabel sebelumnya kita cukup tulis seprti di atas. <br> Apabila kita menggunakan kata kunci <span style="color:red;">var</span>, berarti kita sedang membuat variabel baru, bukan merubah nilai variabel sebelumnya.
+                                <br>
+                            </p>
+                            <h2 class="font-weight-bold">Menghapus Variabel</h2>
+                            <p class="lead">
+                                Menghapus variabel dalam JavaScript sangat jarang sekali dilakukan. Tetapi, untuk program yang membutuhkan ketelitian dalam alokasi memori, penghapusan variabel perlu dilakukan agar penggunaan memori lebih optimal lagi. <br>                                Menghaspus variabel dapat dilakukan dengan kata kunci <span style="color:red;">delete</span>. <br> Contoh : <br>
+                                <pre class="code">
+bookTittle = "Pemrograman JavaScript";
+delete bookTittle;
+</pre> <br> Ketika kita menggunakan kata kunci <span style="color:red;">delete</span>, maka variabel <span style="color:red;">bookTittle</span> akan menghilang dari penyimpanan memori <br> Penghapusan variabel hanya bisa
+                                dilakukan pada variabel yang dibuat tanpa awalan. Sedangkan yang dibuat dengan kata kunci
+                                <span style="color:red;">var</span> dan <span style="color:red;">let</span> akan dihapus otomatis. <br>
+                            </p>
+                            <h2 class="font-weight-bold">Mengenal Tipe Data</h2>
+                            <p class="lead">
+                                Tipe Data adalah jenis-jenis data yang bisa kita simpan ke dalam variabel. <br> Ada beberapa tipe data dalam Pemrograman JavaScript, diantaranya : <br>
+                                <ul>
+                                    <li>String (teks)</li>
+                                    <li>Integer atau Number (bilangan bulat)</li>
+                                    <li>Float (bilangan pecahan)</li>
+                                    <li>Boolean</li>
+                                    <li>Objct</li>
+                                </ul>
+                                JavaScript memiliki sifat <i>dynamic typung</i>, yang artinya kita tidak harus menuliskan tipe data pada saat proses pembuatan variabel seperti pada baha Pemrograman C, C++, Dan lainnya. yang bersifat <i>static typing</i>.
+                                <br> Contoh : <br>
+                                <pre class="code">
+var name = "Ramdani";
+var age = 21;
+var single = true;
+</pre> <br> JavaScriptakan secara otomatis mengenali tipe data yang kita berikan pada variabel tersebut. <br> Pada contoh di atas akan memiliki tipe data seperti dibawah ini : <br>
+                                <ul>
+                                    <li> <span style="color:red;">name</span> memiliki data string </li>
+                                    <li> <span style="color:red;">age</span> memiliki tipe data Integer/number </li>
+                                    <li> dan <span style="color:red;">single</span> akan memiliki tipe data boolean.</li>
+                                </ul>
+                                Hal ini bisa juga kita cek dengan menggunakan kata kunci <span style="color:red;">tyeof</span>. <br> Contoh : <br>
+                                <pre class="code">
+typeof name;
+typeof age;
+typeof single;
+</pre><br> Hasilnya akan seperti dibawah ini : <br>
+                                <img src="../../../assets/img/hasil code/js/typeof.jpg" alt="typeof" class="img-fluid"> <br><br> Cara untuk mengenali tipe data selain menggunakan kata kunci <span style="color:red;">typeof</span>, ialah dengan cara mengenali
+                                melalui cara penulisannya. Sebagai berikut : <br>
+                                <pre class="code">
+// Untuk tipe data teks atau string cara penulisannya selalu diapit dengan tanda petik
+  var author = "BeRCODING.ID";
+
+// sedangkan tipe data number dan booleadn tidak diampit oleh apapun
+var single = true; // < tipe data boolean hanya bernilai true dan false, tidak ada lagi.
+var age = 21;
+</pre> <br>
+                                <h2 class="font-weight-bold">Aturan Dalam Penulisan Nama variabel di JavaScript</h2>
+                                <p class="lead">
+                                    Dalam penulisan variabel, ada beberapa aturan npenulisan, diantaranya : <br>
+                                    <ul>
+                                        <li>Penamaan variabel <b>tidak boleh</b> menggunakan anga di depannya. <br> Contoh : <br>
+                                            <pre class="code">
+// penulisan yang salah
+  var 21nama ="BeRCODING";
+
+// penulisan yang benar
+  var nama21 = "BeRCODING";
+                                </pre>
+                                        </li>
+                                        <li>
+                                            Penamaan variabel <b>boleh</b> menggunakan awal underscore. <br> Contoh : <br>
+                                            <pre class="code">
+var _nama = "BeRCODING";
+                                  </pre>
+                                        </li>
+                                        <li>
+                                            Penamaan variabel dianjurkan menggunakan <strong>camelCase</strong> apabila terdiri dari dua suku kata. <br> Contoh : <br>
+                                            <pre class="code">
+var fullName = "BeRCODING.ID";
+                                  </pre>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item mr-auto ml-auto px-auto">
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/js-3.html" tabindex="-1">&laquo; Sebelumnya</a>
+                            </li>
+                            <li class="page-item mr-auto ml-auto px-auto">
+                                <a class="page-link bg-primary text-white shadow-none" href="../JS/js-5.html">Selanjutnya &raquo;</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-6 col-md-4 border border-top-bottom-right-0 bg-light mt-5 d-none d-sm-block">
+                    <div class="container py-3">
+                        <div class="list-group mt-5">
+                            <h3 class="text-center">
+                                Daftar Modul
+                            </h3>
+                            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                Pengenalan JavaScript
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Penulisan JavaScript
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Fungsi Output
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <strong>Variabel dan Tipe Data</strong>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Jendela Dialog
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Operator
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Percabangan
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Perulangan
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Struktur Data Array
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                DOM API untum Manipulasi HTML
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Fungsi
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Objek di JavaScript
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Submission
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Jumbotron -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>BerCODING ID</h3>
+                        <p>
+                            Jl. Sedap Malam IV No.25 <br> Rancaekek Kencana, Kabupaten Bandung 40394<br> Jawa Barat <br><br>
+                            <strong>Phone:</strong> +62 813-2275-1816<br>
+                            <strong>Email:</strong> bercoding.id@gmail.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links ">
+                        <h4>Lainnya</h4>
+                        <ul>
+                            <li><i class=""></i> <a href="../../../about/about.html">Tim kami</a></li>
+                            <li><i class=""></i> <a href="# ">Galeri</a></li>
+                            <li><i class=""></i> <a href="# ">Rekrutmen</a></li>
+                            <li><i class=""></i> <a href="# ">Syarat dan ketentuan</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links ">
+                        <h4>Pelayanan kami</h4>
+                        <ul>
+                            <li><i class=""></i> <a href="../../../web-dev.html ">Web Development</a></li>
+                            <li><i class=""></i> <a href="../../../database.html ">Database Management</a></li>
+                            <li><i class=""></i> <a href="../../../desk-app.html ">Desktop App Development</a></li>
+                            <li><i class=""></i> <a href="../../../ui-ux.html ">UI/UX Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter ">
+                        <h4>Ikuti kami</h4>
+                        <p>Ikuti kami untuk mendapat berita terbaru</p>
+                        <div class="social-links text-center text-md-left pt-3 pt-md-0 ">
+                            <a href="https://twitter.com" class="twitter "><i class="bx bxl-twitter "></i></a>
+                            <a href="https://facebook.com " class="facebook "><i class="bx bxl-facebook "></i></a>
+                            <a href="https://instagram.com/bercoding.id/ " class="instagram "><i class="bx bxl-instagram "></i></a>
+                            <a href="# " class="google-plus "><i class="bx bxl-skype "></i></a>
+                            <a href="# " class="linkedin "><i class="bx bxl-linkedin "></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container ">
+
+            <div class="copyright-wrap d-md-flex py-4 ">
+                <div class="mr-md-auto text-center text-md-left ">
+                    <div class="copyright" id="copyright">
+                        &copy;
+                        <script>
+                            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+                        </script> BERCODING ID
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="# " class="back-to-top "><i class="icofont-simple-up "></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="../../../assets/vendor/jquery/jquery.min.js "></script>
+    <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../../../assets/vendor/jquery.easing/jquery.easing.min.js "></script>
+    <script src="../../../assets/vendor/php-email-form/validate.js "></script>
+    <script src="../../../assets/vendor/waypoints/jquery.waypoints.min.js "></script>
+    <script src="../../../assets/vendor/counterup/counterup.min.js "></script>
+    <script src="../../../assets/vendor/owl.carousel/owl.carousel.min.js "></script>
+    <script src="../../../assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="../../../assets/vendor/venobox/venobox.min.js "></script>
+    <script src="../../../assets/vendor/aos/aos.js "></script>
+
+    <!-- Template Main JS File -->
+    <script src="../../../assets/js/main.js "></script>
+
+</body>
+
+</html>

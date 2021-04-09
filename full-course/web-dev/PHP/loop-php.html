@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Looping PHP | BerCODING ID</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../../../assets/img/bercoding3.png" rel="icon">
+    <link href="../../../assets/img/bercoding3.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../../assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="../../../assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../../../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-9 d-flex align-items-center">
+                    <h1 class="logo mr-auto">
+                        <a href="../../../index.html"><img src="../../../assets/img/bercoding4.png" alt="" class="img-fluid"></a>
+                    </h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul>
+                            <li class="active"><a href="../../index.html">Home</a></li>
+                            <li><a href="../../../about/about.html">Tentang Kami</a></li>
+                            <li><a href="#">Layanan</a></li>
+                            <li><a href="../../../portofolio/all-portfolio.html">Portofolio</a></li>
+                            <li class="drop-down"><a href="">Kursus</a>
+                                <ul>
+                                    <li><a href="../../../web-dev.html">Web Development</a></li>
+                                    <li><a href="../../../desk-app.html">Desktop App Development</a></li>
+                                    <li><a href="../../../database.html">Database Management</a></li>
+                                    <li><a href="../../../ui-ux.html">UI/UX Design</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../../../contact/contact.html">Hubungi Kami</a></li>
+                        </ul>
+                    </nav>
+                    <!-- .nav-menu -->
+
+                    <a href="../../../login/index.html" class="get-started-btn scrollto"><i class="bx bx-user-circle"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Jumbotron ======= -->
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-sm-6 col-md-8">
+                    <div class="jumbotron-full-bg bg-white text-md-left ">
+                        <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
+                            <h2 class="display-4" style="font-size: 35px;">Looping Pada PHP</h2>
+                            <hr class="my-2 border-dark mb-3">
+                            <p class="lead">
+                                Coba bayangkan jika Anda ingin mengulang suatu hal, Sebagai berikut : <br>
+                                <pre class="code">
+&lt;?php
+  echo "&lt;h2&gt;Ini adalah sebuah Kalimat Contoh &lt;/h2&gt;";
+  echo "&lt;h2&gt;Ini adalah sebuah Kalimat Contoh &lt;/h2&gt;";
+  echo "&lt;h2&gt;Ini adalah sebuah Kalimat Contoh &lt;/h2&gt;";
+  echo "&lt;h2&gt;Ini adalah sebuah Kalimat Contoh &lt;/h2&gt;";
+  echo "&lt;h2&gt;Ini adalah sebuah Kalimat Contoh &lt;/h2&gt;";
+?&gt;
+</pre> Dengan cara itupun Anda masih bisa melakukan pengulangan tetapi jika Anda ingin mengulanginya 100 kali, pasti akan kesulitan bukan? dan pasti akan memakan waktu lama untuk mengerjakannya. Karena itu kita harus menggunakan
+                                perulangan (Looping). Ada dua jenis perulangan dalam pemrograman, diantaranya : <br>
+                                <ol>
+                                    <li>Counted Loop</li>
+                                    <li>Uncounted Loop</li>
+                                </ol>
+                                Perbedaan dari keduanya ialah, <i>Counted Loop</i> adalah perulangan yang sudah jelas banyak pengulangnya. Sedangkan <i>Uncounted Loop</i> tidak pasti berapa kali dia akan mengulang. <br> Pada bahasa pemrograman PHP, ada
+                                4 jenis perulangan yang bisa Anda gunakan, sebagai berikut : <br>
+                                <ol>
+                                    <li>Perulangan For</li>
+                                    <li>Perulangan While</li>
+                                    <li>Perulangan Do/While</li>
+                                    <li>Perulangan Foreach</li>
+                                </ol>
+                                Supaya Anda makin paham cara penggunaan dan sifat dari masing-masing perulangan tersebut, kita akan bahas satu persatu.
+                            </p>
+                            <h3 class="font-weight-bole">Perulangan For</h3>
+                            <p class="lead">
+                                Perulangan <i>For</i> adalah perulangan yang termasuk dalam <i>Counted Loop</i>, karena kita bisa menentukan jumlah perulangannya. Penulisan perulangan <i>For</i> sebagai berikut : <br>
+                                <pre class="code">
+&lt;?php
+  for ($i = 0; $i < 10; $i++){
+    // Blok kode yang akan diulang di sini!
+  }
+?&gt;
+</pre> Dalam perulangan <i>For</i>, Variabel <span style="color:red;">$i</span> berfungsi sebagai
+                                <i>counter</i> yang menghitung berapa kali ia akan mengulang. Hitungan akan dimulai dari nol (<span style="color:red;">0</span>), karena memberikan nilai <span style="color:red;">$i = 0</span>. Lalu, perulangan akan diulang
+                                selama nilai
+                                <span style="color:red;">$i</span> lebih kecil dari <span style="color:red;">10</span>. Yang berarti, perulangan ini akan mengulang sebanyak <span style="color:red;">10x</span>. Makhsud dari <span style="color:red;">$i++</span>                                adalah nilai <span style="color:red;">$i</span> akan ditambah <span style="color:red;">1</span> disetiap kali melakukan perulangan. <br> Supaya Anda makin memahami cara dari perulangan <i>For</i>, dibawah ini contoh dari
+                                penggunaan perulangan <i>For</i> : <br>
+                                <pre class="code">
+&lt;?php
+  for ($i = 0; $i < 10; $i++){
+    echo "&lt;h2&gt;Ini kalimat perulangan ke-$i&lt;/h2&gt;";
+  }
+?&gt;
+</pre> Maka hasilnya akan seperti ini : <br>
+                                <img src="../../../assets/img/hasil code/php/for.jpg" alt="Perulangan For" class="img-fluid">
+                            </p>
+                            <h3 class="font-weight-bold">Perulangan Do/While</h3>
+                            <p class="lead">
+                                Perulangan <i>While</i> adalah perulangan yang termasuk ke dalam <i>Uncounted Loop</i>. Karena pada umumnya digunakan untuk mengulang sesuatu yang belum jelas jumlah perulangannya. Namun, perulangan <i>While</i> juga bisa
+                                digunakan seperti perulangan <i>for</i> sebagai <i>counted loop</i>. Penulisan perulangan Do/While, sebagai berikut :<br>
+                                <pre class="code">
+&lt;?php
+  white(&lt;kondisi&gt;){
+    // Blok kode yang akan diulan disini!
+  }
+?&gt;
+</pre> Contoh dalam kondisi sebenarnya, sebagai berikut : <br>
+                                <pre class="code">
+&lt;?php
+
+  $ulangi = 0;
+
+  while($ulangi < 10){
+    echo "&lt;p&gt;Ini adalah perulangan ke-$ulangi&lt;/p&gt;";
+    $ulangi++;
+  }
+?&gt;
+</pre> Maka hasilnya akan seperti dibawah ini : <br>
+                                <img src="../../../assets/img/hasil code/php/while.jpg" alt="Perulangan While" class="img-fluid"> <br> Dalam perulangan <i>while</i> akan terus mengulang selama nilai dari variabel <span style="color:red;">$ulangi</span>                                lebih kecil dari <span style="color:red;">10</span>. Lalu di dalam perulangan kita melakukan <i>increment</i> nilai variabel
+                                <span style="color:red;">$ulangi</span> dengan <span style="color:red;">$ulangi++</span>. yang berarti di setiap pengulangan akan bertambah <span style="color:red;">1</span>.
+                            </p>
+                            <h3 class="font-weight-bold">Perulangan Do/While</h3>
+                            <p class="lead">
+                                Pada perulangan <i>Do/While</i> sama seperti perulangan <i>while</i>/ Ia juga termasuk kedalam
+                                <i>Uncounted Loop</i>. Perbedaan dari <i>Do/While</i> dengan <i>while</i> terletak pada cara memulai pengulangannya. Perulangan <i>Do/While</i> akan selalu melakukan pengulangan sebanyak 1 kali, kemudian melakukan pengecekan
+                                kondisi. Sedangkan perulangan <i>while</i> akan mengecek kondisinya terlebih dahulu, baru akan melakukan pengulangan.<br> Bentuk dasar dari perulangan Do/While : <br>
+                                <pre class="code">
+&lt;?php
+  do {
+    // blok kode yang akan diulang
+  }while (&lt;kondisi&gt;);
+?&gt;
+</pre> Contoh dalam kondisi nyata, sebagai berikut : <br>
+                                <pre class="code">
+&lt;?php
+  $ulangi = 10;
+
+do {
+  echo "&lt;p&gt;Perulangan yang ke-$ulangi&lt;/p&gt;";
+  $ulangi--;
+  } while ($ulangi > 0);
+
+?&gt;
+</pre> Maka hasilnya akan sebagai berikut : <br>
+                                <img src="../../../assets/img/hasil code/php/do_while.jpg" alt="Do/While" class="img-fluid">
+                            </p>
+                            <h3 class="font-weight-bold">Perulangan Foreach</h3>
+                            <p class="lead">
+                                Perulangan <i>Foreach</i> sama seperi perulangan <i>for</i>. Tetapi, perulangan <i>Foreach</i> lebih khusus digunakan untuk mencetak array. Berikut bentuk dari perulangan <i>foreach</i> : <br>
+                                <pre class="code">
+$lt;?php
+  foreach($array as $data){
+    echoo $data;
+  }
+?&gt;
+</pre> Agar Anda semakin paham cara penulisan dari perulangan <i>foreach</i>, dibawah ini contoh dari perulangan <i>foreach</i> ketika sudah dimasukan kondisi tertentu : <br>
+                                <pre class="code">
+&lt;?php
+  $books = [
+            "Panduan Belajar PHP untuk Pemula",
+            "Membangun Aplikasi Web dengan PHP",
+            "Tutorial PHP dan MySQL",
+            "Membuat Chat Bot dengan PHP"
+  ];
+
+  echo "&lt;h5&gt;Judul Buku PHP:&lt;/h5&gt;";
+  echo "&lt;ul&gt;";
+  foreach($books as $buku){
+    echo "&lt;li&gt;$buku&lt;/li&gt;";
+  }
+  echo "&lt;/ul&gt;";
+
+?&gt;
+
+</pre> Maka hasilnya akan seperti ini : <br>
+                                <img src="../../../assets/img/hasil code/php/foreach.jpg" alt="Perulangan Foreach" class="img-fluid">
+                            </p>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item mr-auto ml-auto px-auto">
+                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/condition-php.html" tabindex="-1">&laquo; Sebelumnya</a>
+                            </li>
+                            <li class="page-item mr-auto ml-auto px-auto">
+                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/fungsi-php.html">Selanjutnya &raquo;</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-6 col-md-4 border border-top-bottom-right-0 bg-light mt-5 d-none d-sm-block">
+                    <div class="container py-3">
+                        <div class="list-group mt-5">
+                            <h3 class="text-center">
+                                Daftar Modul
+                            </h3>
+                            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                Pengenalan PHP
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Tipe Data
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Variable
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Array
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                String
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Operator
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Condition
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <strong>Loop</strong>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Fungsi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Jumbotron -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>BerCODING ID</h3>
+                        <p>
+                            Jl. Sedap Malam IV No.25 <br> Rancaekek Kencana, Kabupaten Bandung 40394<br> Jawa Barat <br><br>
+                            <strong>Phone:</strong> +62 813-2275-1816<br>
+                            <strong>Email:</strong> bercoding.id@gmail.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links ">
+                        <h4>Lainnya</h4>
+                        <ul>
+                            <li><i class=""></i> <a href="../../../about/about.html">Tim kami</a></li>
+                            <li><i class=""></i> <a href="# ">Galeri</a></li>
+                            <li><i class=""></i> <a href="# ">Rekrutmen</a></li>
+                            <li><i class=""></i> <a href="# ">Syarat dan ketentuan</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links ">
+                        <h4>Pelayanan kami</h4>
+                        <ul>
+                            <li><i class=""></i> <a href="../../../web-dev.html ">Web Development</a></li>
+                            <li><i class=""></i> <a href="../../../database.html ">Database Management</a></li>
+                            <li><i class=""></i> <a href="../../../desk-app.html ">Desktop App Development</a></li>
+                            <li><i class=""></i> <a href="../../../ui-ux.html ">UI/UX Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter ">
+                        <h4>Ikuti kami</h4>
+                        <p>Ikuti kami untuk mendapat berita terbaru</p>
+                        <div class="social-links text-center text-md-left pt-3 pt-md-0 ">
+                            <a href="https://twitter.com" class="twitter "><i class="bx bxl-twitter "></i></a>
+                            <a href="https://facebook.com " class="facebook "><i class="bx bxl-facebook "></i></a>
+                            <a href="https://instagram.com/bercoding.id/ " class="instagram "><i class="bx bxl-instagram "></i></a>
+                            <a href="# " class="google-plus "><i class="bx bxl-skype "></i></a>
+                            <a href="# " class="linkedin "><i class="bx bxl-linkedin "></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container ">
+
+            <div class="copyright-wrap d-md-flex py-4 ">
+                <div class="mr-md-auto text-center text-md-left ">
+                    <div class="copyright" id="copyright">
+                        &copy;
+                        <script>
+                            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+                        </script> BERCODING ID
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="# " class="back-to-top "><i class="icofont-simple-up "></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="../../../assets/vendor/jquery/jquery.min.js "></script>
+    <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../../../assets/vendor/jquery.easing/jquery.easing.min.js "></script>
+    <script src="../../../assets/vendor/php-email-form/validate.js "></script>
+    <script src="../../../assets/vendor/waypoints/jquery.waypoints.min.js "></script>
+    <script src="../../../assets/vendor/counterup/counterup.min.js "></script>
+    <script src="../../../assets/vendor/owl.carousel/owl.carousel.min.js "></script>
+    <script src="../../../assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="../../../assets/vendor/venobox/venobox.min.js "></script>
+    <script src="../../../assets/vendor/aos/aos.js "></script>
+
+    <!-- Template Main JS File -->
+    <script src="../../../assets/js/main.js "></script>
+
+</body>
+
+</html>

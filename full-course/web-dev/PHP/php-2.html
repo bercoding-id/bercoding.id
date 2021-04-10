@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>String PHP | BerCODING ID</title>
+    <title>Tipe Data PHP | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,100 +78,79 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">String Pada PHP</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Tipe Data PHP</h2>
                             <hr class="my-2 border-dark mb-3">
                             <p class="lead">
-                                Tipe data string adalah tipe data yang berisikan text, kalimat, atau kumpulan karakter. Diantaranya "a", "Hallo Apa Kabar", atau "S3lalu b3lajar y4H", itu semua bertipe data string. Tipe data ini mungkin tipe data yang paling sering digunakan, dan memiliki
-                                banyak fitur yang disediakan PHP. Karakter yang didukung saat ini adalah <b>256 Karakter ASCII.</b>.
+                                Sama halnya bahasa pemrograman lainnya, PHP juga memiliki beberapa tipe data. Tipe data bisa dikatan sebagai tipe dari isi <b>variabel</b>. Ada yang berbentuk angka yang biasa disebut dengan tipe data <b>integer</b>, dan
+                                adapula yang berbentuk kalimat atau kata, yang biasa di sebut dengan tipe data <b>string</b>. Beriktu ini ialah beberapa tipe data yang berada pada PHP : <br>
+                                <ol>
+                                    <li>String</li>
+                                    <li>Integer</li>
+                                    <li>Float</li>
+                                    <li>Boolean</li>
+                                    <li>Array</li>
+                                    <li>Object</li>
+                                    <li>NULL</li>
+                                </ol>
+                                dari tipe data PHP di atas, hampir semua tipe data tersebutt sangat sering digunakan dalam proses pembangunan sebuah aplikasi.
                             </p>
-                            <h3 class="font-weight-bold">Penulisan Tipe Data String pada PHP</h3>
+                            <h2 class="font-weight-bold">Tipe Data String</h2>
                             <p class="lead">
-                                PHP sendiri menyediakan 4 cara penulisan tipe data string, yakni <b>Single Quoted</b>, <b>Double Quoted</b>,
-                                <b>Heredoc</b>, dan <b>Nowdoc</b>.
-                            </p>
-                            <h3 class="font-weight-bold">Penulisan TIpe Data String dengan Single Quoted</h3>
-                            <p class="lead">
-                                Dalam penulisan Single Quoted, menggunkan tanda petik satu (karakter '...') merupakan cara penulisan <b>string</b> yang paling sederhana. Kita tinggal membuat sebuah kata atau kalimat, dan menambahkan <b>tanda petik satu</b>                                di awal dan akhir kalimat.<br> Untuk tipe data <b>string</b> yang didalamya juga terdapat tanda petik satu, kita harus mendahuluinya dengan karakter <b>backslash(\)</b> agar tidak dianggap sebagai penutup <b>string</b>.
-                                Dan jika di dalam <b>string</b> anda ingin menulis tanda <b>backslash</b>, kita harus menulisnya dengan 2 kali (\\). <br> Contoh penulisan Single Quoted : <br>
+                                Tipe data string ialah tipe data yang berbentuk text, dan untuk penulisannya tipe data string ini diletakkan di tengah-tengah tanda petik. Yang diawali dengan tanda petik dan di akhiri dengan tanda petik juga. Berikut ini contoh dari penulisan tipe data
+                                string : <br>
                                 <pre class="code">
 &lt;?php
-  $contoh1 = 'Ini adalah kalimat string contoh ke 1';
-
-  $contoh2 = 'Sebuah string yang
-  bisa memiliki beberapa baris';
-
-  $contoh3 = 'Dia berkata : "Mengapa kau meninggalkanku?"';
-
-  $contoh4 = 'Anda telah berhasil memasuki direktori C:\xampp\htdoc';
-
-  $contoh5 = 'Kalimat ini tidak akan pindah ke : \n baris baru';
-
-  $contoh6 = 'Variabel juga tidak otomatis ditampilkan $contoh1 dan $contoh3';
-
-  echo $contoh1; echo "&lt;br&gt;";
-  echo $contoh2; echo "&lt;br&gt;";
-  echo $contoh3; echo "&lt;br&gt;";
-  echo $contoh4; echo "&lt;br&gt;";
-  echo $contoh5; echo "&lt;br&gt;";
-  echo $contoh6;
+  $contoh = "Saya Sedang Belajar";
+  // variabel contoh di atas memiliki tipe data string dikarenakan berisi text atau kalimat.
 ?&gt;
-</pre> Jika code tersebut di jalankan, maka akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/php/single quoted.jpg" alt="single quoted" class="img-fluid"><br>
+</pre> Pada contoh code diatas sebuah variabel dengan nama <i>contoh</i> yang berisi kalimat "Saya Sedang belajar", memiliki tipe data <i>string</i>. dikarenakan sebuah nilainya berada di dalam tanda petik dua ("...").
                             </p>
-                            <h3 class="font-weight-bold">Escape String Pada PHP</h3>
+                            <h2 class="font-weight-bold">Tipe Data Integer</h2>
                             <p class="lead">
-                                Terkadang kita butuh mengetikkan karakter khusus seperti petik satu dan dua ( ' ' dan " "), atau tanda dollar $ di dalam string. Untuk itu, kita perlu menggunakan sesuatu yang disebut <i>Escape Sequence</i> atau <i>Escape String</i>.
-                                Berikut ini beberapa daftar <i>Escape String</i> yang dapat di pakai : <br>
-                                <ul>
-                                    <li> <span style="color:red;">\$</span> unuk mengetikka tanda $ pada string petik dua, </li>
-                                    <li><span style="color:red;">\"</span> untuk mengetikkan petik dua,</li>
-                                    <li><span style="color:red;">\'</span> untuk mengetikkan petik satu,</li>
-                                    <li><span style="color:red;">\\</span> untuk mengetikkan <i>back-slash</i> <span style="color:red;">\</span>, </li>
-                                    <li><span style="color:red;">\n</span> untuk <i>newline</i> (baris-baru/enter), </li>
-                                    <li><span style="color:red;">\r</span> untuk carriage return,</li>
-                                    <li><span style="color:red;">\t</span> untuk tab</li>
-                                </ul>
-                                contoh : <br>
+                                Tipe data integer ialah sebuah tipe data yang berbentuk angka yang berbentuk/bernilai bilangan asli atau bilangan bulat, untuk penulisan tipe data tersebut tidak perlu menambahkan tanda petik dua seperti tipe data string <br>                                Berikut contoh penulisannya : <br>
                                 <pre class="code">
 &lt;?php
-  $nama = "Ramdani";
-  echo "Isi variabel \$nama adalah \ "$nama\"";
+  $bilangan1 = 10;
+  $bilangan2 = 73;
+
+// Kedua variabel tersebut merupakan variabel yang beripe data integer
+// dikarenakan nilanya bilangan asli atau bulat.
 ?&gt;
-</pre> maka hasil nya akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/php/escape.jpg" alt="escape stirng" class="img-fluid"> <br>
+</pre> Untuk cara penulisan variabel yang beripe data <i>integer</i>, Anda tidak memerluka tanda petik atau apapun, dengan cuman mengisikan sebuah nilai bilangan asli dan bulat. Nilai tersebut sudah bertipe data integer.
                             </p>
-                            <h3 class="font-weight-bold">Variabel objek dan array dalam string</h3>
+                            <h2 class="fonts-weight-bold">Tipe Data Float</h2>
                             <p class="lead">
-                                Objek dan Arrray pada PHP baru akan dibahas pada topik-topik berikutnya. Akan tetapi ada baiknya bila kita sedikit membahas objek dan array di sini terkait dengan string. String-petik-dua seperti yang dijelaskan dia ats, dapat juga berisi ogjek atau array,
-                                seperti pada contoh program berikut : <br>
+                                Tipe data float atau bisa di sebut juga tipe data double ialah tipe data yang berisikan nila bilangan desimal. Cara penulisannya hampir sama dengan tipe data integer karena tidak memerluka tanda petik di awal dan di akhir isi variabel float. Berikut contoh
+                                dalam penulisannya : <br>
                                 <pre class="code">
 &lt;?php
-  $objek = new stdClass();
-  $objek -> nilai = 30;
-  echo "Nilai pada objek : $objek -> nilai &lt;br&gt;";
-  $perabots[] = "Kursi";
-  $perabots[] = "Meja";
-  $perabots[] = "Lemari";
-  echo "Perabotan kita : $perabots[0], $perabots[1], $perabots[2] &lt;br&gt;";
-  $harga['kursi'] = number_format(1500000,0,",",".");
-  $harga['meja'] = number_format(500000,0,",",".");
-  echo "Kursi : Rp. $harga[kursi], Meja : Rp. $harga[meja]";
+  $angka = 13.232;
+// variabel tersebut bertipe data float dikarenakan nilanya bilangan desimal
 ?&gt;
-</pre> Pada contoh code tersebut, <span style="color:red;">$objek</span> merupakan suatu objek, <span style="color:red;">$objek -> nilai</span> merupakan
-                                <i>field</i> pada objek <span style="color:red;">$objek</span>. <i>Field</i> pada objek bisa dimasukkan langsung ke dalam String seperti contoh di atas. Akan tetapi <i>field</i> level dua seperti misalnya <span style="color:red;">$objek -> format($angka)</span>.
-                                <span style="color:red;">$perabots</span> merupakan array berindex angka, dan <span style="color:red;">$harga</span> merupakan array ber-index string. Index array dapat diketik seperti biasa di dalam string. Tetapi untuk
-                                array ber-index string, nama index diketik tanpa tanda petik satu. Bila petik satu disertakan di dalam string untuk menampilkan variabel array, malah akan menyebabkan error. Perlu diketahui juga bahwa array dua tingkat
-                                juga tidak dapat dimasukkan ke dalam string. Bila array <span style="color:red;">$koordinat[20][10]</span> dimasukkan ke dalam string, tidak akan tampil seperti yang diharapkan.
+</pre>
+                            </p>
+                            <h2 class="font-weight-bold">Tipe Data Boolean</h2>
+                            <p class="lead">
+                                Untuk tipe data <i>boolean</i> sendiri, hanya memiliki duan buah value atau isi, yaitu <b>true</b> dan <b>false</b>, atau 0 dan 1. True sendiri sama saja dengan 1, dan false sendiri sama saja dengan 0. Tipe data ini sering
+                                digunakan untuk memeriksa ketersediaan atau memerika nilai kebenara dari sebuah data.<br> Berikut contoh penulisan tipe data boolean : <br>
+                                <pre class="code">
+&lt?php
+  $nilai1 = true;
+  $nilai2 = false;
+// variabel nilai1 & nilai2 memiliki tipe data boolean karena
+// hanya berisikan nila benar dan salah saja.
+?&gt;
+</pre> Setelah anda mengetahui cara penulisan dari tipe data pada PHP, di pembahasan selanjutnya Anda akan lebih memahami kegunaan dan sifat dari variabel sendiri.<br>
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/array-php.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/php-1.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/operator-php.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/php-3.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -186,16 +165,16 @@
                                 Pengenalan PHP
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                Tipe Data
+                                <strong>Tipe Data</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 Variable
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                 Array
+                                Array
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>String</strong>
+                                String
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 Operator
@@ -208,6 +187,9 @@
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 Fungsi
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Submission
                             </a>
                         </div>
                     </div>

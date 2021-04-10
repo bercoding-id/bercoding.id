@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Array PHP | BerCODING ID</title>
+    <title>String PHP | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,138 +78,100 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Array PHP</h2>
+                            <h2 class="display-4" style="font-size: 35px;">String Pada PHP</h2>
                             <hr class="my-2 border-dark mb-3">
                             <p class="lead">
-                                Secara sederhana Array adalah variabel yang bisa diisi oleh banyak data sekaligus, dan didalam array bisa terdiri dari beberapa kumpulan tipe data. Semisal dalam kelompok buah terdiri dari 5 nama buah, lalu kita menyimpan 5 nama buah tersebut kedalam
-                                variabel, maka penulisannya seperti berikut : <br>
-                                <pre class="code">
-&lt;?php
-  $buah = array(
-      0 => 'Semangka',
-      1 => 'Mangga',
-      2 => 'Kedongdong',
-      3 => 'Jeruk',
-      4 => 'Sirsak'
-  );
-  ?&gt;
-</pre> Cukup mudah bukan?, Anda cukup menuliskan variabel $buah, lalu didalamnya buat array yang berisi dari nama-nama buah. Untuk kcara pemanggilannya, semisal kita ingin menampilkan nama buah "Kedongdong", caranya jika
-                                kita menggunakan array tinggal tuliskan echo $buah['2']; yang berarti kita memanggil data index ke 2 pada array $buah.
-                                <pre class="code">
-&lt;?php
-  $buah = array(
-    0 => 'Semangka',
-    1 => 'Mangga',
-    2 => 'Kedongdong',
-    3 => 'Jeruk',
-    4 => 'Sirsak'
-  );
-
-  echo $buah['2']; // Mengambil lalu menampilkan data index ke 2 pada array $buah
-?&gt;
-</pre> Maka hasilnya akan seperti berikut ini : <br>
-                                <img src="../../../assets/img/hasil code/php/array1.jpg" alt="array" class="img-fluid"><br>
+                                Tipe data string adalah tipe data yang berisikan text, kalimat, atau kumpulan karakter. Diantaranya "a", "Hallo Apa Kabar", atau "S3lalu b3lajar y4H", itu semua bertipe data string. Tipe data ini mungkin tipe data yang paling sering digunakan, dan memiliki
+                                banyak fitur yang disediakan PHP. Karakter yang didukung saat ini adalah <b>256 Karakter ASCII.</b>.
                             </p>
-                            <h2 class="font-weight-bold">Penulisan Array</h2>
+                            <h3 class="font-weight-bold">Penulisan Tipe Data String pada PHP</h3>
                             <p class="lead">
-                                Dalam penulisan array ada 2 cara, diantaranya : <br>
-                                <ul>
-                                    <li>Menggunakan array()</li>
-                                    <li>Menggunakan tanda kurung siku []</li>
-                                </ul>
+                                PHP sendiri menyediakan 4 cara penulisan tipe data string, yakni <b>Single Quoted</b>, <b>Double Quoted</b>,
+                                <b>Heredoc</b>, dan <b>Nowdoc</b>.
                             </p>
-                            <h2 class="font-weight-bold">Jenis-jenis Array</h2>
+                            <h3 class="font-weight-bold">Penulisan TIpe Data String dengan Single Quoted</h3>
                             <p class="lead">
-                                Array memiliki 3 jenis dalam PHP, diantaranya :<br>
-                                <ul>
-                                    <li>Indexed Array</li>
-                                    <li>Associative Array</li>
-                                    <li>Multidimensional Array</li>
-                                </ul>
-                                Dibawah ini adalah sebuah ilustrasi dari setiap jenis array dalam PHP : <br>
-                                <img src="../../../assets/img/hasil code/php/jenis array.jpg" alt="jenis array" class="img-fluid"><br> Perbedaan dari ketiga jenis tersebut, ialah : <br>
-                                <ol>
-                                    <li>Indexed array menggunakan index berupa angka, yang secara default diawali dengan index 0</li>
-                                    <li>Associative array menggunakan index yang bukan angka seperti Indexed Array</li>
-                                    <li>Multidimensional array1 memungkinkan kita untuk membuat array didalam array</li>
-                                </ol>
-                            </p>
-                            <h2 class="font-weight-bold">Indexed Array</h2>
-                            <p class="lead">Indexes array ialah, array yang memiliki index atau key berupa angka yang berurutan.<br> Contohnya: <br>
+                                Dalam penulisan Single Quoted, menggunkan tanda petik satu (karakter '...') merupakan cara penulisan <b>string</b> yang paling sederhana. Kita tinggal membuat sebuah kata atau kalimat, dan menambahkan <b>tanda petik satu</b>                                di awal dan akhir kalimat.<br> Untuk tipe data <b>string</b> yang didalamya juga terdapat tanda petik satu, kita harus mendahuluinya dengan karakter <b>backslash(\)</b> agar tidak dianggap sebagai penutup <b>string</b>.
+                                Dan jika di dalam <b>string</b> anda ingin menulis tanda <b>backslash</b>, kita harus menulisnya dengan 2 kali (\\). <br> Contoh penulisan Single Quoted : <br>
                                 <pre class="code">
 &lt;?php
-  $mahasiswa = ['Rudi', 'Rahmat', 'Ananda'];
-  echo $mahasiswa['2']; // Menampilkan Ananda
+  $contoh1 = 'Ini adalah kalimat string contoh ke 1';
 
-  $mobil = [1 => 'Ferrari', 'Mercedes', 'BMW'];
-  echo $mobil['2']; // Menampilkan Mercede
+  $contoh2 = 'Sebuah string yang
+  bisa memiliki beberapa baris';
 
-  $buah = ['Apel', 'Sirsak', 15=> 'Mangga'];
-  echo $buah['15']; // Menampilkan Mangga
+  $contoh3 = 'Dia berkata : "Mengapa kau meninggalkanku?"';
+
+  $contoh4 = 'Anda telah berhasil memasuki direktori C:\xampp\htdoc';
+
+  $contoh5 = 'Kalimat ini tidak akan pindah ke : \n baris baru';
+
+  $contoh6 = 'Variabel juga tidak otomatis ditampilkan $contoh1 dan $contoh3';
+
+  echo $contoh1; echo "&lt;br&gt;";
+  echo $contoh2; echo "&lt;br&gt;";
+  echo $contoh3; echo "&lt;br&gt;";
+  echo $contoh4; echo "&lt;br&gt;";
+  echo $contoh5; echo "&lt;br&gt;";
+  echo $contoh6;
 ?&gt;
-</pre> Penjelasan : <br>
-                                <ul>
-                                    <li>Pada array $mahasiswa index array dimulai dari angka 0, jadi index ['0'] = Rudi, index ['1'] = Rahmat index ['2'] = Ananda, maka ketika kita menuliskan $mahasiswa['2'] yang tampil adalah Ananda</li>
-                                    <li>Pada array $mobil index array dimulai dari angka 1, dikarenakan untuk apel kita tuliskan index 1, maka ketika kita menuliskan $mobil['2'] yang akan tampil adalah Mercedes, jadi anda bisa mendeklarasikan nilai awal dari
-                                        index tersebut.</li>
-                                    <li>Pada array $buah kita menuliskan index 15 adalah Mangga, maka saat kita menuliskan $buah['15'] yang akan tampil adalah Mangga, jadi anda bisa mendeklarasikan nomor index secara manual.</li>
-                                </ul>
+</pre> Jika code tersebut di jalankan, maka akan seperti ini : <br>
+                                <img src="../../../assets/img/hasil code/php/single quoted.jpg" alt="single quoted" class="img-fluid"><br>
                             </p>
-                            <h2 class="font-weight-bold">Associative Array</h2>
+                            <h3 class="font-weight-bold">Escape String Pada PHP</h3>
                             <p class="lead">
-                                Associative Array memiliki kesamaan dengan indexed array, yang menjadi pembedanya hanyalah Associative array ini indexnya tidak berupa angka, sebagai contoh : <br>
+                                Terkadang kita butuh mengetikkan karakter khusus seperti petik satu dan dua ( ' ' dan " "), atau tanda dollar $ di dalam string. Untuk itu, kita perlu menggunakan sesuatu yang disebut <i>Escape Sequence</i> atau <i>Escape String</i>.
+                                Berikut ini beberapa daftar <i>Escape String</i> yang dapat di pakai : <br>
+                                <ul>
+                                    <li> <span style="color:red;">\$</span> unuk mengetikka tanda $ pada string petik dua, </li>
+                                    <li><span style="color:red;">\"</span> untuk mengetikkan petik dua,</li>
+                                    <li><span style="color:red;">\'</span> untuk mengetikkan petik satu,</li>
+                                    <li><span style="color:red;">\\</span> untuk mengetikkan <i>back-slash</i> <span style="color:red;">\</span>, </li>
+                                    <li><span style="color:red;">\n</span> untuk <i>newline</i> (baris-baru/enter), </li>
+                                    <li><span style="color:red;">\r</span> untuk carriage return,</li>
+                                    <li><span style="color:red;">\t</span> untuk tab</li>
+                                </ul>
+                                contoh : <br>
                                 <pre class="code">
 &lt;?php
-  $mahasiswa = ['id' => 0021, 'nama' => 'Ramdani', 'kelas' => '12', 'jenis_kelamin' => 'Pria', 'agama' => 'islam'];
-  echo $mahasiswa['nama']; // Yang akan tampil Ramdani
+  $nama = "Ramdani";
+  echo "Isi variabel \$nama adalah \ "$nama\"";
 ?&gt;
-</pre> Penjelasan : <br>
-                                <ul>
-                                    <li>Pada array $mahasiswa dengan jenis Associative array kita menuliskan beberapa key, seperi id, nama, kelas, jenis_kelamin, dan agama, serta mengisikan nilai di masing-masing key, maka ketika kita menusliskan $mahasiswa['nama']
-                                        yang akan tampil adalah Ramdani.</li>
-                                </ul>
+</pre> maka hasil nya akan seperti ini : <br>
+                                <img src="../../../assets/img/hasil code/php/escape.jpg" alt="escape stirng" class="img-fluid"> <br>
                             </p>
-                            <h2 class="font-weight-bold">Multidimensional Array</h2>
+                            <h3 class="font-weight-bold">Variabel objek dan array dalam string</h3>
                             <p class="lead">
-                                Multidimensional Array sederhananya adalah Anda bisa membuat array di dalam array, sebagai contoh : <br>
+                                Objek dan Arrray pada PHP baru akan dibahas pada topik-topik berikutnya. Akan tetapi ada baiknya bila kita sedikit membahas objek dan array di sini terkait dengan string. String-petik-dua seperti yang dijelaskan dia ats, dapat juga berisi ogjek atau array,
+                                seperti pada contoh program berikut : <br>
                                 <pre class="code">
 &lt;?php
-    $siswa = [
-        'Indah'=>[
-                  'id'=>1,
-                  'nama'=>'Indah',
-                  'kelas'=>'12',
-                  'jenis_kelamin'=>'Perempuan',
-                  'agama'=>'islam'
-         ],
-         'Ramdani'=>[
-                  'id'=>2,
-                  'nama'=>'Ramdani',
-                  'kelas'=>'10',
-                  'jenis_kelamin'=>'pria',
-                  'agama'=>'kristen'
-          ],
-     ];
-
-      echo $siswa['Ramdani']['jenis_kelamin']; //menampilkan pria
+  $objek = new stdClass();
+  $objek -> nilai = 30;
+  echo "Nilai pada objek : $objek -> nilai &lt;br&gt;";
+  $perabots[] = "Kursi";
+  $perabots[] = "Meja";
+  $perabots[] = "Lemari";
+  echo "Perabotan kita : $perabots[0], $perabots[1], $perabots[2] &lt;br&gt;";
+  $harga['kursi'] = number_format(1500000,0,",",".");
+  $harga['meja'] = number_format(500000,0,",",".");
+  echo "Kursi : Rp. $harga[kursi], Meja : Rp. $harga[meja]";
 ?&gt;
-</pre> Penjelasan : <br>
-                                <ul>
-                                    <li>Kita membuat array $siswa yang didalamnya ada 2 index yaitu ['0'] = 'Indah', dan ['1'] = 'Ramdani'.</li>
-                                    <li>Pada masing-masing value index kita buat array lagi didalamnya</li>
-                                    <li>Sehingga jika ingin menampilkan jenis kelamin dari Ramdani, Anda bisa menampilkannya dengan menuliskan $siswa['Ramdani']['jenis_kelamin'], semisalnya kita ingin menampilkan agama dari Indah maka tuliskan $siswa['Indah']['agama'];
-                                    </li>
-                                </ul>
+</pre> Pada contoh code tersebut, <span style="color:red;">$objek</span> merupakan suatu objek, <span style="color:red;">$objek -> nilai</span> merupakan
+                                <i>field</i> pada objek <span style="color:red;">$objek</span>. <i>Field</i> pada objek bisa dimasukkan langsung ke dalam String seperti contoh di atas. Akan tetapi <i>field</i> level dua seperti misalnya <span style="color:red;">$objek -> format($angka)</span>.
+                                <span style="color:red;">$perabots</span> merupakan array berindex angka, dan <span style="color:red;">$harga</span> merupakan array ber-index string. Index array dapat diketik seperti biasa di dalam string. Tetapi untuk
+                                array ber-index string, nama index diketik tanpa tanda petik satu. Bila petik satu disertakan di dalam string untuk menampilkan variabel array, malah akan menyebabkan error. Perlu diketahui juga bahwa array dua tingkat
+                                juga tidak dapat dimasukkan ke dalam string. Bila array <span style="color:red;">$koordinat[20][10]</span> dimasukkan ke dalam string, tidak akan tampil seperti yang diharapkan.
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/variabel-php.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/php-4.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/string-php.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/php-6.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -230,10 +192,10 @@
                                 Variable
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>Array</strong>
+                                 Array
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                String
+                                <strong>String</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 Operator
@@ -246,6 +208,9 @@
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 Fungsi
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Submission
                             </a>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Fungsi PHP | BerCODING ID</title>
+    <title>Variabel PHP | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,154 +78,106 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Fungsi Pada PHP</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Variabel PHP</h2>
                             <hr class="my-2 border-dark mb-3">
                             <p class="lead">
-                                Seperti pada bahasa-bahasa pemograman lainnya, di PHP pun ada fungsi (function) yang bisa digunakan untuk mempermudah dalam mengerjakan suatu project. Banyak fungsi <i>build-in</i> dari php yang sering kita gunakan, seperti
-                                <span style="color:red;">print()</span>, <span style="color:red;">print_r()</span>,
-                                <span style="color:red;">unset()</span>, dll. Selain fungsi-fungsi tersebut, kita juga dapat membuat fungsi sendiri sesuai kebutuhan kita. Fungsi adalah sekumpulan instruksi yang dibungkus dalam sebuah blok. Fungsi dapat
-                                digunakan ulang tanpa harus menulis ulang instruksi di dalamnya. Fungsi pada PHP dapat dibuat dengan kata kunci <span style="color:red;">function</span>, lalu diikuti dengan nama fungsinya. Sebagai berikut : <br>
+                                Pada dasarnya <b>variabel</b>, di PHP sama saja dengan bahasa pemrograman lainnya. Yang berfungsi sebagai tempat atau wadah untuk menyimpan data sementara, variabel bisa juga sebagai penyimpanan informasi atau data sementara
+                                di dalam pemrograman. Nilai atau isi dari variabel sendiri bisa di update atau di ubah. Dalam penamaan variabel sendiri disarankan sesuai dengan nilainya, supaya mempermudah And untuk mengenali variabel tersebut.
+                            </p>
+                            <h2 class="font-weight-bold">Penulisan Variabel</h2>
+                            <p class="lead">
+                                Penulisan variabel di PHP mempunyai ketentuannya sendiri, berikut cara penulisan variabel di PHP : <br>
+                                <ol>
+                                    <li>Penulisan variabel PHP harus diawali dengan tanda $.</li>
+                                    <li>Variabel PHP memiliki sifat <i>Case Sensitive</i> atau sensitif terhadap huruf besar dan kecil. </li>
+                                    <li>Lalu untuk mengisi suatu nilai/isi pada variabel harus di sertai dengan tanda sama dengan "=".</li>
+                                </ol>
+                                Contohnya : <br>
                                 <pre class="code">
 &lt;?php
-  function namaFungsi(){
-    //...
-  }
+  $nama;
 ?&gt;
-</pre> kode instruksi dapat anda tulis di dalam kurung kurawal (<span style="color:red;">{...}</span>). Sebagai contoh : <br>
+</pre> Pada contoh diatas adalah salah satu contoh penulisan variabel di PHP. Yang diawali dengan membuat tanda dolar ($), lalu di lanjutkan dengan nama dari variabel tersebut. Pada contoh tersebut berarti variabelnya adalah
+                                ("nama"). <br>
+                                <br> Untuk pengisian suatu nilai atau informasi ke dalam variabel Anda bisa tambahkan tanda sama dengan "=", sebagai berikut : <br>
                                 <pre class="code">
 &lt;?php
-  function perkenalan(){
-    echo "Assalamualaikum, kawan&lt;br&gt;";
-    echo "Nama saya Ramdani&lt;br&gt;";
-    echo "Senag bisa mengenal kamu&lt;br&gt;"
-  }
-</pre> Fungsi yang sudah kita buat tidak akan menghasilkan apapun jika kita tidak memanggilnya. Kita dapat memanggil fungsi dengan menuliskan namanya. Sebagai contoh : <br>
+  $nama = "BerCODING ID";
+  $berdiri = 21;
+?&gt;
+</pre> Pada contoh diatas ialah cara untuk pengisian data atau informasi ke dalam variabel PHP. Perlu Anda perhatikan bahwa untuk pengisian data yang berupa string maka nilai tersebut harus di apit dengan tanda petik ganda
+                                atau petik satu. Sedangkan nilai variabel tersebut berupa angka, maka Anda tidak perlu menggunakan tanda petik. <br>
                                 <pre class="code">
-&lt;?php
-  // Membuat suatu fungsi
-  function perkenalan(){
-    echo "Assalamualaikum, kawan";
-    echo "Perkenalkan saya Ramdani&lt;br&gt;";
-    echo "Senang berkenalan dengan kamu&lt;br&gt;";
-  }
-  // Memanggil fungsi yang sudah dibuat
-  perkenalan();
+&lt;php
+  $nama = "BerCODING ID";
+  $umur = 21;
 
+  echo $nama;
+  echo "&lt;br&gt";
+  echo $umur;
+  echo "&lt;br&gt;";
+  echo "Hey, Perkenalkan Nama saya " .$nama." dan saya berumur " .$umur;
+?&gt;
+</pre> Maka hasilnya jika dibuka di web browser, sebagai berikut : <br>
+                                <img src="../../../assets/img/hasil code/php/php-1.jpg" alt="php-1" class="img-fluid"><br>
+                            </p>
+                            <h2 class="font-weight-bold">Update Nilai/isi Variabel</h2>
+                            <p class="lead">
+                                Selain pengisian Nilai pada variabel, nilai yang sudah tersimpan pada variabel juga bisa di update/perbaruai, berikut contohnya : <br>
+                                <pre class="code">
+&lt;?php
+  $kota = "jakarta";
+  $kota = "bandung";
+  echo $kota;
+?&gt;
+</pre> Maka hasilnya akan seperti ini : <br>
+                                <img src="../../../assets/img/hasil code/php/update.jpg" alt="update data variabel" class="img-fluid"> <br> Mengapa yang di eksekusi adalah bandung?. Kikarenakan kita mengisikan nilai awal-nya adalah "jakarta", lalu kita
+                                mengisi ulang atau update nilai variabel "kota" dengan "bandung", dan yang akan di eksekusi oleh web browser adalah nilai terakhir dari variabel tersebut.
+                            </p>
+                            <h3 class="font-weight-bold">Penggabungan nilai variabel</h3>
+                            <p class="lead">
+                                Dalam variabel Anda dapat menggabungkan string menggunakan titik (.). Ini disebut dengan <i>operator dot</i>. dalam penggabungan string terbagi menjadi 3 jenis, diantaranya : <br>
+                                <ol>
+                                    <li>String dengan string</li>
+                                    <li>Variabel string dengan variabel string</li>
+                                    <li>string dengan variabel string</li>
+                                </ol>
+                                Sebagai contoh : <br>
+                                <pre class="code">
+&lt;?php
+// Penulisan pertama
+  $lesson = 'Belajar';
+  echo $lesson.' PHP';
   echo "&lt;hr&gt;";
 
-  // Memanggil lagi
-  perkenalan();
+//Penulisan kedua
+  $level = ' Beginner';
+  echo $lesson.$level;
 ?&gt;
 </pre> Maka hasilnya akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/php/fungsi1.jpg" alt="fungsi" class="img-fluid">
-                            </p>
-                            <h3 class="font-weight-bold">Fungsi dengan Parameter</h3>
-                            <p class="lead">
-                                Supaya intruksi yang di dalam fungsi lebih dinamis lagi, kita dapat menggunakan parameter untuk memasukkan sebuah nilai ke dalam fungsi. Nilai tersebut akan diolah di dalam fungsi. Misalkan, pada contoh fungsi yang tadi kita buat, tidak mungkin nama yang
-                                dicetak adalah <i>Ramdani</i> saja dan salam yang dipakai tidak selalu <i>Assalamualaikum</i>. Maka, kita dapat menambahkan parameter menjadi seperti ini : <br>
+                                <img src="../../../assets/img/hasil code/php/gabung.jpg" alt="Penggabungan variabel" class="img-fluid">
+                                <br> <br> Tidak hanya penulisan begitu saja, tetapi Anda juga dapat menghilangkan penggabungan variabel dan string dengan menggunakan (.=). Sebagai contoh : <br>
                                 <pre class="code">
 &lt;?php
-  // Membuat fungsi
-  function perkenalan($nama, $salam){
-    echo $salam. ",&lt;br&gt;" ;
-    echo "Perkenalkan, nama saya ".$nama." &lt;br&gt;";
-    echo "Senang berkenalan dengan anda&lt;br&gt;";
-  }
+  $name = 'Ramdani';
+  $name .= 'Robert';
+   // Penulisan di atas sama seperti $name = $name."Robert";
+   // hanya yang membedakan cara penulisannya saja.
 
-  // Memanggil fungsi yang sudah dibuat
-    perkenalan("Linda", "Hi");
-
-    echo "&lt;hr&gt;";
-
-    $saya = "Ramdani";
-    $ucapanSalam = "Selamat Pagi";
-
-    // Memanggil lagi
-    perkenalan($saya, $ucapanSalam);
-  ?&gt;
-</pre> Maka hasilnya akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/php/parameter.jpg" alt="Fungsi Parameter" class="img-fluid">
-                            </p>
-                            <h3 class="font-weight-bold">Fungsi dengan Nilai Default</h3>
-                            <p class="lead">
-                                Nilai <i>default</i> dapat kita berikan di parameter. Nilai <i>default</i> berfungsi untuk mengisi nilai sebuah parameter, kalau parameter tersebut tidak diisi nilainya. Misalnya : saya lupa mengisi parameter <i>nama</i>,
-                                maka program akan <i>error</i>. Oleh karena itu, kita perlu memberika nilai <i>default</i> supaya tidak terjadi <i>error</i>. Sebagai contoh : <br>
-                                <pre class="code">
-&lt;?php
-  // Membuat fungsi
-  function perkenalan ($nama="Ramdani", $salam){
-    echo $salam.",&lt;br&gt;";
-    echo "Perkenalkan, nama saya ".$nama."&lt;br&gt;";
-    echo "Senang beejumpa dengan kamu "&lt;br&gt;"";
-  }
-
-  // Memanggil fungsi yang sudah dibuat
-  perkenalan("Intan", "Hi");
-
-  echo "&lt;hr&gt;";
-
-  $saya = "Ramdani";
-  $ucapanSalam = "Selamat Siang";
-
-  // Memanggilnya lagi tanpa mengisi parameter nama
-  perkenalan($ucapanSalam);
+   // Pemanggilan
+   echo $name;
 ?&gt;
-</pre> Maka hasilnya akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/php/default.jpg" alt="Fungsi dengan default" class="img-fluid">
-                            </p>
-                            <h3 class="font-weight-bold">Fungsi yang Mengembalikan Nilai</h3>
-                            <p class="lead">
-                                Hasil pengolahan nilai dari fungsi mungkin saja kita butuhkan untuk pemrosesan berikutnya. Oleh karena itu, kita harus membuat fungsi yang dapat mengembalikan nilai. Pengembalian nilai dalam fungsi dapat menggunakan kata kunci
-                                <span style="color:red;">return</span>. Sebagai contoh : <br>
-                                <pre class="code">
-&lt;?php
-  // membuat suatu fungsi
-  function hitungUmur($thn_lahir, $thn_sekarang){
-    $umur = $thn_sekarang - $thn_lahir;
-    return $umur;
-  }
-
-  echo "Umur saya sudah menginjak ". hitungUmur(1993, 2020) . " Tahun";
-?&gt;
-</pre> Maka hasilnya akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/php/kembali.jpg" alt="Mengembalikan Nilai" class="img-fluid">
-                            </p>
-                            <h3 class="font-weight-bold">Memanggil Fungsi di dalam Fungsi</h3>
-                            <p class="lead">
-                                Fungsi yang sudah kita buat, dapat juga kita panggil di dalam fungsi laim. Sebagai contoh : <br>
-                                <pre class="code">
-&lt;?php
-  // Membuat fungsi
-  function hitungUmur($thn_lahir, $thn_sekarang){
-    $umur = $thn_lahir - $thn_sekarang;
-    return $umur;
-  }
-
-  function perkenalan($nama, $salam="Selamat Pagi!"){
-    echo $salam. ",&lt;br&gt;";
-    echo "Perkenalkan, Nama saya ".$nama."&lt;br&gt;";
-
-    // Memanggil fungsi lain
-    echo "Saya berusia ". hitungUmur(1993, 2018) ." Tahun&lt;br&gt;";
-    echo "Senang berkenalan dengan Anda&lt;br&gt;";
-  }
-
-  // Memanggil fungsi perkenalan
-  perkenalan("Ramdani");
-
-?&gt;
-</pre> Maka hasilnya akan seperti ini : <br>
-                                <img src="../../../assets/img/hasil code/php/dalam fungsi.jpg" alt="Memanggil fungsi di dalam Fungsi" class="img-fluid">
+</pre>
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/loop-php.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/php-2.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/#">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../PHP/php-4.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -243,7 +195,7 @@
                                 Tipe Data
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                Variable
+                                <strong>Variable</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 Array
@@ -261,7 +213,10 @@
                                 Loop
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>Fungsi</strong>
+                                Fungsi
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Submission
                             </a>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Simbol $ (1) | BerCODING ID</title>
+    <title>Simbol $ (2) | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,12 +78,12 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Simbol & (1)</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Simbol & (2)</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Mengulas kembali tentang <span style="color: orange;">:hover</span></h3>
+                            <h3 class="font-weight-bold">Menerapkan CSS ke dalam element spesifik</h3>
                             <p class="lead">
-                                Sebelum kita mempelajari tentang simbol <span style="color: orange;">&</span>, mari kita kembali mengulas ulang tentang <span style="color: skyblue;">:hover</span> dan <span style="color: skyblue;">:active</span>. Yaitu,
-                                sebuah keadaan dimana kursor berada diatas element disebut <span style="color: skyblue;">:hover</span>. Pada CSS, dengan menggunakan selector :hover, kita dapat menerapkan CSS spesifik saat kursor menghover sebuah element.
+                                Saat kita ingin menerapkan CSS ke tag <span style="color: orange;">&lt;li&gt;</span> spesifik seperti pada contoh di bawah, kita dapat menggunakan sintaksis <span style="color: orange;">element.class-name</span>. Sintaksis
+                                ini sering digunakan untuk menerapkan CSS ke element spesifik diantara banyak lainnya.
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link active" id="index-tab" data-toggle="tab" href="#index" role="tab" aria-controls="index" aria-selected="true">index.html</a>
@@ -102,12 +102,16 @@
                                         <pre class="code">
 <span style="color: blue;">&lt;html&gt;</span>
     <span style="color: blue;">&lt;head&gt;</span>
-        <span style="color: blue;">&lt;title&gt;</span> :Hover <span style="color: blue;">&lt;/title&gt;</span>
+        <span style="color: blue;">&lt;title&gt;</span> :Active <span style="color: blue;">&lt;/title&gt;</span>
         <span style="color: blue;">&lt;link</span> <span style="color: skyblue;">rel=</span><span style="color: rgb(168, 110, 2);">"stylesheet"</span><span style="color: skyblue;">href=</span><span style="color: rgb(168, 110, 2);">"style.css"&gt;</span>
     <span style="color: blue;">&lt;/head&gt;</span>
     <span style="color: blue;">&lt;body&gt;</span>
-        <span style="color: blue;">&lt;div&gt;</span>
-            <span style="color: blue;">&lt;h1&gt;</span>Tes Hover<span style="color: blue;">&lt;/h1&gt;</span>
+        <span style="color: blue;">&lt;div <span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"header"</span>&gt;</span>
+            <span style="color: blue;">&lt;ul&gt;</span>
+                <span style="color: blue;">&lt;li&gt;</span>Satu<span style="color: blue;">&lt;/li&gt;</span>
+                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"second"</span>Dua<span style="color: blue;">&lt;/li&gt;</span>
+                <span style="color: blue;">&lt;li&gt;</span>Tiga<span style="color: blue;">&lt;/li&gt;</span>
+            <span style="color: blue;">&lt;/ul&gt;</span>
         <span style="color: blue;">&lt;/div&gt;</span>
     <span style="color: blue;">&lt;/body&gt;</span>
 <span style="color: blue;">&lt;/html&gt;</span>
@@ -117,24 +121,26 @@
                                         <br>
                                         <p>Berkas CSS</p>
                                         <pre class="code">
-<span style="color: rgb(168, 110, 2);">div:hover</span> {
-    <span style="color: #126e82;">background-color:</span> blue;
+<span style="color: rgb(168, 110, 2);">li</span> {
+    <span style="color: #126e82;">font-size:</span> 20px;
+}
+<span style="color: rgb(168, 110, 2);">li.second</span> {
+    <span style="color: #126e82;">color:</span> blue;
 }
 </pre>
                                     </div>
                                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                                         <br>
-                                        <p>Hasil dari selector :hover</p>
-                                        <video class="video-fluid z-depth-1" autoplay loop controls muted>
-                                            <source src="../../../assets/img/hasil code/sass/Hover.mp4" type="video/mp4"/>
-                                        </video>
+                                        <p>Hasil dari kode tersebut</p>
+                                        <img src="../../../assets/img/hasil code/sass/CSS normal.png" alt="Output" class="img-fluid">
                                     </div>
                                 </div>
                             </p>
 
-                            <h3 class="font-weight-bold">Mengulas kembali tentang <span style="color: orange;">:active</span></h3>
+                            <h3 class="font-weight-bold">Mereferensikan element spesifik</h3>
                             <p class="lead">
-                                Dengan menggunakan <span style="color: skyblue;">:active</span>, CSS dapat diterapkan hanya jika element diklik. Seperti contoh dibawah ini :
+                                Pada halaman sebelumnya, kita sudah belajar untuk mereferensikan element spesifik dengan mudah dengan menggunakan simbol <span style="color: orange;">&</span> pada Sass. Dengan CSS normal, kita harus menulis nama element
+                                yang sama berulang kali, namun pada Sass kita dapat menulisnya sekali sehingga mudah untuk mengaplikasikan kode CSS berbeda ke element spesifik.
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link active" id="index2-tab" data-toggle="tab" href="#index2" role="tab" aria-controls="index2" aria-selected="true">index.html</a>
@@ -143,7 +149,7 @@
                                         <a class="nav-link" id="css-tab" data-toggle="tab" href="#css" role="tab" aria-controls="css" aria-selected="false">style.css</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="output-tab" data-toggle="tab" href="#output" role="tab" aria-controls="output" aria-selected="false">Output</a>
+                                        <a class="nav-link" id="scss-tab" data-toggle="tab" href="#scss" role="tab" aria-controls="scss" aria-selected="false">style.scss</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
@@ -157,8 +163,12 @@
         <span style="color: blue;">&lt;link</span> <span style="color: skyblue;">rel=</span><span style="color: rgb(168, 110, 2);">"stylesheet"</span><span style="color: skyblue;">href=</span><span style="color: rgb(168, 110, 2);">"style.css"&gt;</span>
     <span style="color: blue;">&lt;/head&gt;</span>
     <span style="color: blue;">&lt;body&gt;</span>
-        <span style="color: blue;">&lt;div&gt;</span>
-            <span style="color: blue;">&lt;button&gt;</span>Klik Tombol<span style="color: blue;">&lt;/button&gt;</span>
+        <span style="color: blue;">&lt;div <span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"header"</span>&gt;</span>
+            <span style="color: blue;">&lt;ul&gt;</span>
+                <span style="color: blue;">&lt;li&gt;</span>Satu<span style="color: blue;">&lt;/li&gt;</span>
+                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"second"</span>Dua<span style="color: blue;">&lt;/li&gt;</span>
+                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"third"</span>Tiga<span style="color: blue;">&lt;/li&gt;</span>
+            <span style="color: blue;">&lt;/ul&gt;</span>
         <span style="color: blue;">&lt;/div&gt;</span>
     <span style="color: blue;">&lt;/body&gt;</span>
 <span style="color: blue;">&lt;/html&gt;</span>
@@ -168,66 +178,25 @@
                                         <br>
                                         <p>Berkas CSS</p>
                                         <pre class="code">
-<span style="color: rgb(168, 110, 2);">button</span> {
-    <span style="color: #126e82;">margin-top:</span> 50px;
-    <span style="color: #126e82;">display:</span> flex;
-    <span style="color: #126e82;">justify-content:</span> center;
-}
-<span style="color: rgb(168, 110, 2);">button</span> {
-    <span style="color: #126e82;">padding:</span> 20px 50px;
-    <span style="color: #126e82;">font-size:</span> 20px;
-    <span style="color: #126e82;">box-shadow:</span> 0 9px black;
-    <span style="color: #126e82;">border-radius:</span> 10px;
-}
-<span style="color: rgb(168, 110, 2);">button:active</span> {
-    <span style="color: #126e82;">position:</span> relative;
-    <span style="color: #126e82;">top:</span> 7px;
-    <span style="color: #126e82;">box-shadow:</span> none;
-}
-</pre>
-                                    </div>
-                                    <div class="tab-pane fade" id="output" role="tabpanel" aria-labelledby="output-tab">
-                                        <br>
-                                        <p>Output</p>
-                                        <video class="video-fluid z-depth-1" autoplay loop controls muted>
-                                            <source src="../../../assets/img/hasil code/sass/Active.mp4" type="video/mp4"/>
-                                        </video>
-                                    </div>
-                                </div>
-                            </p>
-                            <h3 class="font-weight-bold">Simbol &</h3>
-                            <p class="lead">
-                                Dengan menggunakan nesting (sarang), kita dapat menulis ulang selector <span style="color: orange;">:hover</span> menjadi <span style="color: orange;">&:hover</span>. Simbol & dapat digunakan dengan selectro apapun -hover,
-                                -active, dan lain-lain. Seperti contoh dibawah ini :
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="css2-tab" data-toggle="tab" href="#css2" role="tab" aria-controls="css2" aria-selected="true">style.css</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="scss2-tab" data-toggle="tab" href="#scss2" role="tab" aria-controls="scss2" aria-selected="false">style.scss</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="css2" role="tabpanel" aria-labelledby="css2-tab">
-                                        <br>
-                                        <p>Berkas CSS</p>
-                                        <pre class="code">
 <span style="color: rgb(168, 110, 2);">li</span> {
-    <span style="color: #126e82;">font-size:</span> 15px;
+    <span style="color: #126e82;">font-size:</span> 20px;
 }
-<span style="color: rgb(168, 110, 2);">li:hover</span> {
-    <span style="color: #126e82;">background-color:</span> blue;
+<span style="color: rgb(168, 110, 2);">li.second</span> {
+    <span style="color: #126e82;">color:</span> blue;
 }
 </pre>
                                     </div>
-                                    <div class="tab-pane fade" id="scss2" role="tabpanel" aria-labelledby="scss2-tab">
+                                    <div class="tab-pane fade" id="scss" role="tabpanel" aria-labelledby="scss-tab">
                                         <br>
                                         <p>Berkas SCSS</p>
                                         <pre class="code">
 <span style="color: rgb(168, 110, 2);">li</span> {
-    <span style="color: #126e82;">font-size:</span> 15px;
-    <span style="color: rgb(168, 110, 2);">&:hover</span> {
-        <span style="color: #126e82;">background-color:</span> blue;
+    <span style="color: #126e82;">font-size:</span> 20px;
+    <span style="color: rgb(168, 110, 2);">&.second</span> {
+    <span style="color: #126e82;">color:</span> blue;
+    }
+    <span style="color: rgb(168, 110, 2);">&.third</span> {
+
     }
 }
 </pre>
@@ -239,10 +208,10 @@
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-1.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-2.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-3.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/#">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -257,10 +226,10 @@
                                 Pengenalan Sass & Nesting
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>Simbol & (1)</strong>
+                                Simbol & (1)
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                Simbol & (2)
+                                <strong>Simbol & (2)</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 Variable

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Simbol $ (2) | BerCODING ID</title>
+    <title>Variable | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,113 +78,45 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Simbol & (2)</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Variable Sass</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Menerapkan CSS ke dalam element spesifik</h3>
+                            <h3 class="font-weight-bold">Variable</h3>
                             <p class="lead">
-                                Saat kita ingin menerapkan CSS ke tag <span style="color: orange;">&lt;li&gt;</span> spesifik seperti pada contoh di bawah, kita dapat menggunakan sintaksis <span style="color: orange;">element.class-name</span>. Sintaksis
-                                ini sering digunakan untuk menerapkan CSS ke element spesifik diantara banyak lainnya.
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="index-tab" data-toggle="tab" href="#index" role="tab" aria-controls="index" aria-selected="true">index.html</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">style.css</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Output</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="index" role="tabpanel" aria-labelledby="index-tab">
-                                        <br>
-                                        <p>Berkas HTML</p>
-                                        <pre class="code">
-<span style="color: blue;">&lt;html&gt;</span>
-    <span style="color: blue;">&lt;head&gt;</span>
-        <span style="color: blue;">&lt;title&gt;</span> :Active <span style="color: blue;">&lt;/title&gt;</span>
-        <span style="color: blue;">&lt;link</span> <span style="color: skyblue;">rel=</span><span style="color: rgb(168, 110, 2);">"stylesheet"</span><span style="color: skyblue;">href=</span><span style="color: rgb(168, 110, 2);">"style.css"&gt;</span>
-    <span style="color: blue;">&lt;/head&gt;</span>
-    <span style="color: blue;">&lt;body&gt;</span>
-        <span style="color: blue;">&lt;div <span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"header"</span>&gt;</span>
-            <span style="color: blue;">&lt;ul&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span>Satu<span style="color: blue;">&lt;/li&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"second"</span>Dua<span style="color: blue;">&lt;/li&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span>Tiga<span style="color: blue;">&lt;/li&gt;</span>
-            <span style="color: blue;">&lt;/ul&gt;</span>
-        <span style="color: blue;">&lt;/div&gt;</span>
-    <span style="color: blue;">&lt;/body&gt;</span>
-<span style="color: blue;">&lt;/html&gt;</span>
-</pre>
-                                    </div>
-                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <br>
-                                        <p>Berkas CSS</p>
-                                        <pre class="code">
-<span style="color: rgb(168, 110, 2);">li</span> {
-    <span style="color: #126e82;">font-size:</span> 20px;
-}
-<span style="color: rgb(168, 110, 2);">li.second</span> {
-    <span style="color: #126e82;">color:</span> blue;
-}
-</pre>
-                                    </div>
-                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                        <br>
-                                        <p>Hasil dari kode tersebut</p>
-                                        <img src="../../../assets/img/hasil code/sass/CSS normal.png" alt="Output" class="img-fluid">
-                                    </div>
-                                </div>
+                                Selanjutnya, kita akan belajar mengenai variable pada Sass. Bayangkan variable sebagai kotak yang mempunyai nilai. Gambar di bawah mengilustrasikan bagaimana variable bekerja. Mereka berguna pada kasus dimana nilai yang sama dipakai berulang kali. Kita
+                                akan mempelajari lebih lanjut pada slide-slide berikutnya.
+                                <br>
+                                <img src="../../../assets/img/hasil code/sass/variabel.png" alt="variabel" class="img-fluid">
                             </p>
-
-                            <h3 class="font-weight-bold">Mereferensikan element spesifik</h3>
+                            <h3 class="font-weight-bold">Mendefinisikan Variable</h3>
                             <p class="lead">
-                                Pada halaman sebelumnya, kita sudah belajar untuk mereferensikan element spesifik dengan mudah dengan menggunakan simbol <span style="color: orange;">&</span> pada Sass. Dengan CSS normal, kita harus menulis nama element
-                                yang sama berulang kali, namun pada Sass kita dapat menulisnya sekali sehingga mudah untuk mengaplikasikan kode CSS berbeda ke element spesifik.
+                                Untuk menggunakan variable, kita harus terlebih dahulu mendefinisikan mereka. Variable didefinisikan dengan sintaksis: <span style="color: orange;">$variable-name: nilai;</span> seperti ditunjukkan di bawah. Kita dapat
+                                memikirkannya seperti "letakkan nilai di kanan ke variable di kiri", ini disebut <span style="color: skyblue;">assignment</span>.
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="index2-tab" data-toggle="tab" href="#index2" role="tab" aria-controls="index2" aria-selected="true">index.html</a>
+                                        <a class="nav-link active" id="index2-tab" data-toggle="tab" href="#index2" role="tab" aria-controls="index2" aria-selected="true">Cara Kerja</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="css-tab" data-toggle="tab" href="#css" role="tab" aria-controls="css" aria-selected="false">style.css</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="scss-tab" data-toggle="tab" href="#scss" role="tab" aria-controls="scss" aria-selected="false">style.scss</a>
+                                        <a class="nav-link" id="css-tab" data-toggle="tab" href="#css" role="tab" aria-controls="css" aria-selected="false">style.scss</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="index2" role="tabpanel" aria-labelledby="index2-tab">
                                         <br>
-                                        <p>Berkas HTML</p>
-                                        <pre class="code">
-<span style="color: blue;">&lt;html&gt;</span>
-    <span style="color: blue;">&lt;head&gt;</span>
-        <span style="color: blue;">&lt;title&gt;</span> :Active <span style="color: blue;">&lt;/title&gt;</span>
-        <span style="color: blue;">&lt;link</span> <span style="color: skyblue;">rel=</span><span style="color: rgb(168, 110, 2);">"stylesheet"</span><span style="color: skyblue;">href=</span><span style="color: rgb(168, 110, 2);">"style.css"&gt;</span>
-    <span style="color: blue;">&lt;/head&gt;</span>
-    <span style="color: blue;">&lt;body&gt;</span>
-        <span style="color: blue;">&lt;div <span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"header"</span>&gt;</span>
-            <span style="color: blue;">&lt;ul&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span>Satu<span style="color: blue;">&lt;/li&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"second"</span>Dua<span style="color: blue;">&lt;/li&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"third"</span>Tiga<span style="color: blue;">&lt;/li&gt;</span>
-            <span style="color: blue;">&lt;/ul&gt;</span>
-        <span style="color: blue;">&lt;/div&gt;</span>
-    <span style="color: blue;">&lt;/body&gt;</span>
-<span style="color: blue;">&lt;/html&gt;</span>
-</pre>
+                                        <p>Cara Kerja</p>
+                                        <img src="../../../assets/img/hasil code/sass/variabel-2.png" alt="varaibel" class="img-fluid">
                                     </div>
                                     <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
                                         <br>
-                                        <p>Berkas CSS</p>
+                                        <p>Berkas SCSS</p>
                                         <pre class="code">
-<span style="color: rgb(168, 110, 2);">li</span> {
-    <span style="color: #126e82;">font-size:</span> 20px;
-}
-<span style="color: rgb(168, 110, 2);">li.second</span> {
-    <span style="color: #126e82;">color:</span> blue;
-}
+<span style="color: green;">// $bercoding-color adalah sebuah nama variabel</span>                                            
+<span style="color: green;">// #126e82 adalah sebuah nilai dari variabel</span>                                            
+<span style="color: green;">// #126e82 ditetapkan menjadi nilai di dalam variabel $bercoding-color</span>                                            
+<span style="color: rgb(168, 110, 2);">$bercoding-color</span>:  <span style="color: #126e82;">#126e82</span>;                                   
 </pre>
+                                        <br>
+                                        <p><span style="color: green;">$bercoding-color</span> adalah sebuah nama variabel</p>
+                                        <p><span style="color: purple;">#126e82</span> adalah sebuah nilai variabel</p>
                                     </div>
                                     <div class="tab-pane fade" id="scss" role="tabpanel" aria-labelledby="scss-tab">
                                         <br>
@@ -203,15 +135,43 @@
                                     </div>
                                 </div>
                             </p>
+                            <h3 class="font-weight-bold">Cara Menggunakan Varaible Sass</h3>
+                            <p class="lead">
+                                Menggunakan variable itu mudah. Cukup tulis nama variable, contohnya <span style="color: orange;">$bercoding-color</span>, seperti terlihat di bawah. Dengan menulis nama variable di tempat dimana Anda ingin menggunakannya,
+                                value <span style="color: skyblue;">#126e82</span> yang tersimpan di dalam variable akan otomatis disisipkan. Ini memungkinkan Anda untuk mereferensikan value yang sama dari tempat berbeda, membuatnya mudah untuk diubah.
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="index2-tab" data-toggle="tab" href="#index2" role="tab" aria-controls="index2" aria-selected="true">style.scss</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="index2" role="tabpanel" aria-labelledby="index2-tab">
+                                        <br>
+                                        <p>Berkas SCSS</p>
+                                        <pre class="code">
+<span style="color: green;">// color dalam tag p dan h1 menggunakan nilai #126e82 
+    dari variabel $bercoding-color dari pendefinisian</span>                                                                                     
+<span style="color: rgb(168, 110, 2);">$bercoding-color</span>:  <span style="color: #126e82;">#126e82</span>; 
+<span style="color: rgb(168, 110, 2);">h1</span> {
+    <span style="color: #126e82;">color:</span> $bercoding-color;
+}
+<span style="color: rgb(168, 110, 2);">p</span> {
+    <span style="color: #126e82;">color:</span> $bercoding-color;
+} 
+</pre>
+                                        <br>
+                                    </div>
+                                </div>
+                            </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-2.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-3.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-4.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/#">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -229,10 +189,10 @@
                                 Simbol & (1)
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>Simbol & (2)</strong>
+                                Simbol & (2)
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                Variable
+                                <strong>Variable</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 Mixin (1)

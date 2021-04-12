@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Variable | BerCODING ID</title>
+    <title>Mixin (2) | BerCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,141 +78,52 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Variable Sass</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Mixin (2)</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Variable</h3>
+                            <h3 class="font-weight-bold">Mixin dengan Argument</h3>
                             <p class="lead">
-                                Selanjutnya, kita akan belajar mengenai variable pada Sass. Bayangkan variable sebagai kotak yang mempunyai nilai. Gambar di bawah mengilustrasikan bagaimana variable bekerja. Mereka berguna pada kasus dimana nilai yang sama dipakai berulang kali. Kita
-                                akan mempelajari lebih lanjut pada slide-slide berikutnya.
-                                <br>
-                                <img src="../../../assets/img/hasil code/sass/variabel.png" alt="variabel" class="img-fluid">
+                                Informasi seperti nilai warna dapat diteruskan ke mixin sebagai <span style="color: skyblue;">argument</span>. Argument dapat digunakan untuk membuat kode lebih dinamik dan biasa digunakan di dalam pemrograman. Dengan meneruskan
+                                nilai warna dan data lain sebagai argument pada mixin, mereka bisa digunakan didalam mixin.
                             </p>
-                            <h3 class="font-weight-bold">Mendefinisikan Variable</h3>
+                            <h3 class="font-weight-bold">Meneruskan Data ke Mixin</h3>
                             <p class="lead">
-                                Untuk menggunakan variable, kita harus terlebih dahulu mendefinisikan mereka. Variable didefinisikan dengan sintaksis: <span style="color: orange;">$variable-name: nilai;</span> seperti ditunjukkan di bawah. Kita dapat
-                                memikirkannya seperti "letakkan nilai di kanan ke variable di kiri", ini disebut <span style="color: skyblue;">assignment</span>.
+                                Setelah menambahkan argument ke definisi mixin, kita dapat meneruskan nilai ke mixin saat memanggilnya. Pada contoh di kanan, nilai <span style="color: orange;">#ff0000</span> diteruskan dan ditentukan ke <span style="color: orange;">$color</span>                                pada mixin, ini dapat membuat kode lebih fleksibel.
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="index2-tab" data-toggle="tab" href="#index2" role="tab" aria-controls="index2" aria-selected="true">Cara Kerja</a>
+                                        <a class="nav-link active" id="css-tab" data-toggle="tab" href="#css" role="tab" aria-controls="css" aria-selected="true">style.css</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="css-tab" data-toggle="tab" href="#css" role="tab" aria-controls="css" aria-selected="false">style.scss</a>
+                                        <a class="nav-link" id="scss-tab" data-toggle="tab" href="#scss" role="tab" aria-controls="scss" aria-selected="false">style.scss</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="index2" role="tabpanel" aria-labelledby="index2-tab">
+                                    <div class="tab-pane fade show active" id="css" role="tabpanel" aria-labelledby="css-tab">
                                         <br>
-                                        <p>Cara Kerja</p>
-                                        <img src="../../../assets/img/hasil code/sass/variabel-2.png" alt="varaibel" class="img-fluid">
-                                    </div>
-                                    <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
-                                        <br>
-                                        <p>Berkas SCSS</p>
-                                        <pre class="code">
-<span style="color: green;">// $bercoding-color adalah sebuah nama variabel</span>                                            
-<span style="color: green;">// #126e82 adalah sebuah nilai dari variabel</span>                                            
-<span style="color: green;">// #126e82 ditetapkan menjadi nilai di dalam variabel $bercoding-color</span>                                            
-<span style="color: rgb(168, 110, 2);">$bercoding-color</span>:  <span style="color: #126e82;">#126e82</span>;                                   
+                                        <p>Berkas CSS</p>
+                                        <pre class="code">    
+<span style="color: red;">@mixin</span> <span style="color:rgb(168, 110, 2);">font-data</span> {                                                                               
+    <span style="color: #126e82;">font-size:</span> 15px;
+    <span style="color: #126e82;">color:</span> #000000; <span style="color: green;">// warna font hitam</span>
+}
+<span style="color: rgb(168, 110, 2);">.card</span> {
+    <span style="color: red;">@include</span> <span style="color: rgb(168, 110, 2);">font-data</span>;
+    <span style="color: #126e82;">color:</span> #ff0000; <span style="color: green;">// warna font merah</span>
+}
 </pre>
-                                        <br>
-                                        <p><span style="color: green;">$bercoding-color</span> adalah sebuah nama variabel</p>
-                                        <p><span style="color: purple;">#126e82</span> adalah sebuah nilai variabel</p>
                                     </div>
                                     <div class="tab-pane fade" id="scss" role="tabpanel" aria-labelledby="scss-tab">
                                         <br>
                                         <p>Berkas SCSS</p>
                                         <pre class="code">
-<span style="color: rgb(168, 110, 2);">li</span> {
-    <span style="color: #126e82;">font-size:</span> 20px;
-    <span style="color: rgb(168, 110, 2);">&.second</span> {
-    <span style="color: #126e82;">color:</span> blue;
-    }
-    <span style="color: rgb(168, 110, 2);">&.third</span> {
-
-    }
+<span style="color: green;">// $color ditetapkan dengan argument</span>                                            
+<span style="color: red;">@mixin</span> <span style="color:rgb(168, 110, 2);">font-data</span>(<span style="color: skyblue;">$color</span>) {                                                                               
+    <span style="color: #126e82;">font-size:</span> 15px;
+    <span style="color: #126e82;">color:</span> <span style="color: skyblue;">$color</span>;
 }
+<span style="color: rgb(168, 110, 2);">.card</span> {
+    <span style="color: red;">@include</span> <span style="color: rgb(168, 110, 2);">font-data</span>(<span style="color: skyblue;">#ff0000</span>); <span style="color: green;">// warna font selesai dalam 1 baris</span>
+}               
 </pre>
-                                    </div>
-                                </div>
-                            </p>
-                            <h3 class="font-weight-bold">Cara Menggunakan Variable Sass</h3>
-                            <p class="lead">
-                                Menggunakan variable itu mudah. Cukup tulis nama variable, contohnya <span style="color: orange;">$bercoding-color</span>, seperti terlihat di bawah. Dengan menulis nama variable di tempat dimana Anda ingin menggunakannya,
-                                value <span style="color: skyblue;">#126e82</span> yang tersimpan di dalam variable akan otomatis disisipkan. Ini memungkinkan Anda untuk mereferensikan value yang sama dari tempat berbeda, membuatnya mudah untuk diubah.
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="index2-tab" data-toggle="tab" href="#index2" role="tab" aria-controls="index2" aria-selected="true">style.scss</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="index2" role="tabpanel" aria-labelledby="index2-tab">
-                                        <br>
-                                        <p>Berkas SCSS</p>
-                                        <pre class="code">
-<span style="color: green;">// color dalam tag p dan h1 menggunakan nilai #126e82 
-    dari variabel $bercoding-color dari pendefinisian</span>                                                                                     
-<span style="color: rgb(168, 110, 2);">$bercoding-color</span>:  <span style="color: #126e82;">#126e82</span>; 
-<span style="color: rgb(168, 110, 2);">h1</span> {
-    <span style="color: #126e82;">color:</span> $bercoding-color;
-}
-<span style="color: rgb(168, 110, 2);">p</span> {
-    <span style="color: #126e82;">color:</span> $bercoding-color;
-} 
-</pre>
-                                        <br>
-                                    </div>
-                                </div>
-                            </p>
-                            <h3 class="font-weight-bold">Penempatan Definisi Variable Sass</h3>
-                            <p class="lead">
-                                Variable harus didefinisikan sebelum baris dimana ia akan digunakan. Karena style sheet (CSS) dibaca dari atas ke bawah, jika kita mendefinisikan sebuah variable setelah baris dimana kita ingin menggunakannya, error akan terjadi karena itu akan diinterpretasikan
-                                sebagai variable yang tidak terdefinisi.
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="index2-tab" data-toggle="tab" href="#index2" role="tab" aria-controls="index2" aria-selected="true">style.scss</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="index2" role="tabpanel" aria-labelledby="index2-tab">
-                                        <br>
-                                        <p>Berkas SCSS</p>
-                                        <pre class="code">
-<span style="color: green;">&lt;!--- dapat digunakan ---&gt;</span>                                            
-<span style="color: rgb(168, 110, 2);">$text-red:</span> #ff000;
-<span style="color: rgb(168, 110, 2);">h1</span> {
-    <span style="color: #126e82;">color:</span><span style="color: orange;"> $text-red;</span> <span style="color: green;">//dapat digunakan</span>
-    <span style="color: #126e82;">background-color:</span><span style="color: orange;"> $back-blue;</spans> <span style="color: green;">//tidak dapat digunakan sebelum didefinisikan</span>
-}
-<span style="color: green;">&lt;!--- tidak dapat digunakan sebelum didefinisikan ---&gt;</span>  
-<span style="color: rgb(168, 110, 2);">$back-blue:</span> #0000ff;
-</pre>
-                                        <br>
-                                    </div>
-                                </div>
-                            </p>
-                            <h3 class="font-weight-bold">Scope Variable Sass</h3>
-                            <p class="lead">
-                                Kita juga dapat menspesifikasikan jarak variabel. Jarak ini disebut dengan <span style="color: orange;">scope</span>. Kita tidak bisa menggunakn variabel jika variabel tidak ada didalam scope-nya. Maka dari itu, semua variabel
-                                yang ingin digunakan harus didefinisikan dibagian terluar dari struktur nesting (sarang).
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="index2-tab" data-toggle="tab" href="#index2" role="tab" aria-controls="index2" aria-selected="true">style.scss</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="index2" role="tabpanel" aria-labelledby="index2-tab">
-                                        <br>
-                                        <p>Berkas SCSS</p>
-                                        <pre class="code">
-<span style="color: rgb(168, 110, 2);">h1</span> {
-    <span style="color: orange;">$text:</span> #126e82;
-    <span style="color: #126e82;">color:</span> <span style="color: orange;">$text</span>; <span style="color: green;">//dapat digunakan karena sudah didefinisikan di h1</span>
-}
-<span style="color: rgb(168, 110, 2);">p</span> {
-    <span style="color: #126e82;">color:</span> <span style="color: orange;">$text</span>; <span style="color: green;">//tidak dapat digunakan karena berada diluar scope</span>
-}
-</pre>
-                                        <br>
                                     </div>
                                 </div>
                             </p>
@@ -221,10 +132,10 @@
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-3.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-5.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-5.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/#">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -245,13 +156,13 @@
                                 Simbol & (2)
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>Variable</strong>
+                                Variable
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 Mixin (1)
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                Mixin (2)
+                                <strong>Mixin (2)</strong>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 Function

@@ -74,23 +74,24 @@
 
         <!-- ======= Jumbotron ======= -->
         <div class="container">
-            <div class="row no-gutters">
+            <div class="row no-gutters shadow p-3 bg-white rounded">
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
                             <h2 class="display-4" style="font-size: 35px;">Pengertian Tag HTML dan Fungsinya</h2>
                             <hr class="my-2 border-dark mb-3">
                             <h3 class="font-weight-bold">Tag dalam HTML</h3>
-                            <p class="lead">
+                            <p style="font-family: Poppins;">
                                 Tag adalah sebuah <strong>penanda awalan</strong> dan <strong>akhiran</strong> dari sebuah <strong> elemen </strong> di HTML. Tag dibuat dengan kurung siku (<b style="color:red"><...></b>), lalu di dalamnya berisi nama
                                 tag dan kadang juga ditambahkan dengan atribut.
                                 <br> Contoh Beberapa Tag yang ada dalam HTML ialah :
                                 <b style="color:red"><</b><b style="color:red">p></b>,
                                 <b style="color:red"><</b><b style="color:red">a></b>,
                                 <b style="color:red"><</b><b style="color:red">body></b>,
-                                <b style="color:red"><</b><b style="color:red">head></b>, dan sebagainya. <br>
+                                <b style="color:red"><</b><b style="color:red">head></b>, dan sebagainya.
                                 <br> Dalam penulisan Tag selalu berpasangan. Ada tag pembuka dan tag penutup. Tetapi dalam penulisan Tag ada beberapa tag yang tidak memiliki pasangan penutup. Tag penutup ditulis dengan menambahkan garis miring (<b style="color:red;">/</b>)
                                 di depan nama tag.
+                                <br><br>
                                 <img src="../../../assets/img/hasil code/code.jpg" alt="contoh penulisan Tag" class="img-fluid">
                                 <br><br> Dalam penulisan HTML ada beberapa Tag-tag yang wajib kita sertakan sebelum memulai pengerjaan, Diantaranya : <br>
                                 <ul>
@@ -103,10 +104,11 @@
                                 </ul>
                             </p>
                             <h3 class="font-weight-bold">Tag Head</h3>
-                            <p class="lead">Tag Head berfungsi untuk menyimpan informasi dari sebuah halaman misalnya tag <em style="color:red"><<em style="color:red">title></em></em>
+                            <p style="font-family: Poppins;">
+                                Tag Head berfungsi untuk menyimpan informasi dari sebuah halaman misalnya tag <em style="color:red"><<em style="color:red">title></em></em>
                                 (Judul dari sebuah Halaman) dan <em style="color:red"><<em style="color:red">meta></em></em> (pengkodean karakter UTF-8). Penulisan Tag head memiliki tag pembuka <em style="color:red"><<em style="color:red">head></em></em>
                                 dan tag penutup
-                                <em style="color:red"><<em style="color:red">/head></em></em> apapun yang di tuliskan di dalam tag head tidak akan ditampilkan di halaman webiste yang kita buat
+                                <em style="color:red"><<em style="color:red">/head></em></em> apapun yang di tuliskan di dalam tag head tidak akan ditampilkan di halaman webiste yang kita buat.
                                 <br> Contoh penulisan tag head : <br>
 
                                 <!-- code menampilkan contoh code-->
@@ -117,25 +119,51 @@
 </pre>
                             </p>
                             <h3 class="font-weight-bold">Tag Title</h3>
-                            <p class="lead">Tag title merupakan tag yang digunakan untuk menuliskan judul dokumen HTML. Hasil tag ini akan ditampilkan dalam window caption browser.
-                                <br> Contoh : <br>
-
-                                <!-- code mneampilkan contoh code-->
-                                <pre class="code">
+                            <p style="font-family: Poppins;">
+                                Tag title merupakan tag yang digunakan untuk menuliskan judul dokumen HTML. Hasil tag ini akan ditampilkan dalam window caption browser.
+                                <br> Contoh :
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="true">index.html</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="ouput-tab" data-toggle="tab" href="#output" role="tab" aria-controls="output" aria-selected="false">Output</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="html-tab">
+                                        <br>
+                                        <p>Berkas HTML</p>
+                                        <pre class="code">
 &lt;head&gt;
    &lt;title&gt;Contoh dari Judul Website&lt;/title&gt;
 &lt;/head&gt;
 </pre>
-                                <br> Hasil dari code yang dituliskan di atas, seperti dibawah ini :
-                                <br>
-                                <img src="../../../assets/img/hasil code/hasil title.jpg" alt="hasil title" class="img-fluid">
+                                    </div>
+                                    <div class="tab-pane fade" id="output" role="tabpanel" aria-labelledby="output-tab">
+                                        <br>
+                                        <p>Hasil berkas HTML</p>
+                                        <img src="../../../assets/img/hasil code/hasil title.jpg" alt="hasil title" class="img-fluid">
+                                    </div>
+                                </div>
                             </p>
                             <h3 class="font-weight-bold">Tag Body</h3>
-                            <p class="lead">Tag body merupakan bagian terdalam dari sebuah html, dan bagian ini yang akan di tampilkan dalam sebuah website.
+                            <p style="font-family: Poppins;">
+                                Tag body merupakan bagian terdalam dari sebuah html, dan bagian ini yang akan di tampilkan dalam sebuah website.
                                 <br> Contoh penulisan tag body : <br>
-
-                                <!--code menampilkan code-->
-                                <pre class="code">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">index.html</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Output</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <br>
+                                        <p>Berkas HTML</p>
+                                        <pre class="code">
 &lt;body&gt;
 
     &lt;h1&gt; Contoh dari Judul &lt;/h1&gt;
@@ -143,43 +171,57 @@
     &lt;p&gt;Contoh dari Paragpaph&lt;/p&gt;
 
 &lt;/body&gt;
-                                </pre>
-                                <br> Code yang anda tulis akan menghasilkan seperti gambar di bawah ini :<br>
-                                <img src="../../../assets/img/hasil code/hasil body.jpg" alt="hasil tag body" class="img-fluid">
-
+</pre>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <br>
+                                        <p>Hasil berkas HTML</p>
+                                        <img src="../../../assets/img/hasil code/hasil body.jpg" alt="hasil tag body" class="img-fluid">
+                                    </div>
+                                </div>
                             </p>
                             <h3 class="font-weight-bold">Heading</h3>
-                            <p class="lead">Heading dimanfaatkan untuk menandai judul topic atau untuk menunjukkan tingkat keberartian dari teks yang akan dituliskan. Ada 6 tingkat heading dalam HTML, dinomori dari 1 sampai dengan 6. Nomor 1 merupakan heading yang terbesar.
+                            <p style="font-family: Poppins;">
+                                Heading dimanfaatkan untuk menandai judul topic atau untuk menunjukkan tingkat keberartian dari teks yang akan dituliskan. Ada 6 tingkat heading dalam HTML, dinomori dari 1 sampai dengan 6. Nomor 1 merupakan heading yang terbesar.
                                 <br> Contoh :
-
-                                <!--menampilkan contoh code-->
-                                <pre class="code">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="2-tab" data-toggle="tab" href="#html2" role="tab" aria-controls="html2" aria-selected="true">index.html</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="ouput2-tab" data-toggle="tab" href="#output2" role="tab" aria-controls="output2" aria-selected="false">Output</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="html2" role="tabpanel" aria-labelledby="html2-tab">
+                                        <br>
+                                        <p>Berkas HTML</p>
+                                        <pre class="code">
 &lt;body&gt;
-
     &lt;h1&gt; Contoh dari Judul Tag h1 &lt;/h1&gt;
-
     &lt;h2&gt; Contoh dari Judul Tag h2 &lt;/h2&gt;
-
     &lt;h3&gt; Contoh dari Judul Tag h3 &lt;/h3&gt;
-
     &lt;h4&gt; Contoh dari Judul Tag h4 &lt;/h4&gt;
-
     &lt;h5&gt; Contoh dari Judul Tag h5 &lt;/h5&gt;
-
     &lt;h6&gt; Contoh dari Judul Tag h6 &lt;/h6&gt;
-
 &lt;/body&gt;
 </pre>
-
-                                <br> Hasil dari code di atas, seperti dibawah ini:
-                                <img src="../../../assets/img/hasil code/hasil heading.jpg" alt="hasil heading" class="img-fluid">
-
+                                    </div>
+                                    <div class="tab-pane fade" id="output2" role="tabpanel" aria-labelledby="output2-tab">
+                                        <br>
+                                        <p>Hasil berkas HTML</p>
+                                        <img src="../../../assets/img/hasil code/hasil heading.jpg" alt="hasil heading" class="img-fluid">
+                                    </div>
+                                </div>
                             </p>
                             <h3 class="font-weight-bold">Elemen</h3>
-                            <p class="lead"> Elemen dalam HTML adalah sebuah komponen yang menyusun dokumen HTML. Elemen kadang juga disebut sebagai <i>node</i>, karena ia merupakan salah satu jenis <i>node</i> yang menyusun dokumen HTML. Elemen dibentuk dari <b>tag pembuka, isi tag,</b>                                dan <b>tag penutup.</b> Kadang juga ditambahkan beberapa atribut.
+                            <p style="font-family: Poppins;">
+                                Elemen dalam HTML adalah sebuah komponen yang menyusun dokumen HTML. Elemen kadang juga disebut sebagai <i>node</i>, karena ia merupakan salah satu jenis <i>node</i> yang menyusun dokumen HTML. Elemen dibentuk dari <b>tag pembuka, isi tag</b>,
+                                dan <b>tag penutup.</b> Kadang juga ditambahkan beberapa atribut.
                                 <br> Contoh : <br>
-                                <img src="../../../assets/img/hasil code/contoh elemen.jpg" alt="contoh elemen" class="img-fluid"> <br> Elemen HTML ada banyak jenisnya. Ada elemen khusus untuk teks, ada elemen untuk multimedia, script, tabel, metadata,
-                                dll.
+                                <img src="../../../assets/img/hasil code/contoh elemen.jpg" alt="contoh elemen" class="img-fluid">
+                                <br>
+                                <br> Elemen HTML ada banyak jenisnya. Ada elemen khusus untuk teks, ada elemen untuk multimedia, script, tabel, metadata, dll.
                             </p>
                         </div>
                     </div>

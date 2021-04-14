@@ -74,18 +74,18 @@
 
         <!-- ======= Jumbotron ======= -->
         <div class="container">
-            <div class="row no-gutters">
+            <div class="row no-gutters shadow p-3 bg-white rounded">
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
                             <h2 class="display-4" style="font-size: 35px;">Mixin (1)</h2>
                             <hr class="my-2 border-dark mb-3">
                             <h3 class="font-weight-bold">Apa itu mixin?</h3>
-                            <p class="lead">
+                            <p style="font-family: Poppins;">
                                 Mixin adalah function yang memungkinkan kita untuk menggabungkan baris-baris kode dan menggunakannya kembali. Kita tidak perlu menulis kode yang sama berulang kali dan dapat mengurangi duplikasi kode.
                             </p>
                             <h3 class="font-weight-bold">Mendefinisikan Mixin</h3>
-                            <p class="lead">
+                            <p style="font-family: Poppins;">
                                 Untuk menggunakan mixin, kita harus mendefinisikannya terlebih dahulu. Sintaksis untuk mendefinisikan mixin adalah <span style="color: orange;">@mixin mixin-name {code}</span> seperti pada contoh di bawah ini :
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
@@ -106,7 +106,7 @@
                                 </div>
                             </p>
                             <h3 class="font-weight-bold">Cara Memanggil Mixin</h3>
-                            <p class="lead">
+                            <p style="font-family: Poppins;">
                                 Kita dapat menggunakan mixin pada file Sass dengan sintaksis <span style="color: orange;">@include mixin-name;</span>. Saat kita menggunakan <span style="color: orange;">@include</span>, kode dari mixin akan dimuat disana.
                                 Pada contoh di bawah, setelah mixin dipanggil, kode di dalam <span style="color: orange;">.lesson-1</span> dan <span style="color: orange;">.lesson-2</span> akan sama.
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -122,8 +122,7 @@
                                         <br>
                                         <p>Berkas CSS</p>
                                         <pre class="code">
-<span style="color: green;">// tanpa mixin, kode akan menjadi lebih panjang, 
-    dan harus berulang kali menuliskan kode</span>                                            
+<span style="color: green;">// tanpa mixin, kode akan menjadi lebih panjang, dan harus berulang kali menuliskan kode</span>                                            
 <span style="color: rgb(168, 110, 2);">.lesson-1</span> {
     <span style="color: #126e82;">width:</span> 300px;
     <span style="color: #126e82;">margin:</span> 20px;

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Function | BERCODING ID</title>
+    <title>Import | BERCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -78,115 +78,74 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Function</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Import</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Function Sass</h3>
+                            <h3 class="font-weight-bold">Import Sass</h3>
                             <p style="font-family: Poppins;">
-                                Function kurang lebih bersifat universal di pemrograman. Kita juga dapat menggunakannya pada Sass untuk melakukan hal-hal seperti "ubah warna menjadi 50% lebih terang".
-                            </p>
-                            <h3 class="font-weight-bold">Function Umum yang Berguna</h3>
-                            <p style="font-family: Poppins;">
-                                Berbagai macam function tersedia pada Sass. Sebagai permulaan, akan sangat berguna untuk mengingat beberapa function yang umum. Function umumnya digunakan untuk memanipulasi warna seperti pada contoh dibawah. Ada banyak function untuk memodifikasi warna.
+                                Mari mempelajari bagaimana memuat file-file eksternal dengan <b><span style="color: orange;">import</span></b>. Agar suatu file dapat diimport, kita harus menambahkan <b><span style="color: orange;">_</span></b> diawal
+                                nama file. Selain itu, sintaksis umum untuk memuat file adalah <b><span style="color: orange;">@import filename</span></b> seperti pada contoh di bawah ini.
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="scss-tab" data-toggle="tab" href="#scss" role="tab" aria-controls="scss" aria-selected="true">style.scss</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="css" role="tabpanel" aria-labelledby="css-tab">
-                                        <br>
-                                        <p>Function yang sering digunakan</p>
-                                        <pre class="code">
-<span style="color: green;">//untuk membuat warna lebih gelap</span>                                            
-<span style="color: #126e82;">color:darken</span>(<span style="color: rgb(168, 110, 2);">color</span>,50%);
-<span style="color: green;">//untuk membuat warna lebih terang</span>
-<span style="color: #126e82;">color:lighten</span>(<span style="color: rgb(168, 110, 2);">color</span>,50%);
-<span style="color: green;">//untuk mengatur transparansi warna</span>
-<span style="color: #126e82;">color:rgba</span>(<span style="color: rgb(168, 110, 2);">color</span>,0.5);
-</pre>
-                                    </div>
-                                </div>
-                            </p>
-                            <h3 class="font-weight-bold">Contoh Function Sass</h3>
-                            <p style="font-family: Poppins;">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="true">index.html</a>
+                                        <a class="nav-link active" id="colors-tab" data-toggle="tab" href="#colors" role="tab" aria-controls="colors" aria-selected="true">_colors.scss</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link" id="scss-tab" data-toggle="tab" href="#scss" role="tab" aria-controls="scss" aria-selected="false">style.scss</a>
                                     </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="output-tab" data-toggle="tab" href="#output" role="tab" aria-controls="output" aria-selected="false">Output</a>
-                                    </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="tab-pane fade show active" id="colors" role="tabpanel" aria-labelledby="colors-tab">
                                         <br>
-                                        <p>Berkas HTML</p>
+                                        <p>Berkas <b><span style="color: orange;">_colors.scss</span></b> yang ditambahkan garis bawah pada awal nama file</p>
                                         <pre class="code">
-<span style="color: blue;">&lt;html&gt;</span>
-    <span style="color: blue;">&lt;head&gt;</span>
-        <span style="color: blue;">&lt;title&gt;</span> Function Sass <span style="color: blue;">&lt;/title&gt;</span>
-        <span style="color: blue;">&lt;link</span> <span style="color: skyblue;">rel=</span><span style="color: rgb(168, 110, 2);">"stylesheet"</span><span style="color: skyblue;">href=</span><span style="color: rgb(168, 110, 2);">"style.css"&gt;</span>
-    <span style="color: blue;">&lt;/head&gt;</span>
-    <span style="color: blue;">&lt;body&gt;</span>
-        <span style="color: blue;">&lt;div <span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"main"</span>&gt;</span>
-            <span style="color: blue;">&lt;ul&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"blue1"</span><span style="color: blue;">&lt;/li&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"blue2"</span><span style="color: blue;">&lt;/li&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"blue3"</span><span style="color: blue;">&lt;/li&gt;</span>
-            <span style="color: blue;">&lt;/ul&gt;</span>
-            <span style="color: blue;">&lt;ul&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"pink1"</span><span style="color: blue;">&lt;/li&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"pink2"</span><span style="color: blue;">&lt;/li&gt;</span>
-                <span style="color: blue;">&lt;li&gt;</span><span style="color: skyblue;">class=</span><span style="color: rgb(168, 110, 2);">"pink3"</span><span style="color: blue;">&lt;/li&gt;</span>
-            <span style="color: blue;">&lt;/ul&gt;</span>
-        <span style="color: blue;">&lt;/div&gt;</span>
-    <span style="color: blue;">&lt;/body&gt;</span>
-<span style="color: blue;">&lt;/html&gt;</span>                                     
+<span style="color: rgb(168, 110, 2);">$bercoding-color</span>: #126e82;                                            
 </pre>
                                     </div>
                                     <div class="tab-pane fade" id="scss" role="tabpanel" aria-labelledby="scss-tab">
                                         <br>
-                                        <p>Berkas SCSS</p>
+                                        <p>Berkas SCSS untuk meng-import berkas <b><span style="color: orange;">_colors.scss</span></b></p>
                                         <pre class="code">
-<span style="color: orange;">$blue:</span> #0ac4ff;                                            
-<span style="color: orange;">$pink:</span> #fd6eb6;
-<span style="color: rgb(168, 110, 2);">.main</span> {
-    <span style="color: #126e82;">margin:</span> 10px;
-    <span style="color: rgb(168, 110, 2);">li</span> {
-        <span style="color: #126e82;">list-style:</span> none;
-        <span style="color: #126e82;">float:</span> left;
-        <span style="color: #126e82;">height:</span> 100px;
-        <span style="color: #126e82;">width:</span> 33%;
-        <span style="color: #126e82;">margin-bottom:</span> 10px;
-    }
-    <span style="color: rgb(168, 110, 2);">.blue1</span> {
-        <span style="color: #126e82;">background-color:</span> <span style="color: orange;">$blue</span>;
-    }
-    <span style="color: rgb(168, 110, 2);">.blue2</span> {
-        <span style="color: #126e82;">background-color:</span> <span style="color: skyblue;">darken</span>(<span style="color: orange;">$blue</span>,10%);
-    }
-    <span style="color: rgb(168, 110, 2);">.blue3</span> {
-        <span style="color: #126e82;">background-color:</span> <span style="color: skyblue;">darken</span>(<span style="color: orange;">$blue</span>,20%);
-    }
-    <span style="color: rgb(168, 110, 2);">.pink1</span> {
-        <span style="color: #126e82;">background-color:</span> <span style="color: orange;">$pink</span>;
-    }
-    <span style="color: rgb(168, 110, 2);">.pink1</span> {
-        <span style="color: #126e82;">background-color:</span> <span style="color: skyblue;">darken</span>(<span style="color: orange;">$pink</span>,10%);
-    }
-    <span style="color: rgb(168, 110, 2);">.pink3</span> {
-        <span style="color: #126e82;">background-color:</span> <span style="color: skyblue;">darken</span>(<span style="color: orange;">$pink</span>,20%);
-    }
-}
+<span style="color: red;">@import</span><span style="color: rgb(168, 110, 2);">"_colors.scss"</span>; <span style="color: green;">//unduh file</span>
+<span style="color: rgb(168, 110, 2);">p</span> {
+    <span style="color: #126e82;">color:</span><span style="color: rgb(168, 110, 2);">$bercoding-color</span>;
+    <span style="color: #126e82;">font-size:</span> 15px;
+} 
+<span style="color: green;">//@import unduh file "_colors.scss", sehingga dapat menggunakan variable $bercoding-color</span>
 </pre>
                                     </div>
-                                    <div class="tab-pane fade" id="output" role="tabpanel" aria-labelledby="output-tab">
+                                </div>
+                            </p>
+                            <h3 class="font-weight-bold">Mempersingkat Nama File</h3>
+                            <p style="font-family: Poppins;">
+                                Perlu diingat bahwa saat mengimport file, kita dapat menghapus <b><span style="color: orange;">_</span></b> dan ekstensi file (<b><span style="color: orange;">.scss</span></b>) seperti pada contoh di bawah ini.
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="variable-tab" data-toggle="tab" href="#variable" role="tab" aria-controls="variable" aria-selected="true">_variable.scss</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="scss2-tab" data-toggle="tab" href="#scss2" role="tab" aria-controls="scss2" aria-selected="false">style.scss</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="variable" role="tabpanel" aria-labelledby="variable-tab">
                                         <br>
-                                        <p>Output Function sass</p>
-                                        <img src="../../../assets/img/hasil code/sass/function sass.png" alt="function sass" class="img-fluid">
+                                        <p>Berkas <b><span style="color: orange;">_variable.scss</span></b></p>
+                                        <pre class="code">
+<span style="color: rgb(168, 110, 2);">$html:</span> #0ac4ff;
+<span style="color: rgb(168, 110, 2);">$javascript:</span> #126e82;
+</pre>
+                                    </div>
+                                    <div class="tab-pane fade" id="scss2" role="tabpanel" aria-labelledby="scss2-tab">
+                                        <br>
+                                        <p>Berkas SCSS untuk meng-impot berkas <b><span style="color: orange;">_variable.scss</span></b></p>
+                                        <pre class="code">
+<span style="color: red;">@import</span><span style="color: rgb(168, 110, 2);">"variable"</span> <span style="color: green;">//garis bawah dan ekstensi file dapat dihapus</span>
+<span style="color: rgb(168, 110, 2);">.html</span> {
+    <span style="color: #126e82;">background-color:</span> <span style="color: rgb(168, 110, 2);">$html</span>;
+}
+<span style="color: rgb(168, 110, 2);">.javascript</span> {
+    <span style="color: #126e82;">background-color:</span> <span style="color: rgb(168, 110, 2);">$javascript</span>;
+}
+</pre>
                                     </div>
                                 </div>
                             </p>
@@ -195,10 +154,10 @@
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-6.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-7.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/sass-8.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../Sass/submission.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -228,10 +187,10 @@
                                 Mixin (2)
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                <strong>Function</strong>
+                                Function
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
-                                Import
+                                <strong>Import</strong>
                             </a>
                         </div>
                     </div>

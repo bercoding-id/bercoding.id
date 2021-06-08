@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Hyperlink | BERCODING ID</title>
+    <title>Heading dan Elemen | BERCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
+    <!-- bootstrap 5 for accordion -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- Favicons -->
     <link href="../../../assets/img/bercoding3.png" rel="icon">
     <link href="../../../assets/img/bercoding3.png" rel="apple-touch-icon">
@@ -45,7 +46,7 @@
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                            <li class="active"><a href="../../index.html">Home</a></li>
+                            <li class="active"><a href="../../../index.html">Home</a></li>
                             <li><a href="../../../about/about.html">Tentang Kami</a></li>
                             <li><a href="#">Layanan</a></li>
                             <li><a href="../../../portofolio/all-portfolio.html">Portofolio</a></li>
@@ -76,74 +77,52 @@
         <div class="container">
             <div class="row no-gutters shadow p-3 bg-white rounded">
                 <div class="col-sm-6 col-md-8">
-                    <div class="jumbotron-full-bg bg-white text-md-left ">
+                    <div class="jumbotron-full-bg bg-white text-md-left">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Hyperlink HTML</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Heading dan Elemen</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Hyperlink</h3>
+                            <h3 class="font-weight-bold">Heading</h3>
                             <p style="font-family: Poppins;">
-                                Dokumen HTML mempunyai kemampuan untuk memberikan link dari satu teks atau gambar menuju ke dokumen/halaman Lain dalam suatu dokumen. Browser web akan menyorot teks atau gambar yang diidentifikasikan sebagai link dengan warna atau garis bawah untuk menunjukkan
-                                bahwa itu adalah hypertext link. <br> HTML menggunakan tag
-                                <em style="color:red;"><</em><em style="color:red;">a></em></em> yang disebut sebagai tag anchor untuk membuat suatu link kepada dokumen lain.
+                                Heading dimanfaatkan untuk menandai judul topic atau untuk menunjukkan tingkat keberartian dari teks yang akan dituliskan. Ada 6 tingkat heading dalam HTML, dinomori dari 1 sampai dengan 6. Nomor 1 merupakan heading yang terbesar.
                                 <br> Contoh :
-
-                                <!--menampilkan contoh code-->
-                                <pre class="code">
-<<em style="color:red;">body</em>>
-  <<em style="color:red;">p</em>>
-      <<em style="color:red;">a </em><em style="color:green;">href</em>="<em color:blue;>https://www.bercoding.id</em>"</em>>Contoh Hyperlink<<em>/</em><em style="color:red;">a</em></em>>
-  <<em>/<em style="color:red;">p</em></em>>
-<<em>/<em style="color:red;">body</em></em>>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="2-tab" data-toggle="tab" href="#html2" role="tab" aria-controls="html2" aria-selected="true">index.html</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="ouput2-tab" data-toggle="tab" href="#output2" role="tab" aria-controls="output2" aria-selected="false">Output</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="html2" role="tabpanel" aria-labelledby="html2-tab">
+                                        <br>
+                                        <p>Berkas HTML</p>
+                                        <pre class="code">
+<span style="color: blue;">&lt;body&gt;</span>
+    <span style="color: blue;">&lt;h1&gt;</span> Contoh dari Judul Tag h1 <span style="color: blue;">&lt;/h1&gt;</span>
+    <span style="color: blue;">&lt;h2&gt;</span> Contoh dari Judul Tag h2 <span style="color: blue;">&lt;/h2&gt;</span>
+    <span style="color: blue;">&lt;h3&gt;</span> Contoh dari Judul Tag h3 <span style="color: blue;">&lt;/h3&gt;</span>
+    <span style="color: blue;">&lt;h4&gt;</span> Contoh dari Judul Tag h4 <span style="color: blue;">&lt;/h4&gt;</span>
+    <span style="color: blue;">&lt;h5&gt;</span> Contoh dari Judul Tag h5 <span style="color: blue;">&lt;/h5&gt;</span>
+    <span style="color: blue;">&lt;h6&gt;</span> Contoh dari Judul Tag h6 <span style="color: blue;">&lt;/h6&gt;</span>
+<span style="color: blue;">&lt;/body&gt;</span>
 </pre>
-                                <br> Hasil : <br>
-                                <img src="../../../assets/img/hasil code/link.jpg" alt="hasil Hyperlink" class="img-fluid">
+                                    </div>
+                                    <div class="tab-pane fade" id="output2" role="tabpanel" aria-labelledby="output2-tab">
+                                        <br>
+                                        <p>Hasil berkas HTML</p>
+                                        <img src="../../../assets/img/hasil code/hasil heading.jpg" alt="hasil heading" class="img-fluid">
+                                    </div>
+                                </div>
                             </p>
-                            <h3 class="font-weight-bold">Membuat link untuk Tab Baru</h3>
+                            <h3 class="font-weight-bold">Elemen</h3>
                             <p style="font-family: Poppins;">
-                                Untuk membuat link supaya membuka tab baru dapat ditambahkan atribut: <i>target="_blank"</i>
+                                Elemen dalam HTML adalah sebuah komponen yang menyusun dokumen HTML. Elemen kadang juga disebut sebagai <i>node</i>, karena ia merupakan salah satu jenis <i>node</i> yang menyusun dokumen HTML. Elemen dibentuk dari <b>tag pembuka, isi tag</b>,
+                                dan <b>tag penutup.</b> Kadang juga ditambahkan beberapa atribut.
                                 <br> Contoh : <br>
-
-                                <!--menampilkan contoh code-->
-                                <pre class="code">
-  <<em style="color:red;">body</em>>
-    <<em style="color:red;">p</em>>
-          <<em style="color:red;">a </em><em style="color:green;">href</em>="<em color:blue;>https://www.bercoding.id</em>"</em> <em style="color:orange;">type</em>="<em style="color:green;">_blank</em>">Contoh Hyperlink<<em>/</em><em style="color:red;">a</em></em>>
-    <<em>/<em style="color:red;">p</em></em>>
-  <<em>/<em style="color:red;">body</em></em>>
-</pre>
-                                <br> Hasil : <br>
-                                <img src="../../../assets/img/hasil code/link2.jpg" alt="_blank" class="img-fluid">
-                            </p>
-                            <h3 class="font-weight-bold">Mailto</h3>
-                            <p style="font-family: Poppins;">
-                                Berikut ini adalah contoh link untuk menghubungkan ke sebuah alamat email.
-                                <br> Contoh :
-
-                                <!--menampilkan contoh code-->
-                                <pre class="code">
-  <<em style="color:red;">body</em>>
-      <<em style="color:red;">p</em>>
-            <<em style="color:red;">a </em> <em style="color:orange">href</em>=<em style=color:red;>"mailto:bercoding.id@gmail.com"></em>Contoh Hyperlink mailto <<em>/</em><em style="color:red;">a</em></em>>
-      <<em>/<em style="color:red;">p</em></em>>
-  <<em>/<em style="color:red;">body</em></em>>
-</pre>
-                                <br> Hasil : <br>
-                                <img src="../../../assets/img/hasil code/mailto.jpg" alt="mailto" class="img-fluid">
-                            </p>
-                            <h3 class="font-weight-bold">Image Hyperlink </h3>
-                            <p style="font-family: Poppins;">
-                                Hyperlink dengan gambar, dalam menanamkan link di sebuah gambar memang terlihat seperti tidak ada yang berubah tetapi ketika Anda mengklik gambar tersebut halaman secara otomatis akan beralih ke Hyperlink yang sudah anda buat.
-                                <br> Contoh : <br>
-                                <!--menampilkan contoh code-->
-                                <p class="code1">
-                                    <<em style="color:red">a</em> <em style="color:green;">href</em><em style="color:red;">=</em><em style="color:orange;">"#"</em>>
-                                        <<em style="color:red;">img</em> <em style="color:green;">src</em>
-                                            <em style="color:red;">=</em><em style="color:orange;">"https://www.bercoding.id/img/logo.jpg" </em> /<em>></em>
-                                            <<em>/</em><em style="color:red;">a</em>>
-                                </p>
-
-                                <br> Hasil : <br>
-                                <img src="../../../assets/img/hasil code/link img.jpg" alt="link image" class="img-fluid">
+                                <img src="../../../assets/img/hasil code/contoh elemen.jpg" alt="contoh elemen" class="img-fluid">
+                                <br>
+                                <br> Elemen HTML ada banyak jenisnya. Ada elemen khusus untuk teks, ada elemen untuk multimedia, script, tabel, metadata, dll.
                             </p>
                         </div>
                     </div>
@@ -164,39 +143,270 @@
                             <h3 class="text-center">
                                 Daftar Modul
                             </h3>
-                            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                Pengenalan HTML
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Tag HTML
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Paragraf
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Pemformatan Teks
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <strong>Hyperlink</strong>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                List
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Gambar
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Tabel
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Form
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Font
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Submission
-                            </a>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <b>Pendahuluan</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    <i class="fa fa-check text-success mr-5"></i>Pengenalan HTML
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    <i class="fa fa-check text-success mr-5"></i>Cara Kerja HTML
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        <b>Tag HTML</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    <i class="fa fa-check text-success mr-5"></i>Pengertian Tag HTML
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    <i class="fa fa-check text-success mr-5"></i>Tag Head, Title, & Body
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    <strong>Heading dan Elemen</strong>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <b>Paragraf HTML</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Paragraf
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Line Break
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Attribute Align
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Pemformatan Text HTML</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Format Text
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Text Tebal
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Text Miring
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Garis Bawah
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Text Tercoret
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Marker untuk Text
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Membuat Pangkat
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Text Preformat
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Hyperlink HTML</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Hyperlink
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Membuat Link untuk Tab baru
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Mailto & Image Hyperlink
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>List</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    List Item
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Ordered List
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Unordered List
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeven">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Gambar</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Menyertakan Gambar   
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Text Alternatif untuk Image
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Image Border & Image Alignment
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingEight">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Tabel</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Membuat Tabel
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Menggabungkan Sel Tabel 
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Cellpadding   
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Cellspacing  
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Background Warna  
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Warna Border
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingNine">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Form</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Membuat Form
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Field Text & Field Text-Password
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Checkbox & Radio Button
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Textarea, File Upload, & Button Controls
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTen">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Font HTML</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Mengatur Size, Color, dan Style Huruf (Font)
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Ukuran Font (font size)
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Jenis Font
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Warna Font
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading11">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Penutupan</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Submission
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -291,6 +501,10 @@
     <script src="../../../assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
     <script src="../../../assets/vendor/venobox/venobox.min.js "></script>
     <script src="../../../assets/vendor/aos/aos.js "></script>
+
+    <!-- bootstrap 5 for accordion -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 
     <!-- Template Main JS File -->
     <script src="../../../assets/js/main.js "></script>

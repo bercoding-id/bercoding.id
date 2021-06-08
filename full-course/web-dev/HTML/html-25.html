@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Paragraf HTML | BERCODING ID</title>
+    <title>Image Border & Image Alignment| BERCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <!-- bootstrap 5 for accordion -->
@@ -46,7 +46,7 @@
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                            <li class="active"><a href="../../../index.html">Home</a></li>
+                            <li class="active"><a href="../../index.html">Home</a></li>
                             <li><a href="../../../about/about.html">Tentang Kami</a></li>
                             <li><a href="#">Layanan</a></li>
                             <li><a href="../../../portofolio/all-portfolio.html">Portofolio</a></li>
@@ -77,46 +77,78 @@
         <div class="container">
             <div class="row no-gutters shadow p-3 bg-white rounded">
                 <div class="col-sm-6 col-md-8">
-                    <div class="jumbotron-full-bg bg-white text-md-left">
+                    <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Paragraf HTML</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Image Border & Image Alignment</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Paragraf</h3>
+                            <h3 class="font-weight-bold">Image Border</h3>
                             <p style="font-family: Poppins;">
-                                Paragraf adalah kumpulan dari beberapa kalimat. Pada web, Paragraf biasanya digunakan untuk menampilkan teks. Paragraf pada HTML dibuat dengan tag <b><span style="color: red;">&lt;p&gt;</span></b>. Selain tag itu, ada juga
-                                Tag pendukung lainnya seperti <b><span style="color: red;">&lt;div&gt;</span></b>, <b><span style="color: red;">&lt;hr&gt;</span></b>,
-                                <b><span style="color: red;">&lt;br&gt;</span></b>, dan <b><span style="color: red;">&lt;pre&gt;</span></b>.
+                                Memberikan border atau bingkai pada gambar.
+                                <!--menampilkan contoh code-->
                                 <br> Contoh :
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                                <ul class="nav nav-tabs" id="myTabs" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="true">index.html</a>
+                                        <a class="nav-link show active" id="border-tab" data-toggle="tab" href="#border" role="tab" aria-controls="border" aria-selected="true">index.html</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="output-tab" data-toggle="tab" href="#output" role="tab" aria-controls="output" aria-selected="false">Output</a>
+                                        <a class="nav-link" id="hasil3-tab" data-toggle="tab" href="#hasil3" role="tab" aria-controls="hasil3" aria-selected="false">output</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="html-tab">
+                                    <div class="tab-pane fade show active" id="border" role="tabpanel" aria-labelledby="border-tab">
                                         <br>
-                                        <p>Berkas HTML</p>
                                         <pre class="code">
-<span style="color: blue;">&lt;body&gt;</span>
-    <span style="color: blue;">&lt;p&gt;</span>
-        Paragraf adalah kumpulan dari beberapa kalimat. Pada web,
-        paragraf biasanya digunakan untu menampilkan teks. Paragraf pada
-        HTML dibuat dengan tag pembukan &lt;p&gt; dan Tag
-        penutup &lt;/p&gt;. Selain tag itu, ada juga tag pendukung lain seperti 
-        &lt;div&gt;, &lt;hr&gt;, &lt;br&gt;, dan &lt;pre&gt;.
-    <span style="color: blue;">&lt;/p&gt;</span>
-<span style="color: blue;">&lt;/body&gt;</span>
+<<em style="color:red;">body</em>>
+   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">alt</em><em style="color:red;">=</em><em style="color:green;">"logo"</em> border="3px solid black;">
+<<em>/</em><em style="color:red;">body</em>>
 </pre>
                                     </div>
-                                    <div class="tab-pane fade" id="output" role="tabpanel" aria-labelledby="output-tab">
-                                        <br>
-                                        <p>Hasil berkas HTML</p>
-                                        <img src="../../../assets/img/hasil code/hasil paragraf.jpg" alt="hasil code paragraf" class="img-fluid">
+                                    <div class="tab-pane fade" id="hasil3" role="tabpanel" aria-labelledby="hasil3-tab">
+                                        <br> Hasil : <br>
+                                        <img src="../../../assets/img/hasil code/link img.jpg" style="width: 300px; border: 3px solid black;">
                                     </div>
-                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                                </div>
+
+                            </p>
+                            <h3 class="font-weight-bold">Image Alignment</h3>
+                            <p style="font-family: Poppins;">
+                                Mengatur gambar rata kiri <i>(left)</i>, tengah <i>(center)</i>, atau kanan <i>(right)</i>.
+                                <!--menampilkan contoh code-->
+
+                                <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link show active" id="center-tab" data-toggle="tab" href="#center" role="tab" aria-controls="center" aria-selected="true">Center</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="left-tab" data-toggle="tab" href="#left" role="tab" aria-controls="left" aria-selected="false">Left</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="right-tab" data-toggle="tab" href="#right" role="tab" aria-controls="right" aria-selected="false">Right</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="center" role="tabpanel" aria-labelledby="center-tab">
+                                        <br> Contoh :<pre class="code">
+<<em style="color:red;">body</em>>
+   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">align</em>="center">
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+                                    </div>
+                                    <div class="tab-pane fade" id="left" role="tabpanel" aria-labelledby="left-tab">
+                                        <br> Contoh :<pre class="code">
+<<em style="color:red;">body</em>>
+   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">align</em>="left">
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+                                    </div>
+                                    <div class="tab-pane fade" id="right" role="tabpanel" aria-labelledby="right-tab">
+                                        <br> Contoh :<pre class="code">
+<<em style="color:red;">body</em>>
+   <<em style="color:red;">img</em> <em style="color:orange;">src</em>="<em style="color:green;">BeRCODING.jpg</em>" <em style="color:orange;">align</em>="right">
+<<em>/</em><em style="color:red;">body</em>>
+</pre>
+                                    </div>
                                 </div>
                             </p>
                         </div>
@@ -124,10 +156,10 @@
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-5.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-23.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-7.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/#">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -182,21 +214,21 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                         <b>Paragraf HTML</b>
                                     </button>
                                     </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    <strong>Paragraf</strong>
+                                                    <i class="fa fa-check text-success mr-5"></i>Paragraf
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Line Break
+                                                    <i class="fa fa-check text-success mr-5"></i>Line Break
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Attribute Align
+                                                    <i class="fa fa-check text-success mr-5"></i>Attribute Align
                                                 </a>
                                             </ul>
                                         </div>
@@ -212,28 +244,28 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Format Text
+                                                    <i class="fa fa-check text-success mr-5"></i>Format Text
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Text Tebal
+                                                    <i class="fa fa-check text-success mr-5"></i>Text Tebal
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Text Miring
+                                                    <i class="fa fa-check text-success mr-5"></i>Text Miring
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Garis Bawah
+                                                    <i class="fa fa-check text-success mr-5"></i>Garis Bawah
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Text Tercoret
+                                                    <i class="fa fa-check text-success mr-5"></i>Text Tercoret
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Marker untuk Text
+                                                    <i class="fa fa-check text-success mr-5"></i>Marker untuk Text
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Membuat Pangkat
+                                                    <i class="fa fa-check text-success mr-5"></i>Membuat Pangkat
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Text Preformat
+                                                    <i class="fa fa-check text-success mr-5"></i>Text Preformat
                                                 </a>
                                             </ul>
                                         </div>
@@ -249,13 +281,13 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Hyperlink
+                                                    <i class="fa fa-check text-success mr-5"></i>Hyperlink
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Membuat Link untuk Tab baru
+                                                    <i class="fa fa-check text-success mr-5"></i>Link ke Tab Baru
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Mailto & Image Hyperlink
+                                                    <i class="fa fa-check text-success mr-5"></i>Mailto & Image Hyperlink
                                                 </a>
                                             </ul>
                                         </div>
@@ -271,13 +303,13 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    List Item
+                                                    <i class="fa fa-check text-success mr-5"></i>List Item
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Ordered List
+                                                    <i class="fa fa-check text-success mr-5"></i>Ordered List
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Unordered List
+                                                    <i class="fa fa-check text-success mr-5"></i>Unordered List
                                                 </a>
                                             </ul>
                                         </div>
@@ -285,21 +317,21 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingSeven">
-                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseFour">
+                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseFour">
                                         <b>Gambar</b>
                                     </button>
                                     </h2>
-                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Menyertakan Gambar   
+                                                    <i class="fa fa-check text-success mr-5"></i>Menyertakan Gambar
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Text Alternatif untuk Image
+                                                    <i class="fa fa-check text-success mr-5"></i>Text Alternatif untuk Image
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Image Border & Image Alignment
+                                                    <strong>Image Border & Image Alignment</strong>
                                                 </a>
                                             </ul>
                                         </div>

@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Paragraf HTML | BERCODING ID</title>
+    <title>Tag HTML | BERCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
+    <!-- bootstrap 5 for accordion -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- Favicons -->
     <link href="../../../assets/img/bercoding3.png" rel="icon">
     <link href="../../../assets/img/bercoding3.png" rel="apple-touch-icon">
@@ -78,211 +79,30 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Paragraf HTML</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Pengertian Tag HTML</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Paragraf</h3>
+                            <h3 class="font-weight-bold">Tag dalam HTML</h3>
                             <p style="font-family: Poppins;">
-                                Paragraf adalah kumpulan dari beberapa kalimat. Pada web, Paragraf biasanya digunakan untuk menampilkan teks. Paragraf pada HTML dibuat dengan tag <b><span style="color: red;">&lt;p&gt;</span></b>. Selain tag itu, ada juga
-                                Tag pendukung lainnya seperti <b><span style="color: red;">&lt;div&gt;</span></b>, <b><span style="color: red;">&lt;hr&gt;</span></b>,
-                                <b><span style="color: red;">&lt;br&gt;</span></b>, dan <b><span style="color: red;">&lt;pre&gt;</span></b>,
-                                <br> Contoh :
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="true">index.html</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="output-tab" data-toggle="tab" href="#output" role="tab" aria-controls="output" aria-selected="false">Output</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="html-tab">
-                                        <br>
-                                        <p>Berkas HTML</p>
-                                        <pre class="code">
-&lt;body&gt;
-
-   &lt;p&gt;
-   Paragraf adalah kumpulan dari beberapa kalimat. Pada web,
-   paragraf biasanya digunakan untu menampilkan teks. Paragraf pada
-   HTML dibuat dengan tag pembukan &lt;p&gt; dan Tag
-   penutup &lt;/p&gt;. Selain tag itu, ada juga tag pendukung lain seperti &lt;div&gt;, &lt;hr&gt;
-   &lt;br&gt;, dan &lt;pre&gt;.
-   &lt;/p&gt;
-
-&lt;/body&gt;
-</pre>
-                                    </div>
-                                    <div class="tab-pane fade" id="output" role="tabpanel" aria-labelledby="output-tab">
-                                        <br>
-                                        <p>Hasil berkas HTML</p>
-                                        <img src="../../../assets/img/hasil code/hasil paragraf.jpg" alt="hasil code paragraf" class="img-fluid">
-                                    </div>
-                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                                </div>
-                            </p>
-                            <h3 class="font-weight-bold">Line Break</h3>
-                            <p style="font-family: Poppins;">Digunakan untuk ganti baris atau ENTER. Tag <b><span style="color: red;">&lt;br&gt;</span></b> sebenarnya bukanlah tag untuk membuat paragrag. Tetapi tag ini, biasanya digunakan untuk membantu tag <b><span style="color: red;">&lt;p&gt;</span></b>.
-                                <br> Fungsi utama tag <b><span style="color: red;">&lt;br&gt;</span></b> adalah untuk membuat baris baru.<br>
-                                <br> Contoh : <br> Misalkan kita ingin menampilkan pantun, bisa saja kita buat seperti ini dengan tag <b><span style="color: red;">&lt;p&gt;</span></b>.
-                                <br>
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">index.html</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Output</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <br>
-                                        <p>Berkas HTML</p>
-                                        <pre class="code">
-&lt;body&gt;
-
-   &lt;p&gt; Buah dipetik rasanya segar
-    Untuk dibuat kue acar.
-    Kalau malas belajar,
-    Pasti bodoh di waktu besar. &lt;/p&gt;
-
-&lt;/body&gt;
-</pre>
-                                    </div>
-                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <br>
-                                        <p>Hasil berkas HTML</p>
-                                        <img src="../../../assets/img/hasil code/br1.jpg" alt="br1" class="img-fluid"> <br> <br> Meskipun pada kode HTML kita sudah menulis tiap bait pantun dalam baris yang baru. Tetapi ia akan Tetap ditampilkan seperti
-                                        baris.
-                                    </div>
-                                </div>
-                                <br> Di sinilah saatnya kita harus menggunakan tag <b><span style="color: red;">&lt;br&gt;</span></b>. Maka, kode di atas bisa kita tambahkan menjadi seperti ini : <br> <br>
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="html2-tab" data-toggle="tab" href="#html2" role="tab" aria-controls="html2" aria-selected="true">Home</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="output2-tab" data-toggle="tab" href="#output2" role="tab" aria-controls="output2" aria-selected="false">Profile</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="html2" role="tabpanel" aria-labelledby="html2-tab">
-                                        <br>
-                                        <p>Berkas HTML</p>
-                                        <pre class="code">
-&lt;body&gt;
-
-   &lt;p&gt; Buah dipetik rasanya segar &lt;br /&gt;
-    Untuk dibuat kue acar. &lt;br /&gt;
-    Kalau malas belajar, &lt;br /&gt;
-    Pasti bodoh di waktu besar. &lt;/p&gt;
-
-   &lt;/body&gt;
-</pre>
-                                    </div>
-                                    <div class="tab-pane fade" id="output2" role="tabpanel" aria-labelledby="output2-tab">
-                                        <br>
-                                        <p>Hasil berkas HTML</p>
-                                        <img src="../../../assets/img/hasil code/br2.jpg" alt="br2" class="img-fluid">
-                                    </div>
-                                </div>
-                                <br> Dalam penulisan tag <b><span style="color: red;">&lt;br&gt;</span></b> tag ini tidal memiliki pasangan penutup. Cara menutupnya, tambahkan saja garis miring seperti ini <b><span style="color: red;">&lt;br&gt;</span></b>.
-                                Tag <b><span style="color: red;">&lt;br&gt;</span></b> boleh ditutup, dan juga boleh tidak ditutup.
-
-                            </p>
-                            <h3 class="font-weight-bold">Align</h3>
-                            <p style="font-family: Poppins;">
-                                <b>Atribut align</b> adalah atribut yang menentukan perataan teks. Ada beberapa mancam nilai Atribut align, diantaranya :
-                                <br>
+                                Tag adalah sebuah <strong>penanda awalan</strong> dan <strong>akhiran</strong> dari sebuah <strong> elemen </strong> di HTML. Tag dibuat dengan kurung siku (<b style="color:red"><...></b>), lalu di dalamnya berisi nama
+                                tag dan kadang juga ditambahkan dengan atribut.
+                                <br> Contoh Beberapa Tag yang ada dalam HTML ialah :
+                                <b style="color:red"><</b><b style="color:red">p></b>,
+                                <b style="color:red"><</b><b style="color:red">a></b>,
+                                <b style="color:red"><</b><b style="color:red">body></b>,
+                                <b style="color:red"><</b><b style="color:red">head></b>, dan sebagainya.
+                                <br> Dalam penulisan Tag selalu berpasangan. Ada tag pembuka dan tag penutup. Tetapi dalam penulisan Tag ada beberapa tag yang tidak memiliki pasangan penutup. Tag penutup ditulis dengan menambahkan garis miring (<b style="color:red;">/</b>)
+                                di depan nama tag.
+                                <br><br>
+                                <img src="../../../assets/img/hasil code/code.jpg" alt="contoh penulisan Tag" class="img-fluid">
+                                <br><br> Dalam penulisan HTML ada beberapa Tag-tag yang wajib kita sertakan sebelum memulai pengerjaan, Diantaranya : <br>
                                 <ul>
-                                    <li>center : Membuat seluruh teks ke tengan halaman web, penulisannya align="center"</li>
-                                    <li>left : Membuat seluruh teks ke sisi kiri halaman web, penulisannya align="left"</li>
-                                    <li>right : Membuat seluruh teks ke sisi kanan halaman web, penulisannya align="right"</li>
-                                    <li>justify : Meregangkan baris sehingga setiap baris memiliki lebar yang sama (seperti dikoran dan majalah), penulisannya align="justify"</li>
+                                    <li><em style="color:red"><<em style="color:red">!DOCTYPE html></em></em> - Untuk mendeklarasikan type dokumen</li>
+                                    <li><em style="color:red"><<em style="color:red">html></em></em> - Tag utama dalam HYML</li>
+                                    <li><em style="color:red"><<em style="color:red">head></em></em> - untuk bagian kepala dari dokumen</li>
+                                    <li><em style="color:red"><<em style="color:red">title></em></em> - Untuk judul web</li>
+                                    <li><em style="color:red"><<em style="color:red">body></em></em> - Untuk bagian body dari dokumen</li>
+                                    <br>
                                 </ul>
-                                <br>Kita bisa menggunakan atribut align di beberapa tag seperti di bawah ini :
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="tes1-tab" data-toggle="tab" href="#tes1" role="tab" aria-controls="tes1" aria-selected="true">Tag Heading</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="tes2-tab" data-toggle="tab" href="#tes2" role="tab" aria-controls="tes2" aria-selected="false">Tag Paragraf</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="tes3-tab" data-toggle="tab" href="#tes3" role="tab" aria-controls="tes3" aria-selected="false">Tag Horizontal Rule</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="tes1" role="tabpanel" aria-labelledby="tes1-tab">
-                                        <br>
-                                        <p>dengan tag heading</p>
-                                        <pre class="code">
-&lt;h1 align="right"&gt; . . &lt;/h1&gt;
-</pre>
-                                    </div>
-                                    <div class="tab-pane fade" id="tes2" role="tabpanel" aria-labelledby="tes2-tab">
-                                        <br>
-                                        <p>dengan tag paragraf</p>
-                                        <pre class="code">
-&lt;p align="right"&gt; . . &lt;/p&gt;
-</pre>
-                                    </div>
-                                    <div class="tab-pane fade" id="tes3" role="tabpanel" aria-labelledby="tes3-tab">
-                                        <br>
-                                        <p>dengan tag Horizontal Rule</p>
-                                        <pre class="code">
-&lt;hr align="right"&gt; . . &lt;/hr&gt;
-</pre>
-                                    </div>
-                                </div>
-                                <br> Contoh :
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="align-tab" data-toggle="tab" href="#align" role="tab" aria-controls="align" aria-selected="true">index.html</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="output3-tab" data-toggle="tab" href="#output3" role="tab" aria-controls="output3" aria-selected="false">Output</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="align" role="tabpanel" aria-labelledby="align-tab">
-                                        <br>
-                                        <p>Berkas HTML</p>
-                                        <pre class="code">
-&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-  &lt;head&gt;
-      &lt;title&gt; Belajar atribut align &lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-      &lt;h1 align="center&gt;" Hi kamu yang disana &lt;/h1&gt;
-      &lt;p align="right"&gt;
-          semoga kamu baik - baik saja, ada yang selalu merindukanmu disini
-      &lt;/p&gt;
-      &lt;hr align="center"&gt;
-      &lt;p align="center"&gt;
-          senyum manis kamoeh yang ngebuat akoh terus kangen sama kamoeh #eaaa
-      &lt;/p&gt;
-      &lt;p align="justify"&gt;
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur ullamcorper, mi sit amet porttitor porttitor, velit sapien iaculis ipsum,
-          a rhoncus felis elit non mauris. Praesent orci tellus, faucibus sed tellus vel,
-          posuere posuere lorem. Integer mi nunc, tempor a auctor non, mollis a tellus.
-          Etiam nibh lectus, consectetur vel lectus vitae, imperdiet pretium purus.
-          Quisque vehicula lacus vel porttitor ultricies. Nam dignissim eu augue sit
-          amet maximus. Fusce lacus ligula, porttitor a tristique eget, tempor sit amet tellus.
-          Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Nullam eu maximus nibh. Nulla vulputate lorem tellus, quis rhoncus erat sagittis non
-      &lt;/p&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-</pre>
-                                    </div>
-                                    <div class="tab-pane fade" id="output3" role="tabpanel" aria-labelledby="output3-tab">
-                                        <br>
-                                        <p>Hasil berkas HTML</p>
-                                        <img src="../../../assets/img/hasil code/align.jpg" alt="hasil align" class="img-fluid">
-                                    </div>
-                                </div>
                             </p>
                         </div>
                     </div>
@@ -303,39 +123,270 @@
                             <h3 class="text-center">
                                 Daftar Modul
                             </h3>
-                            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                Pengenalan HTML
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Tag HTML
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <strong>Paragraf </strong>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Pemformatan Teks
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Hyperlink
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                List
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Gambar
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Tabel
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Form
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Font
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                Submission
-                            </a>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <b>Pendahuluan</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    <i class="fa fa-check text-success mr-5"></i>Pengenalan HTML
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    <i class="fa fa-check text-success mr-5"></i>Cara Kerja HTML
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        <b>Tag HTML</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    <strong>Pengertian Tag HTML</strong>
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Tag Head,Title, & Body
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Heading dan Elemen
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <b>Paragraf HTML</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Paragraf
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Line Break
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Attribute Align
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Pemformatan Text HTML</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Format Text
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Text Tebal
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Text Miring
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Garis Bawah
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Text Tercoret
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Marker untuk Text
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Membuat Pangkat
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Text Preformat
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Hyperlink HTML</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Hyperlink
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Membuat Link untuk Tab baru
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Mailto & Image Hyperlink
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>List</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    List Item
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Ordered List
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Unordered List
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeven">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Gambar</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Menyertakan Gambar   
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Text Alternatif untuk Image
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Image Border & Image Alignment
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingEight">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Tabel</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Membuat Tabel
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Menggabungkan Sel Tabel 
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Cellpadding   
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Cellspacing  
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Background Warna  
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Warna Border
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingNine">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Form</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Membuat Form
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Field Text & Field Text-Password
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Checkbox & Radio Button
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Textarea, File Upload, & Button Controls
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTen">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Font HTML</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Mengatur Size, Color, dan Style Huruf (Font)
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Ukuran Font (font size)
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Jenis Font
+                                                </a>
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Warna Font
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading11">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Penutupan</b>
+                                    </button>
+                                    </h2>
+                                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item" aria-current="true">
+                                                    Submission
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -430,6 +481,10 @@
     <script src="../../../assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
     <script src="../../../assets/vendor/venobox/venobox.min.js "></script>
     <script src="../../../assets/vendor/aos/aos.js "></script>
+
+    <!-- bootstrap 5 for accordion -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 
     <!-- Template Main JS File -->
     <script src="../../../assets/js/main.js "></script>

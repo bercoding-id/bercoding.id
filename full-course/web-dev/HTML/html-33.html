@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Hyperlink | BERCODING ID</title>
+    <title>Textarea, File Upload dan Button Controls | BERCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <!-- bootstrap 5 for accordion -->
@@ -79,53 +79,89 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Hyperlink HTML</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Textarea, File Upload dan Button Controls</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Hyperlink</h3>
+                            <h3 class="font-weight-bold">Textarea </h3>
                             <p style="font-family: Poppins;">
-                                <br>Dokumen HTML mempunyai kemampuan untuk memberikan link dari satu teks atau gambar menuju ke dokumen/halaman lain dalam suatu dokumen.
-                                <br><br>Browser web akan menyorot teks atau gambar yang diidentifikasikan sebagai link dengan warna atau garis bawah untuk menunjukkan bahwa itu adalah hypertext link.
-                                <br><br> HTML menggunakan tag <span style="color: red;"><b>&lt;a&gt;</b></span> atau yang disebut juga sebagai tag anchor untuk membuat suatu link kepada dokumen lain.
-                                <br><br>Untuk penggunaannya bisa dilihat seperti contoh dibawah ini.
-                                <br><br> Contoh :
-
-                                <!--menampilkan contoh code-->
-
-                                <ul class="nav nav-tabs" id="myTab" role="tablis">
+                                Contoh :
+                                <ul class="nav nav-tabs" id="myTabs" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="hyperlink-tab" data-toggle="tab" href="#hyperlink" role="tab" aria-control="hyperlink" aria-selected="true">index.html</a>
+                                        <a class="nav-link show active" id="textarea-tab" data-toggle="tab" href="#textarea" role="tab" aria-controls="textarea" aria-selected="true">index.html</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="hasil2-tab" data-toggle="tab" href="#hasil2" role="tab" aria-control="hasil2" aria-selected="false">output</a>
+                                        <a class="nav-link" id="hasil5-tab" data-toggle="tab" href="#hasil5" role="tab" aria-Controls="hasil5" aria-selected="false">output</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="hyperlink" role="tabpanel" aria-labelledby="hyperlink-tab">
-                                        <br>
-                                        <p>Contoh file index.html</p>
+                                    <div class="tab-pane fade show active" id="textarea" role="tabpanel" aria-labelledby="textarea-tab">
                                         <pre class="code">
-<span style="color: blue;">&lt;body&gt;</span>
-    <span style="color: blue;">&lt;p&gt;</span>
-        <span style="color: blue;">&lt;a</span> <span style="color: #126e82;">href</span>=<span style="color: rgb(168, 110, 2);">"https://bercoding.id"</span><span style="color: blue;">&gt;</span>Contoh Hyperlink<span style="color: blue;">&lt;a&gt;</span>
-    <span style="color: blue;">&lt;p&gt;</span>                                            
-<span style="color: blue;">&lt;/body&gt;</span>
+  <<em style="color:red;">label</em>>Feedback <<em>/</em><em style="color:red;">label</em>> <<em style="color:red;">br</em>>
+<<em style="color:red;">textarea</em> <em style="color:orange;">name</em><em style="color:red;">=</em><em style="color:green;">"Feedback"</em>> <<em>/</em><em style="color:red;">textarea</em>>
 </pre>
                                     </div>
-                                    <div class="tab-pane fade" id="hasil2" role="tabpanel" aria-labelledby="hasil2-tab">
-                                        <br> Hasil dari file index.html<br>
-                                        <img src="../../../assets/img/hasil code/link.jpg" alt="hasil Hyperlink" class="img-fluid">
+                                    <div class="tab-pane fade" id="hasil5" role="tabpanel" aria-labelledby="hasil5-tab">
+                                        <br> Hasil : <br>
+                                        <img src="../../../assets/img/hasil code/textarea.jpg" alt="fieltext" class="img-fluid">
                                     </div>
                                 </div>
+                                <br>
+                            </p>
+                            <h3 class="font-weight-bold">File Upload</h3>
+                            <p style="font-family: Poppins;">
+                                Contoh : <br>
+                                <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link show active" id="upload-tab" data-toggle="tab" href="#upload" role="tab" aria-controls="upload" aria-selected="true">index.html</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="hasil6-tab" data-toggle="tab" href="#hasil6" role="tab" aria-controls="hasil6" aria-selected="false">output</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" role="myTabContent">
+                                    <div class="tab-pane fade show active" id="upload" role="tabpanel" aria-labelledby="upload-tab">
+                                        <pre class="code">
+<<em style="color:red;">p</em>> Upload<<em style="color:red;">input</em> <em style="color:orange;">type</em><em style="color:red;">=</em><em style="color:green;">"file"</em> <<em>/</em><em style="color:red;">p</em>>
+</pre>
+                                    </div>
+                                    <div class="tab-pane fade" id="hasil6" role="tabpanel" aria-labelledby="hasil6-tab">
+                                        <br> Hasil : <br>
+                                        <img src="../../../assets/img/hasil code/file upload.jpg" alt="fieltext" class="img-fluid">
+                                    </div>
+                                </div>
+                            </p>
+                            <h3 class="font-weight-bold">Button Controls</h3>
+                            <p style="font-family: Poppins;">
+                                Contoh : <br>
+                                <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link show active" id="button-tab" data-toggle="tab" href="#button" role="tab" aria-controls="button" aria-selected="true">index.html</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="hasil7-tab" data-toggle="tab" href="#hasil7" role="tab" aria-controls="hasil7" aria-selected="false">output</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="button" role="tabpanel" aria-labelledby="button-tab">
+                                        <pre class="code">
+  <<em style="color:red;">button</em> <em style="color:orange;">type</em><em style="color:red;">=</em><em style="color:green;">"submit"</em>> Kirim <<em>/</em><em style="color:red;">button</em>>
+</pre>
+                                    </div>
+                                    <div class="tab-pane fade" id="hasil7" role="tabpanel" aria-labelledby="hasil7-tab">
+                                        <br> Hasil : <br>
+                                        <img src="../../../assets/img/hasil code/button.jpg" alt="fieltext" class="img-fluid">
+                                    </div>
+                                </div>
+                                <br>
                             </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-16.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-32.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-18.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-34.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -239,21 +275,21 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFour">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
                                         <b>Hyperlink HTML</b>
                                     </button>
                                     </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    <strong>Hyperlink</strong>
+                                                    <i class="fa fa-check text-success mr-3"></i>Hyperlink
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Membuat Link untuk Tab baru
+                                                    <i class="fa fa-check text-success mr-3"></i>Link ke Tab Baru
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Mailto & Image Hyperlink
+                                                    <i class="fa fa-check text-success mr-3"></i>Mailto & Image Hyperlink
                                                 </a>
                                             </ul>
                                         </div>
@@ -269,13 +305,13 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    List Item
+                                                    <i class="fa fa-check text-success mr-3"></i>List Item
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Ordered List
+                                                    <i class="fa fa-check text-success mr-3"></i>Ordered List
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Unordered List
+                                                    <i class="fa fa-check text-success mr-3"></i>Unordered List
                                                 </a>
                                             </ul>
                                         </div>
@@ -291,13 +327,13 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Menyertakan Gambar   
+                                                    <i class="fa fa-check text-success mr-3"></i>Menyertakan Gambar
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Text Alternatif untuk Image
+                                                    <i class="fa fa-check text-success mr-3"></i>Text Alternatif untuk Image
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Image Border & Image Alignment
+                                                    <i class="fa fa-check text-success mr-3"></i>Image Border & Image Alignment
                                                 </a>
                                             </ul>
                                         </div>
@@ -313,16 +349,16 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Membuat Tabel HTML
+                                                    <i class="fa fa-check text-success mr-3"></i>Membuat Tabel HTML
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Menggabungkan Sel Tabel 
+                                                    <i class="fa fa-check text-success mr-3"></i>Menggabungkan Sel Tabel
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Cellpadding & Cellspacing
+                                                    <i class="fa fa-check text-success mr-3"></i>Cellpadding & Cellspacing
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Background Warna & Warna Border 
+                                                    <i class="fa fa-check text-success mr-3"></i>Background Warna & Warna Border
                                                 </a>
                                             </ul>
                                         </div>
@@ -330,24 +366,24 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingNine">
-                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseFour">
+                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseFour">
                                         <b>Form</b>
                                     </button>
                                     </h2>
-                                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                    <div id="collapseNine" class="accordion-collapse collapse show" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Membuat Form
+                                                    <i class="fa fa-check text-success mr-3"></i>Membuat Form
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Field Text & Field Text-Password
+                                                    <i class="fa fa-check text-success mr-3"></i>Field Text & Field Text-Password
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Checkbox & Radio Button
+                                                    <i class="fa fa-check text-success mr-3"></i>Checkbox & Radio Button
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Textarea, File Upload, & Button Controls
+                                                    <strong>Textarea, File Upload, & Button Controls</strong>
                                                 </a>
                                             </ul>
                                         </div>
@@ -367,11 +403,9 @@
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
                                                     Ukuran Font (font size)
-                                                <a href="#" class="list-group-item" aria-current="true">
-                                                    Jenis Font
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Warna Font
+                                                    Jenis Font & Warna Font
                                                 </a>
                                             </ul>
                                         </div>

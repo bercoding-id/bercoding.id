@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Hyperlink | BERCODING ID</title>
+    <title>Membuat Tabel | BERCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <!-- bootstrap 5 for accordion -->
@@ -79,41 +79,47 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Hyperlink HTML</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Tabel HTML</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Hyperlink</h3>
+                            <h3 class="font-weight-bold">Membuat Tabel</h3>
                             <p style="font-family: Poppins;">
-                                <br>Dokumen HTML mempunyai kemampuan untuk memberikan link dari satu teks atau gambar menuju ke dokumen/halaman lain dalam suatu dokumen.
-                                <br><br>Browser web akan menyorot teks atau gambar yang diidentifikasikan sebagai link dengan warna atau garis bawah untuk menunjukkan bahwa itu adalah hypertext link.
-                                <br><br> HTML menggunakan tag <span style="color: red;"><b>&lt;a&gt;</b></span> atau yang disebut juga sebagai tag anchor untuk membuat suatu link kepada dokumen lain.
-                                <br><br>Untuk penggunaannya bisa dilihat seperti contoh dibawah ini.
-                                <br><br> Contoh :
+                                Tabel digunakan untuk menyajikan data dalam bentuk kolom dan baris. Untuk mengawali pembuatan Tabel di awali dengan tag <em style="color:red;"><<em style="color:red;">table></em></em>.
+                                <br> Tabel sudah identik dengan baris dan kolom,dalam penulisan baris di dalam tabel bisa gunakan tag <em style="color:red;"><<em style="color:red;">tr></em></em> dan untuk pembuatan kolom Anda bisa menggunakan tag
+                                <em style="color:red;">
+                                    <<em style="color:red;">td></em>
+                                </em>.
+                                <br> Td kependekan dari <strong>"table data"</strong> yang berarti tempat menyimpan data <i>(data cell)</i>. Sebuah cell data dapat berupa teks, image, list, paragraf, form, tabel, dll.
+                                <br> Contoh : <br>
 
-                                <!--menampilkan contoh code-->
-
-                                <ul class="nav nav-tabs" id="myTab" role="tablis">
+                                <ul class="nav nav-tabs" id="myTabs" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="hyperlink-tab" data-toggle="tab" href="#hyperlink" role="tab" aria-control="hyperlink" aria-selected="true">index.html</a>
+                                        <a class="nav-link show active" id="tabel-tab" data-toggle="tab" href="#tabel" role="tab" aria-controls="tab" aria-selected="true">index.html</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="hasil2-tab" data-toggle="tab" href="#hasil2" role="tab" aria-control="hasil2" aria-selected="false">output</a>
+                                        <a class="nav-link" id="hasil3-tab" data-toggle="tab" href="#hasil3" role="tab" aria-controls="tabs" aria-selected="false">output</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="hyperlink" role="tabpanel" aria-labelledby="hyperlink-tab">
-                                        <br>
-                                        <p>Contoh file index.html</p>
+                                    <div class="tab-pane fade show active" id="tabel" role="tabpanel" aria-labelledby="tabel-tab">
                                         <pre class="code">
-<span style="color: blue;">&lt;body&gt;</span>
-    <span style="color: blue;">&lt;p&gt;</span>
-        <span style="color: blue;">&lt;a</span> <span style="color: #126e82;">href</span>=<span style="color: rgb(168, 110, 2);">"https://bercoding.id"</span><span style="color: blue;">&gt;</span>Contoh Hyperlink<span style="color: blue;">&lt;a&gt;</span>
-    <span style="color: blue;">&lt;p&gt;</span>                                            
-<span style="color: blue;">&lt;/body&gt;</span>
+<<em style="color:red;">body</em>>
+    <<em style="color:red;">table</em> border="1px solid black">
+         <<em style="color:red;">tr</em>>
+            <<em style="color:red;">td</em>> Nama <<em>/</em><em style="color:red;">td</em>>
+            <<em style="color:red;">td</em>> Jabatan <<em>/</em><em style="color:red;">td</em>>
+         <<em>/</em><em style="color:red;">tr</em>>
+
+         <<em style="color:red;">tr</em>>
+            <<em style="color:red;">td</em>> Michael <<em>/</em><em style="color:red;">td</em>>
+            <<em style="color:red;">td</em>> Founder <<em>/</em><em style="color:red;">td</em>>
+         <<em>/</em><em style="color:red;">tr</em>>
+    <<em>/</em><em style="color:red;">table</em>>
+<<em>/</em><em style="color:red;">body</em>>
 </pre>
                                     </div>
-                                    <div class="tab-pane fade" id="hasil2" role="tabpanel" aria-labelledby="hasil2-tab">
-                                        <br> Hasil dari file index.html<br>
-                                        <img src="../../../assets/img/hasil code/link.jpg" alt="hasil Hyperlink" class="img-fluid">
+                                    <div class="tab-pane fade" id="hasil3" role="tabpanel" aria-labelledby="hasil3-tab">
+                                        <br> Hasil : <br>
+                                        <img src="../../../assets/img/hasil code/table.jpg" alt="table" class="img-fluid">
                                     </div>
                                 </div>
                             </p>
@@ -122,10 +128,10 @@
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-16.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-25.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-18.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../HTML/html-27.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -239,21 +245,21 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFour">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
                                         <b>Hyperlink HTML</b>
                                     </button>
                                     </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    <strong>Hyperlink</strong>
+                                                    <i class="fa fa-check text-success mr-3"></i>Hyperlink
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Membuat Link untuk Tab baru
+                                                    <i class="fa fa-check text-success mr-3"></i>Link ke Tab Baru
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Mailto & Image Hyperlink
+                                                    <i class="fa fa-check text-success mr-3"></i>Mailto & Image Hyperlink
                                                 </a>
                                             </ul>
                                         </div>
@@ -269,13 +275,13 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    List Item
+                                                    <i class="fa fa-check text-success mr-3"></i>List Item
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Ordered List
+                                                    <i class="fa fa-check text-success mr-3"></i>Ordered List
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Unordered List
+                                                    <i class="fa fa-check text-success mr-3"></i>Unordered List
                                                 </a>
                                             </ul>
                                         </div>
@@ -291,13 +297,13 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Menyertakan Gambar   
+                                                    <i class="fa fa-check text-success mr-3"></i>Menyertakan Gambar
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Text Alternatif untuk Image
+                                                    <i class="fa fa-check text-success mr-3"></i>Text Alternatif untuk Image
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Image Border & Image Alignment
+                                                    <i class="fa fa-check text-success mr-3"></i>Image Border & Image Alignment
                                                 </a>
                                             </ul>
                                         </div>
@@ -305,15 +311,15 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingEight">
-                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseFour">
+                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseFour">
                                         <b>Tabel</b>
                                     </button>
                                     </h2>
-                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                    <div id="collapseEight" class="accordion-collapse collapse show" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Membuat Tabel HTML
+                                                    <strong>Membuat Tabel</strong>
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
                                                     Menggabungkan Sel Tabel 

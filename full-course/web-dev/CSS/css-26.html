@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Eksternal CSS | BERCODING ID</title>
+    <title>Menggunakan RGBA | BERCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <!-- bootstrap 5 for accordion -->
@@ -79,43 +79,45 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Eksternal CSS</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Styling Color CSS</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Membuat Eksternal CSS</h3>
+                            <h3 class="font-weight-bold">Menggunakan RGBA</h3>
                             <p style="font-family: Poppins;">
-                                Dengan External CSS, kita bisa menggunakan style untuk beberapa halaman dalam suatu website. Untuk menggunakannya, kode CSS yang ditulis terpisah dengan kode HTML Eksternal CSS ditulis di sebuah file khusus yang berekstensi .css . dalam peletakan file
-                                eksternal CSS dengan menuliskan link file eksternal CSS di dalam tag <em style="color:red;"><<em style="color:red;">head></em></em>.
-                                <br>
-                                <br>Sebagai Contoh saya membuat file CSS dengan nama styling.css berikut isi kode dari file styling.css <br>
-
+                                Ini adalah salah satu dari styling color dengan menggunakan kombilasi nilai RGBA (red, green, blue, alpa) dengan nilai 0 sampai 255 dan alpha digunakan untuk mengatur transparansi. Nilai alpha berupa bilangan float (pecahan desimal) antara 0 (transparan)
+                                hingga 1 (tidak transparan). <br> Contoh : <br>
                                 <pre class="code">
-   <em style="color:red;">h2</em> {
-        width : 100%;
-     }
-   <em style="color:red;">p</em> {
-        padding: 10px;
-     }
-</pre>
-                                <p>Untuk menyambungkan/menggunakan file styling.css yang sudah kita buat, Anda perlu menambahkannya ke dalan file html. Dengan menggunakan tag <em style="color:red;"><<em style="color:red;">link></em></em> <br>
-                                    <pre class="code">
-<<em style="color:red;">head</em>>
-      <<em style="color:red;">link </em> <em style="color:green;">rel</em>="stylesheet" type="text/css" <em style="color:red;">href</em>="styling.css">
-<<em>/</em><em style="color:red;">head</em>>
-     <<em style="color:red;">body</em>>
-          <<em style="color:red;">h2</em>> BeRCODING.ID <<em style="color:red;">/h2</em>>
-     <<em style="color:red;">p</em>>Contoh Dari penggunaan External CSS<<em style="color:red;">/p</em>>
-<<em>/</em><em style="color:red;">body</em>>
-</pre>
-                                </p>
+&lt;head&gt;
+   &lt;style type="text/css"&gt;
+      .red {
+        background-color: rgb(255, 0, 0, 1);
+      }
+
+      .green {
+        background-color: rgba(0, 255, 0, .5);
+      }
+
+      .hex {
+        background-color: rgb(100, 50, 70, .8);
+      }
+  &lt/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 class="red"&gt; 255, 0, 0, 1 (Red) &lt;/h1&gt;
+    &lt;h1 class="green"&gt; 0, 255, 0, .5 (Green) &lt;/h1&gt;
+    &lt;h1 class="hex"&gt; 100, 50, 70, .8 &lt;/h1&gt;
+&lt;/body&gt;
+                              </pre> <br> Hasil dari code di atas, akan seperti dibawah ini : <br> <br>
+                                <img src="../../../assets/img/hasil code/css/rgba.jpg" alt="RGBA" class="img-fluid">
+                            </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/css-3.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/css-25.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/css-5.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/css-27.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -129,11 +131,11 @@
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                         <b>Pendahuluan</b>
                                     </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
@@ -146,7 +148,7 @@
                                                     <i class="fa fa-check text-success mr-3"></i>Internal CSS
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    <strong>Eksternal CSS</strong>
+                                                    <i class="fa fa-check text-success mr-3"></i>Eksternal CSS
                                                 </a>
                                             </ul>
                                         </div>
@@ -162,13 +164,13 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Styling Font
+                                                    <i class="fa fa-check text-success mr-3"></i>Styling Font
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Font Size
+                                                    <i class="fa fa-check text-success mr-3"></i>Font Size
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Font Weight
+                                                    <i class="fa fa-check text-success mr-3"></i>Font Weight
                                                 </a>
                                             </ul>
                                         </div>
@@ -184,13 +186,13 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Pengenalan Sytling link
+                                                    <i class="fa fa-check text-success mr-3"></i>Pengenalan Sytling link
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Pseudo Class
+                                                    <i class="fa fa-check text-success mr-3"></i>Pseudo Class
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Kaidah Penulisan
+                                                    <i class="fa fa-check text-success mr-3"></i>Kaidah Penulisan
                                                 </a>
                                             </ul>
                                         </div>
@@ -206,19 +208,19 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Pengenalan Styling Table
+                                                    <i class="fa fa-check text-success mr-3"></i>Pengenalan Styling Table
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Memisahkan Border Pada Tabel
+                                                    <i class="fa fa-check text-success mr-3"></i>Memisahkan Border Pada Tabel
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Membuat Jarak antara Kolom dan Baris
+                                                    <i class="fa fa-check text-success mr-3"></i>Membuat Jarak antara Kolom dan Baris
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Mengatur Posisi Judul atau Caption Tabel
+                                                    <i class="fa fa-check text-success mr-3"></i>Mengatur Posisi Judul atau Caption Tabel
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Menghilangkan Garis pada Kolom Kosong
+                                                    <i class="fa fa-check text-success mr-3"></i>Menghilangkan Garis pada Kolom Kosong
                                                 </a>
                                             </ul>
                                         </div>
@@ -234,7 +236,7 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Pengenalan Styling Button
+                                                    <i class="fa fa-check text-success mr-3"></i>Pengenalan Styling Button
                                                 </a>
                                             </ul>
                                         </div>
@@ -250,22 +252,22 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Pengenalan Styling Image
+                                                    <i class="fa fa-check text-success mr-3"></i>Pengenalan Styling Image
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Mengatur Gambar pada CSS
+                                                    <i class="fa fa-check text-success mr-3"></i>Mengatur Gambar pada CSS
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Mengatur Border atau Garis pada Gambar
+                                                    <i class="fa fa-check text-success mr-3"></i>Mengatur Border atau Garis pada Gambar
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Mengatur Lebar Gambar dengan CSS
+                                                    <i class="fa fa-check text-success mr-3"></i>Mengatur Lebar Gambar dengan CSS
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Mengatur Tinggi Gambar dengan CSS
+                                                    <i class="fa fa-check text-success mr-3"></i>Mengatur Tinggi Gambar dengan CSS
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Mengatur Gambar agar Transparan
+                                                    <i class="fa fa-check text-success mr-3"></i>Mengatur Gambar agar Transparan
                                                 </a>
                                             </ul>
                                         </div>
@@ -281,7 +283,7 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Font Awesome
+                                                    <i class="fa fa-check text-success mr-3"></i>Font Awesome
                                                 </a>
                                             </ul>
                                         </div>
@@ -289,21 +291,21 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingEight">
-                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseFour">
+                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseFour">
                                         <b>Styling Color CSS</b>
                                     </button>
                                     </h2>
-                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                    <div id="collapseEight" class="accordion-collapse collapse show" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Color Names
+                                                    <i class="fa fa-check text-success mr-3"></i>Color Names
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Menggunakan RGB
+                                                    <i class="fa fa-check text-success mr-3"></i>Menggunakan RGB
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Menggunakan RGBA
+                                                    <strong>Menggunakan RGBA</strong>
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
                                                     Menggunakan HEX

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Eksternal CSS | BERCODING ID</title>
+    <title>Styling Button | BERCODING ID</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <!-- bootstrap 5 for accordion -->
@@ -79,43 +79,68 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="jumbotron-full-bg bg-white text-md-left ">
                         <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-                            <h2 class="display-4" style="font-size: 35px;">Eksternal CSS</h2>
+                            <h2 class="display-4" style="font-size: 35px;">Styling Button</h2>
                             <hr class="my-2 border-dark mb-3">
-                            <h3 class="font-weight-bold">Membuat Eksternal CSS</h3>
+                            <h3 class="font-weight-bold">Pengenalan Styling Button</h3>
                             <p style="font-family: Poppins;">
-                                Dengan External CSS, kita bisa menggunakan style untuk beberapa halaman dalam suatu website. Untuk menggunakannya, kode CSS yang ditulis terpisah dengan kode HTML Eksternal CSS ditulis di sebuah file khusus yang berekstensi .css . dalam peletakan file
-                                eksternal CSS dengan menuliskan link file eksternal CSS di dalam tag <em style="color:red;"><<em style="color:red;">head></em></em>.
-                                <br>
-                                <br>Sebagai Contoh saya membuat file CSS dengan nama styling.css berikut isi kode dari file styling.css <br>
-
+                                Tombol (button) telah menjadi bagian yang tidak terhindarkan lagi dari pengembangan front-end. Oleh karena itu, penting untuk mengingat beberapa hal sebelum Anda mulai menata tombol. Ini beberapa cara menata tombol menggunakan CSS. <br>                                <br>
+                                <b>HTML CODE</b>
                                 <pre class="code">
-   <em style="color:red;">h2</em> {
-        width : 100%;
-     }
-   <em style="color:red;">p</em> {
-        padding: 10px;
-     }
+&lt;h1&gt;Style Button 1 &lt;/h1&gt;
+
+&lt;button class="btn first"&gt;Tombol 1&lt;/button&gt;
 </pre>
-                                <p>Untuk menyambungkan/menggunakan file styling.css yang sudah kita buat, Anda perlu menambahkannya ke dalan file html. Dengan menggunakan tag <em style="color:red;"><<em style="color:red;">link></em></em> <br>
-                                    <pre class="code">
-<<em style="color:red;">head</em>>
-      <<em style="color:red;">link </em> <em style="color:green;">rel</em>="stylesheet" type="text/css" <em style="color:red;">href</em>="styling.css">
-<<em>/</em><em style="color:red;">head</em>>
-     <<em style="color:red;">body</em>>
-          <<em style="color:red;">h2</em>> BeRCODING.ID <<em style="color:red;">/h2</em>>
-     <<em style="color:red;">p</em>>Contoh Dari penggunaan External CSS<<em style="color:red;">/p</em>>
-<<em>/</em><em style="color:red;">body</em>>
-</pre>
-                                </p>
+                                <br><br>
+                                <b>CSS CODE Styling 1</b>
+                                <pre class="code">
+
+.btn {
+     box-sizing: border-box;
+     -webkit-appearance: none;
+        -moz-appearance: none;
+             appearance: none;
+     background-color: transparent;
+     border: 2px solid #e74c3c;
+     border-radius: 0.6em;
+     color: #e74c3c;
+     cursor: pointer;
+     display: flex;
+     align-self: center;
+     font-size: 1rem;
+     font-weight: 400;
+     line-height: 1;
+     margin: 20px;
+     padding: 1.2em 2.8em;
+     text-decoration: none;
+     text-align: center;
+     text-transform: uppercase;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+}
+.btn:hover, .btn:focus {
+     color: #fff;
+     outline: 0;
+}
+
+.first {
+     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+     box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+</pre> <br><br> Hasil dari code yang kita tulis di atas akan seperti dibawah ini : <br>
+                                <img src="../../../assets/img/hasil code/css/button1.gif" alt="button 1" class="img-fluid"> <br><br>
+
+                            </p>
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/css-3.html" tabindex="-1">&laquo; Sebelumnya</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/css-15.html" tabindex="-1">&laquo; Sebelumnya</a>
                             </li>
                             <li class="page-item mr-auto ml-auto px-auto">
-                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/css-5.html">Selanjutnya &raquo;</a>
+                                <a class="page-link bg-primary text-white shadow-none" href="../CSS/css-17.html">Selanjutnya &raquo;</a>
                             </li>
                         </ul>
                     </nav>
@@ -129,11 +154,11 @@
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                         <b>Pendahuluan</b>
                                     </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
@@ -146,7 +171,7 @@
                                                     <i class="fa fa-check text-success mr-3"></i>Internal CSS
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    <strong>Eksternal CSS</strong>
+                                                    <i class="fa fa-check text-success mr-3"></i>Eksternal CSS
                                                 </a>
                                             </ul>
                                         </div>
@@ -162,13 +187,13 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Styling Font
+                                                    <i class="fa fa-check text-success mr-3"></i>Styling Font
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Font Size
+                                                    <i class="fa fa-check text-success mr-3"></i>Font Size
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Font Weight
+                                                    <i class="fa fa-check text-success mr-3"></i>Font Weight
                                                 </a>
                                             </ul>
                                         </div>
@@ -184,13 +209,13 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Pengenalan Sytling link
+                                                    <i class="fa fa-check text-success mr-3"></i>Pengenalan Sytling link
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Pseudo Class
+                                                    <i class="fa fa-check text-success mr-3"></i>Pseudo Class
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Kaidah Penulisan
+                                                    <i class="fa fa-check text-success mr-3"></i>Kaidah Penulisan
                                                 </a>
                                             </ul>
                                         </div>
@@ -206,19 +231,19 @@
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Pengenalan Styling Table
+                                                    <i class="fa fa-check text-success mr-3"></i>Pengenalan Styling Table
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Memisahkan Border Pada Tabel
+                                                    <i class="fa fa-check text-success mr-3"></i>Memisahkan Border Pada Tabel
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Membuat Jarak antara Kolom dan Baris
+                                                    <i class="fa fa-check text-success mr-3"></i>Membuat Jarak antara Kolom dan Baris
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Mengatur Posisi Judul atau Caption Tabel
+                                                    <i class="fa fa-check text-success mr-3"></i>Mengatur Posisi Judul atau Caption Tabel
                                                 </a>
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Menghilangkan Garis pada Kolom Kosong
+                                                    <i class="fa fa-check text-success mr-3"></i>Menghilangkan Garis pada Kolom Kosong
                                                 </a>
                                             </ul>
                                         </div>
@@ -226,15 +251,15 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
+                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFour">
                                         <b>Styling Button CSS</b>
                                     </button>
                                     </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="list-group list-group-flush">
                                                 <a href="#" class="list-group-item" aria-current="true">
-                                                    Pengenalan Styling Button
+                                                    <strong>Pengenalan Styling Button</strong>
                                                 </a>
                                             </ul>
                                         </div>
